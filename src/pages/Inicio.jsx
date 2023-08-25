@@ -1,8 +1,8 @@
-
+import Navbar from "../components/Navbar/Navbar"
 function Inicio() {
   return (
     <>
-      INICIO
+      <Navbar/>
     </>
   )
 }

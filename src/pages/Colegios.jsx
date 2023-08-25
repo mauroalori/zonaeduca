@@ -2,7 +2,7 @@
 function Colegios() {
   return (
     <>
-      Colegios
+      <h1 className="text-center">Colegios</h1>
     </>
   )
 }
