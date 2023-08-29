@@ -1,45 +1,55 @@
-import React, {useState} from "react";
+import  {useState} from "react";
 import logo from './../../assets/logo.png'
+import { Link } from "react-router-dom";
 import './Navbar.css'
 
 function Navbar() {
     // to change burger classes
-    const [burger_state, setBurgerClass] = useState("unclicked")
-    const [menu_state, setMenuClass] = useState("hidden")
-    const [isMenuClicked, setIsMenuClicked] = useState(false)
+
 
     // toggle burger menu change
-    const updateMenu = () => {
-        if(!isMenuClicked) {
-            setBurgerClass("clicked")
-            setMenuClass("visible")
-        }
-        else {
-            setBurgerClass("unclicked")
-            setMenuClass("hidden")
-        }
-        setIsMenuClicked(!isMenuClicked)
-    }
+    const [Open, setOpen] = useState(false);
+
 
   return (
     <>
-      <nav id="nav" className='bg-[#001A29] text-white flex wrap justify-between items-center'>
-        <img src={logo} alt="" className='ml-4 h-11 p-2'/>
-        <button type="icon-toggle" className={`burger ${burger_state} mr-4`} onClick={updateMenu}></button>
-        <ul className={`menu ${menu_state} nav-principal flex flex-col gap-8`}>
-          <li className=''>Inicio</li>
-          <li className=''>Colegios</li>
-          <li className=''>Contacto</li>
-          <li className=''>Ayuda</li>
-        </ul>
-        <ul className={`menu ${menu_state} nav-cuenta flex flex-row gap-5 mr-4 text-sm`}>
-          <li>Registrarse</li>
-          <li>Ingresar</li>
-        </ul>
-      </nav>
-      
+    <nav className={`navBar ${Open && "open"}`}>
+
+      <div className={`navLogo ${Open && "open"}`}>
+      <img src={logo} alt="logo" className="w-44"/>
+      </div>
+
+      <div className={`items ${Open && "open"} flex  `}>
+
+        <Link >Inicio</Link>
+        <Link >Colegios</Link>
+        <Link  >Contacto </Link>
+        <Link  >Ayuda </Link>
+        
+        <div className="gap-5 mr-5 flex justify-center md:ml-60 ml-0"   >
+          <div className="text-center items-center flex md:gap-2 gap-5 text-white md:mt-0 mt-16">
+          <Link  >Registrarse </Link>
+          <Link  >Ingresar </Link>
+          </div>
+        </div>
+
+      </div>
+
+
+
+      <div
+        className={`toggle ${Open && "open"}`}
+        onClick={() => setOpen(!Open)}
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+
+    </nav>
     </>
-  )
+  );
 }
 
-export default Navbar
+export default Navbar;
