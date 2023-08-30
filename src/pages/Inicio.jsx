@@ -9,6 +9,7 @@ function Inicio() {
       <SeccionPortada/>
 
       {/* SECCION PRESENTACION  */}
+      
 
       {/* SECCION RECOMENDACIONES  */}
 
