@@ -28,13 +28,15 @@
     display: none;
 }
 
+.noMostrar{
+    display: none;
+}
+
 @media (max-width: 968px) {
 
     .navBar.open{
         background-color: #001A29;
         transition: 0.3s ease all;
-
-
 
     }
 

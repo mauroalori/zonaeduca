@@ -19,22 +19,25 @@ function Navbar() {
       <img src={logo} alt="logo" className="w-44"/>
       </div>
 
-      <div className={`items ${Open && "open"} flex  `}>
-
+        <div className={`items ${Open && "open"} justify-center text-center items-center flex`}>
         <Link >Inicio</Link>
         <Link >Colegios</Link>
         <Link  >Contacto </Link>
-        <Link  >Ayuda </Link>
-        
-        <div className="gap-5 mr-5 flex justify-center md:ml-60 ml-0"   >
-          <div className="text-center items-center flex md:gap-2 gap-5 text-white md:mt-0 mt-16">
-          <Link  >Registrarse </Link>
-          <Link  >Ingresar </Link>
-          </div>
+        <Link >Ayuda </Link>
+
+        {window.innerWidth < 968 && Open && (
+              <div className="mt-10">
+                  <Link>Registrarse</Link>
+                  <Link>Ingresar</Link>
+              </div>
+        )}
+
         </div>
-
-      </div>
-
+      
+        <div className={`items justify-center gap-5 text-center items-center flex`}>
+        <Link  >Registrarse</Link>
+        <Link  >Ingresar </Link>
+        </div>
 
 
       <div
