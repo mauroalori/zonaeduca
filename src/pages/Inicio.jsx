@@ -1,14 +1,22 @@
 import Navbar from "../components/Navbar/Navbar"
-import fondo from "../assets/fondo.png"
-import '../styles/inicio.css';
+import SeccionPortada from "../components/Inicio/seccionPortada/SeccionPortada";
 function Inicio() {
   return (
     <>
       <Navbar/>
-      <div className="contenedor">
-        <img src={fondo} alt="" className="imagen"/>
-        <p className="texto">Te ayudamos a encontrar el mejor <br /> colegio para tus hijos</p>
-      </div>
+
+      {/* SECCION PORTADA  */}
+      <SeccionPortada/>
+
+      {/* SECCION PRESENTACION  */}
+
+      {/* SECCION RECOMENDACIONES  */}
+
+      {/* SECCION COMENTARIOS  */}
+
+      {/* FORMULARIO CONTACTO */}
+
+      {/* FOOTER  */}
     </>
   )
 }
