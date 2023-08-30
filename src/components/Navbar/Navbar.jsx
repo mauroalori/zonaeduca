@@ -19,7 +19,7 @@ function Navbar() {
       <img src={logo} alt="logo" className="w-44"/>
       </div>
 
-        <div className={`items ${Open && "open"} justify-center text-center items-center flex`}>
+        <div className={`items ${Open && "open"} justify-start text-center items-center flex`}>
         <Link >Inicio</Link>
         <Link >Colegios</Link>
         <Link  >Contacto </Link>
