@@ -28,11 +28,13 @@
     display: none;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 968px) {
 
     .navBar.open{
         background-color: #001A29;
         transition: 0.3s ease all;
+
+
 
     }
 
@@ -47,12 +49,16 @@
         left: 0;
         font-size: 25px;
         background-color: #001A29;
+        align-items: center;
+        text-align: center;
         display: flex;
         flex-direction: column;
         width: 100%;
         height: -webkit-fill-available;
         transform: translateX(-100%);
         transition: 0.3s ease all;
+        z-index: 1;
+
     }
     
     .items a{
