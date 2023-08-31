@@ -1,5 +1,6 @@
 import Navbar from "../components/Navbar/Navbar"
 import SeccionPortada from "../components/Inicio/seccionPortada/SeccionPortada";
+import SeccionRecomendaciones from "../components/Inicio/seccionRecomendaciones/SeccionRecomendaciones";
 function Inicio() {
   return (
     <>
@@ -12,7 +13,7 @@ function Inicio() {
       
 
       {/* SECCION RECOMENDACIONES  */}
-
+      <SeccionRecomendaciones/>
       {/* SECCION COMENTARIOS  */}
 
       {/* FORMULARIO CONTACTO */}
