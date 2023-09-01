@@ -3,11 +3,22 @@
 }
 
 .navBar{
+    position: fixed; /* Cambio importante: fijar la posición */
+    top: 0; /* Colocar en la parte superior */
     background-color: #001A29;
     height: var(--altura-nav);
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%; /* Ocupar el ancho completo */
+    z-index: 2; 
+}
+
+.navBar.scrolled {
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: #001a29a7;
+
 }
 
 .navLogo{

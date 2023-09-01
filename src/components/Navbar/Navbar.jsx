@@ -1,19 +1,34 @@
-import  {useState} from "react";
+import  {useState, useEffect} from "react";
 import logo from './../../assets/logo.png'
 import { Link } from "react-router-dom";
-import './Navbar.css'
+import './Navbar.css';
 
 function Navbar() {
-    // to change burger classes
 
-
-    // toggle burger menu change
     const [Open, setOpen] = useState(false);
+
+    const [scrolling, setScrolling] = useState(false);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            if (window.scrollY > 0) {
+                setScrolling(true);
+            } else {
+                setScrolling(false);
+            }
+        };
+
+        window.addEventListener("scroll", handleScroll);
+
+        return () => {
+            window.removeEventListener("scroll", handleScroll);
+        };
+    }, []);
 
 
   return (
     <>
-    <nav className={`navBar ${Open && "open"}`}>
+    <nav className={`navBar ${Open && "open"} ${scrolling && "scrolled"}`}>
 
       <div className={`navLogo ${Open && "open"}`}>
       <img src={logo} alt="logo" className="w-44"/>
