@@ -1,4 +1,4 @@
-import SliderComentarios from "./swiperRecomendaciones/SliderComentarios"
+import SliderComentarios from "./swiperComentarios/SliderComentarios"
 
 function SeccionComentarios() {
   return (
