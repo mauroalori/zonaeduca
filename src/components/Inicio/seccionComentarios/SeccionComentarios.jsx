@@ -7,6 +7,7 @@ function SeccionComentarios() {
     <h1 className="text-center text-4xl m-5 uppercase text-[#00405B]">Comentarios</h1>      
 
     <SliderComentarios/>
+    
     </div>
   )
 }
