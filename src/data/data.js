@@ -4,6 +4,7 @@ import foto3 from "../assets/fotosComentarios/Foto3.jpg"
 import foto4 from "../assets/fotosComentarios/Foto4.jpg"
 import foto5 from "../assets/fotosComentarios/Foto5.jpg"
 import foto6 from "../assets/fotosComentarios/Foto6.jpg"
+import fotoColegio from "../assets/fotosColegios/tecnica1joseingenieros.jpg"
 
 const datosComentarios = [
     {
@@ -38,4 +39,43 @@ const datosComentarios = [
     }
 ]
 
-export{datosComentarios}
+const datosColegios = [
+    {
+        id: 1,
+        escuela: "tecnica 1 jose ingenieros",
+        foto: fotoColegio,
+        informacion: "Se inició como Escuela Argentina de Educación Profesional, siendo oficializada por Orden Ministerial del Gobierno Provincial con fecha el 1 de enero de 1945 y funcionaba en Ingeniero Huergo 1051. Con el tiempo paso a ser Escuela Profesional y de oficios Mixta N°1. En la década de 1950 se traslada a I. Huergo 1534, compartiendo edificio con la Escuela Primaria N°33. Su nombre vuelve a cambiar Escuela Profesional Mixta N° 1 de Avellaneda."
+    },
+    {
+        id: 2,
+        escuela: "tecnica 1 jose ingenieros",
+        foto: fotoColegio,
+        informacion: "Se inició como Escuela Argentina de Educación Profesional, siendo oficializada por Orden Ministerial del Gobierno Provincial con fecha el 1 de enero de 1945 y funcionaba en Ingeniero Huergo 1051. Con el tiempo paso a ser Escuela Profesional y de oficios Mixta N°1. En la década de 1950 se traslada a I. Huergo 1534, compartiendo edificio con la Escuela Primaria N°33. Su nombre vuelve a cambiar Escuela Profesional Mixta N° 1 de Avellaneda."
+    },
+    {
+        id: 3,
+        escuela: "tecnica 1 jose ingenieros",
+        foto: fotoColegio,
+        informacion: "Se inició como Escuela Argentina de Educación Profesional, siendo oficializada por Orden Ministerial del Gobierno Provincial con fecha el 1 de enero de 1945 y funcionaba en Ingeniero Huergo 1051. Con el tiempo paso a ser Escuela Profesional y de oficios Mixta N°1. En la década de 1950 se traslada a I. Huergo 1534, compartiendo edificio con la Escuela Primaria N°33. Su nombre vuelve a cambiar Escuela Profesional Mixta N° 1 de Avellaneda."
+    },
+    {
+        id: 4,
+        escuela: "tecnica 1 jose ingenieros",
+        foto: fotoColegio,
+        informacion: "Se inició como Escuela Argentina de Educación Profesional, siendo oficializada por Orden Ministerial del Gobierno Provincial con fecha el 1 de enero de 1945 y funcionaba en Ingeniero Huergo 1051. Con el tiempo paso a ser Escuela Profesional y de oficios Mixta N°1. En la década de 1950 se traslada a I. Huergo 1534, compartiendo edificio con la Escuela Primaria N°33. Su nombre vuelve a cambiar Escuela Profesional Mixta N° 1 de Avellaneda."
+    },
+    {
+        id: 5,
+        escuela: "tecnica 1 jose ingenieros",
+        foto: fotoColegio,
+        informacion: "Se inició como Escuela Argentina de Educación Profesional, siendo oficializada por Orden Ministerial del Gobierno Provincial con fecha el 1 de enero de 1945 y funcionaba en Ingeniero Huergo 1051. Con el tiempo paso a ser Escuela Profesional y de oficios Mixta N°1. En la década de 1950 se traslada a I. Huergo 1534, compartiendo edificio con la Escuela Primaria N°33. Su nombre vuelve a cambiar Escuela Profesional Mixta N° 1 de Avellaneda."
+    },
+    {
+        id: 6,
+        escuela: "tecnica 1 jose ingenieros",
+        foto: fotoColegio,
+        informacion: "Se inició como Escuela Argentina de Educación Profesional, siendo oficializada por Orden Ministerial del Gobierno Provincial con fecha el 1 de enero de 1945 y funcionaba en Ingeniero Huergo 1051. Con el tiempo paso a ser Escuela Profesional y de oficios Mixta N°1. En la década de 1950 se traslada a I. Huergo 1534, compartiendo edificio con la Escuela Primaria N°33. Su nombre vuelve a cambiar Escuela Profesional Mixta N° 1 de Avellaneda."
+    }
+]
+
+export{datosComentarios, datosColegios}
