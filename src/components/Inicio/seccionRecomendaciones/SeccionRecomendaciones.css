@@ -1,3 +1,10 @@
 h3{
     letter-spacing: .05rem;
 }
+
+.text-disappear{
+    background: linear-gradient(
+        to right,
+        #fff0,
+        #fff);
+}
