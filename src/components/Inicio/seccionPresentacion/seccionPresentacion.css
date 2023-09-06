@@ -1,0 +1,44 @@
+.contenedor{
+    position: relative;
+    height: 700px;
+}
+.imagen1{
+    position: absolute;
+    width: 430px;
+    height: 450px;
+    margin: 80px;
+    border-radius: 20px;
+    z-index: 0;
+}
+.imagen2{
+    position: absolute;
+    width: 250px;
+    height: 290px;
+    margin: 10px;
+    top: 50%;
+    right: 50%;
+    border-radius: 20px;
+    z-index: 1;
+}
+.presentacion{
+    width: 480px;
+    margin: 40px;
+    color: #6E6E6E;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.5   
+}
+.btn-colegio{
+    width: 480px;
+    height: 65px;
+    color: #FFF;
+    text-align: center;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    border-radius: 20px;
+    background: #00729A;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
