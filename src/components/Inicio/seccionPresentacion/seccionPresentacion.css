@@ -4,6 +4,7 @@
 }
 .imagen1{
     position: absolute;
+    object-fit: cover;
     width: 430px;
     height: 450px;
     margin: 80px;
