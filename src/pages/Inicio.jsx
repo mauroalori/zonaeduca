@@ -2,7 +2,7 @@ import Navbar from "../components/Navbar/Navbar"
 import SeccionPortada from "../components/Inicio/seccionPortada/SeccionPortada";
 import SeccionRecomendaciones from "../components/Inicio/seccionRecomendaciones/SeccionRecomendaciones";
 import SeccionComentarios from "../components/Inicio/seccionComentarios/SeccionComentarios";
-
+import SeccionPresentacion from "../components/Inicio/seccionPresentacion/SeccionPresentacion";
 function Inicio() {
   return (
     <>
@@ -12,7 +12,7 @@ function Inicio() {
       <SeccionPortada/>
 
       {/* SECCION PRESENTACION  */}
-      
+      <SeccionPresentacion/>
 
       {/* SECCION RECOMENDACIONES  */}
       <SeccionRecomendaciones/>
