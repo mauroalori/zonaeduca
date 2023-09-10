@@ -8,6 +8,7 @@ function SeccionComentarios() {
 
     <SliderComentarios/>
     
+    
     </div>
   )
 }
