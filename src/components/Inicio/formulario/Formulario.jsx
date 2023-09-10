@@ -61,6 +61,7 @@ function Formulario() {
             <p className="text-white w-52 text-sm">
               Lavalle 648 Piso 8, C1047AAN CABA, Argentina
             </p>
+            
           </div>
 
           <div className="flex items-center">
