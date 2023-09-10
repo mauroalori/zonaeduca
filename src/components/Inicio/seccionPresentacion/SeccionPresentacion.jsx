@@ -5,14 +5,14 @@ import "./seccionPresentacion.css"
 export default function SeccionPresentacion() {
     return (
       <>
-      <div className="container_presentacion relative flex bg-[#00B0E4] bg-opacity-20 w-full">
-        <div className="w-1/2 flex items-center justify-center p-6">
+      <div className="container_presentacion bg-[#00B0E4] bg-opacity-20">
+        <div className="container_imagen">
             <img src={fondo1} alt="" className="imagen1"/>
             <img src={fotoPresentacion} alt=""  className="imagen2"/>
         </div>
-        <div className="w-1/2 flex flex-col justify-center items-center p-6">
+        <div className="container_frase">
             <div >
-            <h3 className="titulo text-3xl">
+            <h3 className="titulo">
               ¡Bienvenidos a ZonaEduca!
             </h3>
             <p className="presentacion">
@@ -20,7 +20,7 @@ export default function SeccionPresentacion() {
             </p>
             </div>
             <div>
-                <button className="btn-colegio mt-7">COLEGIOS</button>
+                <button className="btn-colegio">COLEGIOS</button>
             </div>
         </div>
       </div>
