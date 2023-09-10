@@ -5,6 +5,9 @@ import foto4 from "../assets/fotosComentarios/Foto4.jpg"
 import foto5 from "../assets/fotosComentarios/Foto5.jpg"
 import foto6 from "../assets/fotosComentarios/Foto6.jpg"
 import fotoColegio from "../assets/fotosColegios/tecnica1joseingenieros.jpg"
+const
+    path = "../assets/fotosColegios/",
+    extension = ".jpg";
 
 const datosComentarios = [
     {
@@ -75,6 +78,156 @@ const datosColegios = [
         nombre: "Tecnica N°1 Jose Ingenieros",
         imagen: fotoColegio,
         informacion: "Se inició como Escuela Argentina de Educación Profesional, siendo oficializada por Orden Ministerial del Gobierno Provincial con fecha el 1 de enero de 1945 y funcionaba en Ingeniero Huergo 1051. Con el tiempo paso a ser Escuela Profesional y de oficios Mixta N°1. En la década de 1950 se traslada a I. Huergo 1534, compartiendo edificio con la Escuela Primaria N°33. Su nombre vuelve a cambiar Escuela Profesional Mixta N° 1 de Avellaneda."
+    },
+    {
+        id: 51,
+        nombre: "St. Catherine’s Moorlands School",
+        imagen: path + "santacatalina" + extension,
+        informacion: "St. Catherine’s Moorlands School, también conocido como Santa Catalina de Belgrano, es un colegio fundado en 1956, de gestión privada, mixto, de jornada completa y con orientación en valores de la religión Católica. Se dicta una enseñanza plurilingüe (Inglés, Francés, Mandarín), con carácter bilingüe, con la posibilidad de aplicar a certificaciones internacionales. Además, los alumnos tienen la posibilidad de obtener el Bachillerato Internacional (IB)."
+    },
+    {
+        id: 52,
+        nombre: "St. Catherine’s Moorlands School",
+        imagen: path + "santacatalina" + extension,
+        informacion: "St. Catherine’s Moorlands School, también conocido como Santa Catalina de Belgrano, es un colegio fundado en 1956, de gestión privada, mixto, de jornada completa y con orientación en valores de la religión Católica. Se dicta una enseñanza plurilingüe (Inglés, Francés, Mandarín), con carácter bilingüe, con la posibilidad de aplicar a certificaciones internacionales. Además, los alumnos tienen la posibilidad de obtener el Bachillerato Internacional (IB)."
+    },
+    {
+        id: 53,
+        nombre: "St. Catherine’s Moorlands School",
+        imagen: path + "santacatalina" + extension,
+        informacion: "St. Catherine’s Moorlands School, también conocido como Santa Catalina de Belgrano, es un colegio fundado en 1956, de gestión privada, mixto, de jornada completa y con orientación en valores de la religión Católica. Se dicta una enseñanza plurilingüe (Inglés, Francés, Mandarín), con carácter bilingüe, con la posibilidad de aplicar a certificaciones internacionales. Además, los alumnos tienen la posibilidad de obtener el Bachillerato Internacional (IB)."
+    },
+    {
+        id: 54,
+        nombre: "St. Catherine’s Moorlands School",
+        imagen: path + "santacatalina" + extension,
+        informacion: "St. Catherine’s Moorlands School, también conocido como Santa Catalina de Belgrano, es un colegio fundado en 1956, de gestión privada, mixto, de jornada completa y con orientación en valores de la religión Católica. Se dicta una enseñanza plurilingüe (Inglés, Francés, Mandarín), con carácter bilingüe, con la posibilidad de aplicar a certificaciones internacionales. Además, los alumnos tienen la posibilidad de obtener el Bachillerato Internacional (IB)."
+    },
+    {
+        id: 55,
+        nombre: "St. Catherine’s Moorlands School",
+        imagen: path + "santacatalina" + extension,
+        informacion: "St. Catherine’s Moorlands School, también conocido como Santa Catalina de Belgrano, es un colegio fundado en 1956, de gestión privada, mixto, de jornada completa y con orientación en valores de la religión Católica. Se dicta una enseñanza plurilingüe (Inglés, Francés, Mandarín), con carácter bilingüe, con la posibilidad de aplicar a certificaciones internacionales. Además, los alumnos tienen la posibilidad de obtener el Bachillerato Internacional (IB)."
+    },
+    {
+        id: 56,
+        nombre: "St. Catherine’s Moorlands School",
+        imagen: path + "santacatalina" + extension,
+        informacion: "St. Catherine’s Moorlands School, también conocido como Santa Catalina de Belgrano, es un colegio fundado en 1956, de gestión privada, mixto, de jornada completa y con orientación en valores de la religión Católica. Se dicta una enseñanza plurilingüe (Inglés, Francés, Mandarín), con carácter bilingüe, con la posibilidad de aplicar a certificaciones internacionales. Además, los alumnos tienen la posibilidad de obtener el Bachillerato Internacional (IB)."
+    },
+    {
+        id: 57,
+        nombre: "St. Catherine’s Moorlands School",
+        imagen: path + "santacatalina" + extension,
+        informacion: "St. Catherine’s Moorlands School, también conocido como Santa Catalina de Belgrano, es un colegio fundado en 1956, de gestión privada, mixto, de jornada completa y con orientación en valores de la religión Católica. Se dicta una enseñanza plurilingüe (Inglés, Francés, Mandarín), con carácter bilingüe, con la posibilidad de aplicar a certificaciones internacionales. Además, los alumnos tienen la posibilidad de obtener el Bachillerato Internacional (IB)."
+    },
+    {
+        id: 58,
+        nombre: "St. Catherine’s Moorlands School",
+        imagen: path + "santacatalina" + extension,
+        informacion: "St. Catherine’s Moorlands School, también conocido como Santa Catalina de Belgrano, es un colegio fundado en 1956, de gestión privada, mixto, de jornada completa y con orientación en valores de la religión Católica. Se dicta una enseñanza plurilingüe (Inglés, Francés, Mandarín), con carácter bilingüe, con la posibilidad de aplicar a certificaciones internacionales. Además, los alumnos tienen la posibilidad de obtener el Bachillerato Internacional (IB)."
+    },
+    {
+        id: 59,
+        nombre: "St. Catherine’s Moorlands School",
+        imagen: path + "santacatalina" + extension,
+        informacion: "St. Catherine’s Moorlands School, también conocido como Santa Catalina de Belgrano, es un colegio fundado en 1956, de gestión privada, mixto, de jornada completa y con orientación en valores de la religión Católica. Se dicta una enseñanza plurilingüe (Inglés, Francés, Mandarín), con carácter bilingüe, con la posibilidad de aplicar a certificaciones internacionales. Además, los alumnos tienen la posibilidad de obtener el Bachillerato Internacional (IB)."
+    },
+    {
+        id: 60,
+        nombre: "St. Catherine’s Moorlands School",
+        imagen: path + "santacatalina" + extension,
+        informacion: "St. Catherine’s Moorlands School, también conocido como Santa Catalina de Belgrano, es un colegio fundado en 1956, de gestión privada, mixto, de jornada completa y con orientación en valores de la religión Católica. Se dicta una enseñanza plurilingüe (Inglés, Francés, Mandarín), con carácter bilingüe, con la posibilidad de aplicar a certificaciones internacionales. Además, los alumnos tienen la posibilidad de obtener el Bachillerato Internacional (IB)."
+    },
+    {
+        id: 61,
+        nombre: "St. Catherine’s Moorlands School",
+        imagen: path + "santacatalina" + extension,
+        informacion: "St. Catherine’s Moorlands School, también conocido como Santa Catalina de Belgrano, es un colegio fundado en 1956, de gestión privada, mixto, de jornada completa y con orientación en valores de la religión Católica. Se dicta una enseñanza plurilingüe (Inglés, Francés, Mandarín), con carácter bilingüe, con la posibilidad de aplicar a certificaciones internacionales. Además, los alumnos tienen la posibilidad de obtener el Bachillerato Internacional (IB)."
+    },
+    {
+        id: 62,
+        nombre: "St. Catherine’s Moorlands School",
+        imagen: path + "santacatalina" + extension,
+        informacion: "St. Catherine’s Moorlands School, también conocido como Santa Catalina de Belgrano, es un colegio fundado en 1956, de gestión privada, mixto, de jornada completa y con orientación en valores de la religión Católica. Se dicta una enseñanza plurilingüe (Inglés, Francés, Mandarín), con carácter bilingüe, con la posibilidad de aplicar a certificaciones internacionales. Además, los alumnos tienen la posibilidad de obtener el Bachillerato Internacional (IB)."
+    },
+    {
+        id: 63,
+        nombre: "St. Catherine’s Moorlands School",
+        imagen: path + "santacatalina" + extension,
+        informacion: "St. Catherine’s Moorlands School, también conocido como Santa Catalina de Belgrano, es un colegio fundado en 1956, de gestión privada, mixto, de jornada completa y con orientación en valores de la religión Católica. Se dicta una enseñanza plurilingüe (Inglés, Francés, Mandarín), con carácter bilingüe, con la posibilidad de aplicar a certificaciones internacionales. Además, los alumnos tienen la posibilidad de obtener el Bachillerato Internacional (IB)."
+    },
+    {
+        id: 64,
+        nombre: "St. Catherine’s Moorlands School",
+        imagen: path + "santacatalina" + extension,
+        informacion: "St. Catherine’s Moorlands School, también conocido como Santa Catalina de Belgrano, es un colegio fundado en 1956, de gestión privada, mixto, de jornada completa y con orientación en valores de la religión Católica. Se dicta una enseñanza plurilingüe (Inglés, Francés, Mandarín), con carácter bilingüe, con la posibilidad de aplicar a certificaciones internacionales. Además, los alumnos tienen la posibilidad de obtener el Bachillerato Internacional (IB)."
+    },
+    {
+        id: 65,
+        nombre: "St. Catherine’s Moorlands School",
+        imagen: path + "santacatalina" + extension,
+        informacion: "St. Catherine’s Moorlands School, también conocido como Santa Catalina de Belgrano, es un colegio fundado en 1956, de gestión privada, mixto, de jornada completa y con orientación en valores de la religión Católica. Se dicta una enseñanza plurilingüe (Inglés, Francés, Mandarín), con carácter bilingüe, con la posibilidad de aplicar a certificaciones internacionales. Además, los alumnos tienen la posibilidad de obtener el Bachillerato Internacional (IB)."
+    },
+    {
+        id: 66,
+        nombre: "St. Catherine’s Moorlands School",
+        imagen: path + "santacatalina" + extension,
+        informacion: "St. Catherine’s Moorlands School, también conocido como Santa Catalina de Belgrano, es un colegio fundado en 1956, de gestión privada, mixto, de jornada completa y con orientación en valores de la religión Católica. Se dicta una enseñanza plurilingüe (Inglés, Francés, Mandarín), con carácter bilingüe, con la posibilidad de aplicar a certificaciones internacionales. Además, los alumnos tienen la posibilidad de obtener el Bachillerato Internacional (IB)."
+    },
+    {
+        id: 67,
+        nombre: "St. Catherine’s Moorlands School",
+        imagen: path + "santacatalina" + extension,
+        informacion: "St. Catherine’s Moorlands School, también conocido como Santa Catalina de Belgrano, es un colegio fundado en 1956, de gestión privada, mixto, de jornada completa y con orientación en valores de la religión Católica. Se dicta una enseñanza plurilingüe (Inglés, Francés, Mandarín), con carácter bilingüe, con la posibilidad de aplicar a certificaciones internacionales. Además, los alumnos tienen la posibilidad de obtener el Bachillerato Internacional (IB)."
+    },
+    {
+        id: 68,
+        nombre: "St. Catherine’s Moorlands School",
+        imagen: path + "santacatalina" + extension,
+        informacion: "St. Catherine’s Moorlands School, también conocido como Santa Catalina de Belgrano, es un colegio fundado en 1956, de gestión privada, mixto, de jornada completa y con orientación en valores de la religión Católica. Se dicta una enseñanza plurilingüe (Inglés, Francés, Mandarín), con carácter bilingüe, con la posibilidad de aplicar a certificaciones internacionales. Además, los alumnos tienen la posibilidad de obtener el Bachillerato Internacional (IB)."
+    },
+    {
+        id: 69,
+        nombre: "St. Catherine’s Moorlands School",
+        imagen: path + "santacatalina" + extension,
+        informacion: "St. Catherine’s Moorlands School, también conocido como Santa Catalina de Belgrano, es un colegio fundado en 1956, de gestión privada, mixto, de jornada completa y con orientación en valores de la religión Católica. Se dicta una enseñanza plurilingüe (Inglés, Francés, Mandarín), con carácter bilingüe, con la posibilidad de aplicar a certificaciones internacionales. Además, los alumnos tienen la posibilidad de obtener el Bachillerato Internacional (IB)."
+    },
+    {
+        id: 70,
+        nombre: "St. Catherine’s Moorlands School",
+        imagen: path + "santacatalina" + extension,
+        informacion: "St. Catherine’s Moorlands School, también conocido como Santa Catalina de Belgrano, es un colegio fundado en 1956, de gestión privada, mixto, de jornada completa y con orientación en valores de la religión Católica. Se dicta una enseñanza plurilingüe (Inglés, Francés, Mandarín), con carácter bilingüe, con la posibilidad de aplicar a certificaciones internacionales. Además, los alumnos tienen la posibilidad de obtener el Bachillerato Internacional (IB)."
+    },
+    {
+        id: 71,
+        nombre: "St. Catherine’s Moorlands School",
+        imagen: path + "santacatalina" + extension,
+        informacion: "St. Catherine’s Moorlands School, también conocido como Santa Catalina de Belgrano, es un colegio fundado en 1956, de gestión privada, mixto, de jornada completa y con orientación en valores de la religión Católica. Se dicta una enseñanza plurilingüe (Inglés, Francés, Mandarín), con carácter bilingüe, con la posibilidad de aplicar a certificaciones internacionales. Además, los alumnos tienen la posibilidad de obtener el Bachillerato Internacional (IB)."
+    },
+    {
+        id: 72,
+        nombre: "St. Catherine’s Moorlands School",
+        imagen: path + "santacatalina" + extension,
+        informacion: "St. Catherine’s Moorlands School, también conocido como Santa Catalina de Belgrano, es un colegio fundado en 1956, de gestión privada, mixto, de jornada completa y con orientación en valores de la religión Católica. Se dicta una enseñanza plurilingüe (Inglés, Francés, Mandarín), con carácter bilingüe, con la posibilidad de aplicar a certificaciones internacionales. Además, los alumnos tienen la posibilidad de obtener el Bachillerato Internacional (IB)."
+    },
+    {
+        id: 73,
+        nombre: "St. Catherine’s Moorlands School",
+        imagen: path + "santacatalina" + extension,
+        informacion: "St. Catherine’s Moorlands School, también conocido como Santa Catalina de Belgrano, es un colegio fundado en 1956, de gestión privada, mixto, de jornada completa y con orientación en valores de la religión Católica. Se dicta una enseñanza plurilingüe (Inglés, Francés, Mandarín), con carácter bilingüe, con la posibilidad de aplicar a certificaciones internacionales. Además, los alumnos tienen la posibilidad de obtener el Bachillerato Internacional (IB)."
+    },
+    {
+        id: 74,
+        nombre: "St. Catherine’s Moorlands School",
+        imagen: path + "santacatalina" + extension,
+        informacion: "St. Catherine’s Moorlands School, también conocido como Santa Catalina de Belgrano, es un colegio fundado en 1956, de gestión privada, mixto, de jornada completa y con orientación en valores de la religión Católica. Se dicta una enseñanza plurilingüe (Inglés, Francés, Mandarín), con carácter bilingüe, con la posibilidad de aplicar a certificaciones internacionales. Además, los alumnos tienen la posibilidad de obtener el Bachillerato Internacional (IB)."
+    },
+    {
+        id: 75,
+        nombre: "St. Catherine’s Moorlands School",
+        imagen: path + "santacatalina" + extension,
+        informacion: "St. Catherine’s Moorlands School, también conocido como Santa Catalina de Belgrano, es un colegio fundado en 1956, de gestión privada, mixto, de jornada completa y con orientación en valores de la religión Católica. Se dicta una enseñanza plurilingüe (Inglés, Francés, Mandarín), con carácter bilingüe, con la posibilidad de aplicar a certificaciones internacionales. Además, los alumnos tienen la posibilidad de obtener el Bachillerato Internacional (IB)."
     }
 ]
 
