@@ -39,9 +39,7 @@
     border-radius: 20px;
     z-index: 1;
 }
-.titulo{
-    font-size: 30px;
-}
+
 .titulo,
 .presentacion{
     width: 500px;
@@ -49,10 +47,14 @@
     color: #6E6E6E;
     text-align: left;
     font-size: 18px;
-    font-style: normal;
     font-weight: 600;
     line-height: 1.5   
 }
+
+.titulo{
+    font-size: 28px;
+}
+
 .btn-colegio{
     width: 500px;
     height: 65px;
@@ -119,6 +121,7 @@
     .btn-colegio{
         width: 350px;
         margin-top: .8rem;
+        font-size: 18;
     }
     
     
@@ -139,5 +142,8 @@
     }
     .presentacion{
         font-size: 14px;
+    }
+    .btn-colegio{
+        font-size: 16px;
     }
 }
