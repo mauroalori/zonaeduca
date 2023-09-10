@@ -4,6 +4,7 @@ import SeccionRecomendaciones from "../components/Inicio/seccionRecomendaciones/
 import SeccionComentarios from "../components/Inicio/seccionComentarios/SeccionComentarios";
 import SeccionPresentacion from "../components/Inicio/seccionPresentacion/SeccionPresentacion";
 import Formulario from "../components/Inicio/formulario/Formulario";
+import Footer from "../components/Footer/Footer";
 
 function Inicio() {
   return (
@@ -26,6 +27,7 @@ function Inicio() {
       <Formulario/>
 
       {/* FOOTER  */}
+      <Footer/>
     </>
   )
 }
