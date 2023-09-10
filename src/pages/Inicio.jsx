@@ -3,6 +3,8 @@ import SeccionPortada from "../components/Inicio/seccionPortada/SeccionPortada";
 import SeccionRecomendaciones from "../components/Inicio/seccionRecomendaciones/SeccionRecomendaciones";
 import SeccionComentarios from "../components/Inicio/seccionComentarios/SeccionComentarios";
 import SeccionPresentacion from "../components/Inicio/seccionPresentacion/SeccionPresentacion";
+import Formulario from "../components/Inicio/formulario/Formulario";
+
 function Inicio() {
   return (
     <>
@@ -21,6 +23,7 @@ function Inicio() {
       <SeccionComentarios/>
 
       {/* FORMULARIO CONTACTO */}
+      <Formulario/>
 
       {/* FOOTER  */}
     </>
