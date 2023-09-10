@@ -10,7 +10,6 @@ function Formulario() {
     <div className={`flex ${window.innerWidth < 768 ? 'flex-col' : ''} items-center justify-center md:h-[80vh] h-[90vh] m-5`}>
 
       {/* FORM  */}
-      
         <form
           action=""
           className="md:w-96 md:h-[90%] w-80 flex flex-col justify-center   shadow-lg shadow-gray-300 p-5"
