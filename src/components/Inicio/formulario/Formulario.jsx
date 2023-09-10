@@ -5,6 +5,8 @@ import "./formulario.css";
 
 function Formulario() {
   return (
+
+    // DIV GENERAL 
     <div className={`flex ${window.innerWidth < 768 ? 'flex-col' : ''} items-center justify-center md:h-[80vh] h-[90vh] m-5`}>
 
       {/* FORM  */}
