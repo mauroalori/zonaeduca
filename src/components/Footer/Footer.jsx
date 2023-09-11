@@ -1,6 +1,6 @@
 import logo from './../../assets/logo.png'
 import './Footer.css';
-
+import FooterLinkList from './FooterLinkList/FooterLinkList';
 function Footer() {
 
   return (
@@ -10,17 +10,10 @@ function Footer() {
             <img src={logo} alt="logo de zonaeduca" className='max-w-[250px] w-1/2 md:w-full text-left'/>
         </div>
         <div className='inline-block w-full md:w-2/3'>
-            <ul className='flex flex-col gap-6 w-1/2 text-slate-400'>
-                <li className='font-bold text-white'>Contacto</li>
-                <li>zonaeduca@gmail.com</li>
-                <li>11-1234-5678</li>
-            </ul>
-            <ul className='flex flex-col gap-6 w-1/2 text-slate-400'>
-                <li className='font-bold text-white'>Redes sociales</li>
-                <li><a href="https://www.instagram.com/" target='blank'>Instagram</a></li>
-                <li><a href="https://www.facebook.com/" target='blank'>Facebook</a></li>
-                <li><a href="https://twitter.com/" target='blank'>Twitter</a></li>
-            </ul>
+            {/* Lista de contacto */}
+            <FooterLinkList title={"Contacto"} links={["zonaeduca@gmail.com","11-1234-5678"]}/>
+            {/* Lista de redes sociales */}
+            <FooterLinkList title={"Redes sociales"} links={["Instagram","Facebook","Twitter"]} a={true}/>
         </div>
         <p className='text-white text-center font-bold w-full m-auto mt-12'>©2023 ZonaEduca. Conocé los términos de uso y nuestra política de privacidad.</p>
     </div>
