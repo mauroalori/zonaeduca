@@ -6,10 +6,10 @@ function Footer() {
   return (
     <>
     <div className='footer flex flex-wrap gap-8 bg-[#001A29] px-10 py-5'>
-        <div className='w-full md:w-1/3'>
+        <div className='w-full md:w-1/3 '>
             <img src={logo} alt="logo de zonaeduca" className='max-w-[250px] w-1/2 md:w-full text-left'/>
         </div>
-        <div className='inline-block w-full md:w-2/3'>
+        <div className='flex flex-wrap justify-evenly gap-y-6 m-auto w-full md:w-2/3'>
             {/* Lista de contacto */}
             <FooterLinkList title={"Contacto"} links={["zonaeduca@gmail.com","11-1234-5678"]}/>
             {/* Lista de redes sociales */}
