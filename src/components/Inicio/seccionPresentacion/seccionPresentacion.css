@@ -69,9 +69,13 @@
     font-weight: 500;
     border-radius: 20px;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    transition: background 0.8s ease, transform 0.8s ease, box-shadow 0.5s ease;
 }
+
 .btn-colegio:hover{
     background: linear-gradient(to bottom, #6ac6e7, #002c3d);
+    transform: scale(1.05); /* Aumenta ligeramente el tamaño al pasar el cursor */
+    box-shadow: 0px 6px 6px 0px rgba(0, 0, 0, 0.4); /* Cambia la sombra al pasar el cursor */
 }
 
 
