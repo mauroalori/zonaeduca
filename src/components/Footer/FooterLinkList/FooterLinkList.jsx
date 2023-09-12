@@ -15,7 +15,7 @@ function FooterLinkList({title,links,a=false}) {
 
   return (
     <>
-        <ul className='flex flex-col gap-6 w-1/2 text-slate-400'>
+        <ul className='flex flex-col gap-6 min-w-[200px] text-slate-400'>
             <li className='font-bold text-white'>{title}</li>
             {linkList}
         </ul>
