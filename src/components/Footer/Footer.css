@@ -1,0 +1,50 @@
+.footer{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    padding-left: 2.5rem; 
+    padding-right: 2.5rem; 
+    padding-top: 1.25rem; 
+    padding-bottom: 1.25rem;  
+}
+.enlaces{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 66.666667%; 
+    margin-top: 2rem;   
+}
+@media screen and (max-width: 992px){
+    .copyright{
+        font-size: 14px;
+    }
+    .enlaces{
+        font-size: 10px;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+        margin: 0 auto;
+        width: 100%;
+        max-width: 66.666667%;
+        margin-top: 2rem;
+    }
+}
+/*Pantallas sm Smartphones*/
+@media screen and (max-width: 576px) {
+    .copyright{
+        font-size: 10px;
+    }
+    .footer {
+        display: flex;
+        flex-direction: column;
+    }
+    .enlaces {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-wrap: nowrap;
+    }
+}
