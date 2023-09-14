@@ -64,7 +64,6 @@ function Navbar() {
         <span></span>
       </div>
 
-
     </nav>
     </>
   );
