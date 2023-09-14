@@ -6,3 +6,10 @@
     outline: none;
     border-bottom:1px solid gray;
 }
+
+
+@media (max-width: 768px) {
+    .responsive {
+      flex-direction: column;
+    }
+}
