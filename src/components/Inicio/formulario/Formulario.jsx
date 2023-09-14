@@ -7,7 +7,7 @@ function Formulario() {
   return (
 
     // DIV GENERAL 
-    <div className={`flex ${window.innerWidth < 768 ? 'flex-col' : ''} items-center justify-center md:h-[80vh] h-[90vh] m-5`}>
+    <div className={`flex responsive items-center justify-center md:h-[80vh] h-[90vh] m-5 mb-32`}>
 
       {/* FORM  */}
         <form
@@ -38,11 +38,11 @@ function Formulario() {
         {/* mensaje  */}
         <div className="flex flex-col mt-5">
             <label htmlFor="mensaje" className="text-[#666666]">Mensaje</label>
-            <textarea name="" id="mensaje" className="w-72 h-20 bordes text-xs text-[#03ABE6] p-1" type="text" placeholder="Mensaje" cols="10" rows="10" required></textarea>
+            <textarea name="" id="mensaje" className="w-72 h-14 bordes text-xs text-[#03ABE6] p-1" type="text" placeholder="Mensaje" cols="10" rows="10" required></textarea>
         </div>
 
      
-         <div className="flex justify-center items-center mt-10">
+         <div className="flex justify-center items-center mt-8 mb-2">
          <button type="submit" className="m-auto bg-[#3DCCFF] text-white w-20 p-1 rounded-md hover:bg-[#1e8eb7] duration-200">
             Enviar
           </button>
@@ -55,24 +55,24 @@ function Formulario() {
       {/* CAJA GRADIENTE  */}
       <div className="w-80 h-[90%] flex  justify-center items-center fondoFormulario shadow-lg shadow-gray-300">
         {/* CONTENEDOR ITEMS  */}
-        <div className="m-auto flex flex-col justify-center items-center gap-5">
+        <div className="m-auto flex flex-col justify-center items-center md:gap-5 gap-2">
           {/* ITEMS  */}
-          <div className="flex items-center">
+          <div className="flex items-center p-1">
             <img src={ubicacion} alt="ubicacion" className="w-10" />
-            <p className="text-white w-52 text-sm">
+            <p className="text-white w-52 md:text-sm text-xs ">
               Lavalle 648 Piso 8, C1047AAN CABA, Argentina
             </p>
             
           </div>
 
-          <div className="flex items-center">
+          <div className="flex items-center p-1">
             <img src={telefono} alt="telefono" className="w-10" />
-            <p className="text-white w-52 text-sm">11-1234-5678</p>
+            <p className="text-white w-52 md:text-sm text-xs">11-1234-5678</p>
           </div>
 
-          <div className="flex items-center">
+          <div className="flex items-center p-1">
             <img src={mail} alt="mail" className="w-10" />
-            <p className="text-white w-52 text-sm">zonaeduca@gmail.com</p>
+            <p className="text-white w-52 md:text-sm text-xs">zonaeduca@gmail.com</p>
           </div>
         </div>
       </div>
