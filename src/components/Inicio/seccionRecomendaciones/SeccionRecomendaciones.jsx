@@ -1,10 +1,59 @@
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+// IMPORTO EL OBJETO DESDE DATA PARA RECORRERLO 
+import { datosColegios } from '../../../data/data';
+
+// STYLES 
+import 'swiper/css';
+import 'swiper/css/pagination';
 import './SeccionRecomendaciones.css'
 
+// MODULOS 
+import { Pagination } from 'swiper/modules';
 function SeccionRecomendaciones() {
   return (
     <>
         <h3 className='text-white text-2xl bg-[#00405B] p-3 pl-12'>Nuestras recomendaciones</h3>
-        <div className='carrousel bg-[#001A29] h-80'></div>
+        <div className='flex-col justify-center bg-[#001A29] p-4'>
+          <div className='carrousel p-10'>
+            <Swiper
+          // PROPIEDADES DEL SWIPER 
+              slidesPerView={1}
+              spaceBetween={30}
+              pagination={{
+                clickable: true,
+              }}
+              modules={[Pagination]}
+              breakpoints={{
+                  768: {
+                      slidesPerView: 3,
+                  },
+              }}
+            >
+              {/* MAPEO LOS DATOS DENTRO DEL SWIPER PARA QUE ME CREE LAS CARDS  */}
+              {datosColegios.map((escuela) => (
+                  <SwiperSlide
+                  // le paso el id de cada card 
+                  key={escuela.id}
+                  className='flex justify-center items-center'
+                  >
+                      {/* DISEÑO LA CARD  */}
+                      <div className='bg-white h-96 rounded-xl m-2 p-4 md:w-64 w-72 flex flex-col justify-evenly items-center'>
+                        <img src={escuela.imagen} alt="foto de una escuela" className='h-1/3 object-cover rounded-xl'  />
+                        <h3 className='text-center text-[#00405B]'>{escuela.nombre}</h3>
+                        <div className='h-1/3 overflow-hidden px-1 relative'>
+                        <div className='text-disappear w-16 h-4 absolute z-1 bottom-0 right-0'>...</div>
+                          <p className='text-left text-[#00405B] text-sm'>{escuela.informacion}</p>
+                        </div>
+                      </div>
+
+                  </SwiperSlide>
+
+              ))}
+
+            </Swiper>
+            </div>
+        </div>
     </>
   )
 }

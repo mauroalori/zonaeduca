@@ -37,7 +37,7 @@
     width: 100%; /* La imagen ocupa todo el ancho del contenedor */
     height: 100%;
     }
-
+  }
   @media screen and (max-width: 768px) {
       .texto {
         font-size: 1.6em; /* Cambia el tamaño de fuente para pantallas más pequeñas */
@@ -54,4 +54,3 @@
       }
     }
     
-  }

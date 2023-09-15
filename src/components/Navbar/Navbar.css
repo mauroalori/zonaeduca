@@ -10,7 +10,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%; /* Ocupar el ancho completo */
+    width:100%; /* Ocupar el ancho completo */
     z-index: 2; 
 }
 
@@ -56,6 +56,7 @@
     .navBar.open{
         background-color: #001A29;
         transition: 0.3s ease all;
+        
 
     }
 
