@@ -167,10 +167,18 @@
     .container-imagen{
         right: 0;
     }
+    .container-frase{
+        height: auto;
+    }
+    .titulo,
+    .presentacion,
+    .btn-colegio{
+        width: 220px;
+    }
     .presentacion{
-        font-size: 14px;
+        font-size: 12px;
     }
     .btn-colegio{
-        font-size: 16px;
+        font-size: 14px;
     }
 }

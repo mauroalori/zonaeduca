@@ -1,5 +1,5 @@
 import React from 'react'
-
+import './FooterLinkList.css';
 function FooterLinkList({title,links,a=false}) {
 
     console.log(a)
@@ -15,7 +15,7 @@ function FooterLinkList({title,links,a=false}) {
 
   return (
     <>
-        <ul className='flex flex-col gap-6 min-w-[200px] text-slate-400'>
+        <ul className='lista-enlace'>
             <li className='font-bold text-white'>{title}</li>
             {linkList}
         </ul>
