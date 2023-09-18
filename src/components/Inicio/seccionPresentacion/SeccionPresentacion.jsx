@@ -1,16 +1,16 @@
-import fondo1 from "../../../assets/fondo1.png"
-import fotoPresentacion from "../../../assets/fotoP.png"
+import fotoSup from "../../../assets/fondo1.png"
+import fotoInf from "../../../assets/fotoP.png"
 import "./seccionPresentacion.css"
 
 export default function SeccionPresentacion() {
     return (
       <>
-      <div className="container_presentacion bg-[#00B0E4] bg-opacity-20">
-        <div className="container_imagen">
-            <img src={fondo1} alt="" className="imagen1"/>
-            <img src={fotoPresentacion} alt=""  className="imagen2"/>
+      <div className="container-presentacion bg-[#00B0E4] bg-opacity-20">
+        <div className="container-imagen w-[50%]">
+              <img src={fotoSup} alt="" className="imagen-grande"/>
+              <img src={fotoInf} alt=""  className="imagen-chica"/>
         </div>
-        <div className="container_frase">
+        <div className="container-frase w-[50%]">
             <div >
             <h3 className="titulo">
               ¡Bienvenidos a ZonaEduca!

@@ -18,7 +18,7 @@ function SeccionRecomendaciones() {
           <div className='carrousel p-10'>
             <Swiper
           // PROPIEDADES DEL SWIPER 
-              slidesPerView={2}
+              slidesPerView={1}
               spaceBetween={30}
               pagination={{
                 clickable: true,
