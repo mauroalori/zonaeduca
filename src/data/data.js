@@ -232,3 +232,22 @@ const datosColegios = [
 ]
 
 export{datosComentarios, datosColegios}
+/*
+const datosColegios = [
+    {
+        id: 1,
+        nombre: "",
+        imagen: "",
+        informacion: "",
+        telefono: 12345678,
+        correoElectronico: "",
+        direccion: "",
+        departamento: "",
+        tipo: "",
+        niveles: [],
+        caracteristicas: {
+            infraestructura: [],
+            idiomas: []
+        }
+    }
+]*/
