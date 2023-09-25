@@ -1,8 +1,19 @@
-
+import Navbar from "../components/Navbar/Navbar"
+import Footer from "../components/Footer/Footer"
+import MapaColegios from "../components/MapaColegios/MapaColegios"
 function Colegios() {
   return (
     <>
-      <h1 className="text-center">Colegios</h1>
+      {/* NAVBAR */}
+        <Navbar/>
+      {/* FILTRADO COLEGIOS */}
+
+      {/* MAPA COLEGIOS */}
+        <MapaColegios/>
+      {/* LISTADO COLEGIOS */}
+        
+      {/* FOOTER */}
+        <Footer/>
     </>
   )
 }

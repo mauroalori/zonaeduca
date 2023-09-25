@@ -49,7 +49,7 @@
 .imagen-grande,
 .imagen-chica {
     position: absolute;
-    transition: all 0.3s ease; /* Agrega una transición suave para un efecto más agradable */
+    transition: all 0.5s ease; /* Agrega una transición suave para un efecto más agradable */
 }
 
 .container-imagen:hover .imagen-grande{
@@ -134,11 +134,9 @@
     }
     .imagen-grande{
         margin: 0px;
-        z-index: 1;
     }
     .imagen-chica{
         margin: 0%;
-        z-index: 0; 
     }
     .titulo{
         font-size: 22px;
