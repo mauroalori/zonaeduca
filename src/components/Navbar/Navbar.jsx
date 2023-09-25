@@ -35,9 +35,9 @@ function Navbar() {
       </div>
 
         <div className={`items ${Open && "open"} justify-start text-center items-center flex`}>
-        <Link >Inicio</Link>
-        <Link >Colegios</Link>
-        <Link  >Contacto </Link>
+        <Link to={'/'}>Inicio</Link>
+        <Link to={'/Colegios'}>Colegios</Link>
+        <Link to={'/Contacto'}>Contacto</Link>
         <Link >Ayuda </Link>
 
         {window.innerWidth < 968 && Open && (
