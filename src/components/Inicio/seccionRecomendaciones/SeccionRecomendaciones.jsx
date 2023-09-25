@@ -1,7 +1,9 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 // IMPORTO EL OBJETO DESDE DATA PARA RECORRERLO 
-import { datosColegios } from '../../../data/data';
+import { datosColegios } from "../../../data/data";
+
+const datosRecorrer = datosColegios.slice(0,10)
 
 // STYLES 
 import 'swiper/css';
@@ -31,19 +33,19 @@ function SeccionRecomendaciones() {
               }}
             >
               {/* MAPEO LOS DATOS DENTRO DEL SWIPER PARA QUE ME CREE LAS CARDS  */}
-              {datosColegios.map((escuela) => (
+              {datosRecorrer.map((escuela) => (
                   <SwiperSlide
                   // le paso el id de cada card 
                   key={escuela.id}
                   className='flex justify-center items-center'
                   >
                       {/* DISEÑO LA CARD  */}
-                      <div className='bg-white h-96 rounded-xl m-2 p-4 md:w-64 w-72 flex flex-col justify-evenly items-center'>
+                      <div  className='bg-white h-96 rounded-xl m-2 p-4 md:w-64 w-72 flex flex-col justify-evenly items-center'>
                         <img src={escuela.imagen} alt="foto de una escuela" className='h-1/3 object-cover rounded-xl'  />
                         <h3 className='text-center text-[#00405B]'>{escuela.nombre}</h3>
                         <div className='h-1/3 overflow-hidden px-1 relative'>
                         <div className='text-disappear w-16 h-4 absolute z-1 bottom-0 right-0'>...</div>
-                          <p className='text-left text-[#00405B] text-sm'>{escuela.informacion}</p>
+                          <p className='text-left text-[#00405B] text-sm'>{escuela.descripcion}</p>
                         </div>
                       </div>
 
