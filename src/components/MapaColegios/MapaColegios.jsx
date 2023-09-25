@@ -4,7 +4,7 @@ import GoogleMapReact from 'google-map-react';
 function MapaColegios() {
   return (
     <>
-        
+      
     </>
   )
 }
