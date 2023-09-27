@@ -2,8 +2,6 @@ import React from 'react'
 
 function FooterLinkList({title,links,a=false}) {
 
-    console.log(a)
-
     const linkList=links.map((link, index) => {
         if(!a){
             return (<li key={index}>{link}</li>);

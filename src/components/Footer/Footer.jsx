@@ -10,7 +10,7 @@ function Footer() {
             <div className='w-full md:w-1/3 flex items-center justify-center'>
                 <img src={logo} alt="logo de zonaeduca" className='logoFooter max-w-[250px] w-1/2 mx-auto mt-4'/>
             </div>
-            <div className='enlaces'>
+            <div className='enlaces flex flex-wrap gap-y-6'>
                 {/* Lista de contacto */}
                 <FooterLinkList title={"Contacto"} links={["zonaeduca@gmail.com","11-1234-5678"]}/>
                 {/* Lista de redes sociales */}
