@@ -1,7 +1,7 @@
 import Navbar from "../components/Navbar/Navbar"
 import Footer from "../components/Footer/Footer"
 import MapaColegios from "../components/MapaColegios/MapaColegios"
-import SeccionFiltro from "../components/Colegios/seccionFiltro/SeccionFiltro"
+import SeccionFiltro from "../components/Colegios/seccionFiltro/seccionFiltro"
 function Colegios() {
   return (
     <>

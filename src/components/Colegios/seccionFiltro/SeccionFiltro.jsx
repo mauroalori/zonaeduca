@@ -1,6 +1,7 @@
 import "./filtro.css"
 function SeccionFiltro(){
     return (
+        <>
         <div className="contenedor">
             <p className="text">Encuentre su colegio</p>
         <form action="">
@@ -23,6 +24,7 @@ function SeccionFiltro(){
             </div>
         </form>
         </div>
+        </>
     );
 }
 
