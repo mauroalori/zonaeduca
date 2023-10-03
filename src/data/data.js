@@ -6,6 +6,9 @@ import foto4 from "../assets/fotosComentarios/Foto4.jpg";
 import foto5 from "../assets/fotosComentarios/Foto5.jpg";
 import foto6 from "../assets/fotosComentarios/Foto6.jpg";
 
+// FOTOS COLEGIOS 
+
+
 const datosComentarios = [
     {
       id: 1,
