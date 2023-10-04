@@ -13,7 +13,9 @@ function Colegios() {
 
       {/* MAPA COLEGIOS */}
         <MapaColegios/>
+
       {/* LISTADO COLEGIOS */}
+      <ListadoColegios/>
         
       {/* FOOTER */}
         <Footer/>
