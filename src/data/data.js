@@ -8,6 +8,32 @@ import foto6 from "../assets/fotosComentarios/Foto6.jpg";
 
 // FOTOS COLEGIOS 
 
+//DEL 76 AL 100
+import WilliamMorris from "../assets/fotosColegios/Instituto Escuela Evangélica William Morris.png";
+import carlosVignale from "../assets/fotosColegios/CARLOS VIGNALE.jpg";
+import sanCayetano from "../assets/fotosColegios/INSTITUTO PARROQUIAL SAN CAYETANO.jpg";
+import benitoQuinquela from "../assets/fotosColegios/BenitoQUINQUELA.jpg";
+import juanMaria from "../assets/fotosColegios/Juan María Gutiérrez.jpg";
+import eustaquioCardenas from "../assets/fotosColegios/EUSTAQUIO CARDENAS.png";
+import escuelaAldea from "../assets/fotosColegios/Jardín de Infantes y Escuela de La Aldea.jpg";
+import carlosGuido from "../assets/fotosColegios/CARLOSGUIDO.jpg";
+import betEl from "../assets/fotosColegios/INSTITUTO BETEL.jpg";
+import sanPedro from "../assets/fotosColegios/INSTITUTO SAN PEDRO.jpg";
+import jardinElCentavo from "../assets/fotosColegios/JARDIN DE INFANTES EL CENTAVO.jpg";
+import mariaSilventi from "../assets/fotosColegios/MARIA SILVENTI DE AMATO.jpg";
+import santaLucia from "../assets/fotosColegios/INSTITUTO PARROQUIAL SANTA LUCIA.jpg";
+import pedroLedesma from "../assets/fotosColegios/PEDRO MELITON LEDESMA.png";
+import integralInterdiciplinaria from "../assets/fotosColegios/ESCUELA INTEGRAL INTERDISCIPLINARIA.png";
+import institutoDelSud from "../assets/fotosColegios/INSTITUTO INTEGRAL DEL SUD.jpg";
+import tomasDeAquino from "../assets/fotosColegios/Colegio Santo Tomás de Aquino.jpg";
+import frayCayetano from "../assets/fotosColegios/Fray Cayetano Rodriguez.jpg";
+import pioIX from "../assets/fotosColegios/INSTITUTO PIO IX.png";
+import marinaTomas from "../assets/fotosColegios/MARINA TOMAS ESPORA.jpg";
+import amapola from "../assets/fotosColegios/Amapola.jpg";
+import materDolorosa from "../assets/fotosColegios/Instituto Máter Dolorosa.jpg";
+import virgerDelPilar from "../assets/fotosColegios/INSTITUTO ESPAÑOL VIRGEN DEL PILAR.jpg";
+import mariaBianchi from "../assets/fotosColegios/INST MARIA BIANCHI DE COPELLO.jpg";
+import martinBarco from "../assets/fotosColegios/Fray Martín Del Barco Centenera.png"
 
 const datosComentarios = [
     {
@@ -1579,7 +1605,7 @@ const datosComentarios = [
       "mail": "NIVELMEDIOWILLIAMCMORRIS@HOTMAIL.COM /   WILLIAMCMORRIS503@GMAIL.COM",
       "descripcion": "El Instituto Escuela Evangélica William Morris es una institución educativa comprometida con la excelencia académica y los valores cristianos. Nuestra misión es brindar una educación integral que fomente el crecimiento espiritual, intelectual y personal de nuestros estudiantes. Nuestra comunidad escolar se caracteriza por su ambiente de apoyo y respeto mutuo, donde cada estudiante es valorado y alentado a alcanzar su máximo potencial.",
       "tipo": "Comun",
-      "imagen": foto1,
+      "imagen": WilliamMorris,
       "caracteristicas": [
           "Gimnasio",
           "Prácticas profesionales"
@@ -1600,7 +1626,7 @@ const datosComentarios = [
       "mail": "dep_epc2_de4@bue.edu.ar",
       "descripcion": "El Colegio Carlos R. Vignale es una institución educativa comprometida con la excelencia académica y el desarrollo integral de sus estudiantes. Nuestra misión es proporcionar una educación de calidad que promueva valores de responsabilidad, respeto y solidaridad en un ambiente de aprendizaje inclusivo y motivador. Contamos con un cuerpo docente altamente calificado y programas educativos innovadores para asegurar que nuestros estudiantes alcancen su máximo potencial.",
       "tipo": "Comun",
-      "imagen": foto1,
+      "imagen": carlosVignale,
       "caracteristicas": [
           "Ayuda terapéutica",
           "Biblioteca"
@@ -1619,7 +1645,7 @@ const datosComentarios = [
       "mail": "SANCAYETANOPRIMARIA@GMAIL.COM",
       "descripcion": "El Instituto Parroquial San Cayetano es una institución educativa que combina la educación de calidad con valores católicos arraigados. Nuestra misión es ofrecer una formación integral que promueva el crecimiento espiritual, académico y moral de nuestros estudiantes. En un ambiente de comunidad y respeto mutuo, nuestros docentes altamente capacitados se esfuerzan por ayudar a los estudiantes a alcanzar su máximo potencial académico y personal. Además, ofrecemos actividades extracurriculares que abarcan desde actividades religiosas hasta deportes y arte, para enriquecer la experiencia educativa de nuestros alumnos.",
       "tipo": "Comun",
-      "imagen": foto1,
+      "imagen": sanCayetano,
       "caracteristicas": [
           "Nutrición",
           "Talleres"
@@ -1639,7 +1665,7 @@ const datosComentarios = [
       "mail": "dep_epc9_de4@bue.edu.ar",
       "descripcion": "El Colegio Benito Quinquela Martín es una institución educativa comprometida con la educación de calidad y la formación integral de sus estudiantes. Nuestra escuela se enfoca en valores como la responsabilidad, la creatividad y la solidaridad, creando un ambiente de aprendizaje inclusivo y motivador. Contamos con un equipo docente dedicado y programas educativos innovadores para garantizar que cada estudiante alcance su máximo potencial. En nuestro colegio, fomentamos el amor por el arte y la cultura, inspirando a nuestros alumnos a descubrir su talento y pasión. Únete a nuestra comunidad escolar y juntos construiremos un futuro prometedor.",
       "tipo": "Comun",
-      "imagen": foto1,
+      "imagen": benitoQuinquela,
       "caracteristicas": [
           "Laboratorios",
           "Nutrición",
@@ -1659,7 +1685,7 @@ const datosComentarios = [
       "mail": "dep_epc3_de4@bue.edu.ar",
       "descripcion": "La Escuela Primaria Común N° 03 - Juan María Gutiérrez es una institución educativa comprometida con la formación académica y personal de sus estudiantes. Nuestra misión es proporcionar una educación de calidad que promueva valores de inclusión, respeto y cooperación en un ambiente de aprendizaje enriquecedor. Contamos con un equipo docente dedicado y programas educativos que fomentan la participación activa de los estudiantes en su proceso de aprendizaje. Además, ofrecemos actividades extracurriculares en música, deportes y otras áreas para enriquecer la experiencia educativa de nuestros alumnos.",
       "tipo": "Comun",
-      "imagen": foto1,
+      "imagen": juanMaria,
       "caracteristicas": [
           "Laboratorios",
           "Nutrición",
@@ -1679,7 +1705,7 @@ const datosComentarios = [
       "mail": "DEAA_EP16_DE3@BUE.EDU.AR",
       "descripcion": "El Colegio Eustaquio Cárdenas es una institución educativa comprometida con la formación integral de sus estudiantes. Nuestra misión es proporcionar una educación de calidad que promueva valores de ética, responsabilidad y excelencia académica en un ambiente de aprendizaje enriquecedor. Contamos con un equipo de educadores dedicados y apasionados que guían a nuestros estudiantes hacia el éxito académico y personal. Además, ofrecemos una amplia gama de actividades extracurriculares, desde deportes hasta clubes culturales, para fomentar el desarrollo de habilidades y talentos diversos. Únete a nuestra comunidad escolar y juntos construiremos un futuro brillante y lleno de oportunidades.",
       "tipo": "Comun",
-      "imagen": foto1,
+      "imagen": eustaquioCardenas,
       "caracteristicas": [
           "Biblioteca",
           "Prácticas profesionales"
@@ -1698,7 +1724,7 @@ const datosComentarios = [
       "mail": "info@escuelalaaldea.edu.ar",
       "descripcion": "El Jardín de Infantes y Escuela de La Aldea es una institución educativa que se dedica con pasión al cuidado y desarrollo de los más pequeños. Nuestra misión es proporcionar un ambiente seguro y estimulante donde los niños puedan crecer, aprender y explorar su mundo. Valoramos la educación centrada en el niño y nos esforzamos por nutrir su curiosidad natural y fomentar habilidades sociales clave. Contamos con un equipo de educadores dedicados y programas educativos lúdicos que inspiran el amor por el aprendizaje desde una edad temprana.",
       "tipo": "Comun",
-      "imagen": foto1,
+      "imagen": escuelaAldea,
       "caracteristicas": [
           "Gimnasio"
       ],
@@ -1717,7 +1743,7 @@ const datosComentarios = [
       "mail": "dep_epc6_de13@bue.edu.ar/dep_epc6_de13@bue.edu.ar",
       "descripcion": "El Colegio Carlos Guido y Spano es un lugar de aprendizaje excepcional donde los estudiantes prosperan académica y personalmente. Nuestro compromiso con la educación de calidad y un ambiente de apoyo promueve el éxito de cada estudiante. Con maestros dedicados y una variedad de oportunidades extracurriculares, ofrecemos una educación integral que prepara a nuestros alumnos para un futuro brillante. Únete a nosotros para una experiencia educativa enriquecedora.",
       "tipo": "Comun",
-      "imagen": foto1,
+      "imagen": carlosGuido,
       "caracteristicas": [
           "Gimnasio",
           "Ayuda terapéutica"
@@ -1736,7 +1762,7 @@ const datosComentarios = [
       "mail": "SECRETARIAPRIMARIA@BETEL.EDU.AR",
       "descripcion": "El Instituto Bet-El es un faro de conocimiento y valores en el corazón de la comunidad. Nuestra pasión por el aprendizaje se combina con un compromiso inquebrantable con la empatía, la justicia y la excelencia académica. Aquí, cada estudiante es una historia de éxito en desarrollo, con maestros dedicados que guían y nutren el crecimiento intelectual y personal. Únete a nosotros en este viaje educativo extraordinario, donde el futuro se forja con pasión y propósito.",
       "tipo": "Comun",
-      "imagen": foto1,
+      "imagen": betEl,
       "caracteristicas": [
           "Nutrición",
           "Talleres",
@@ -1757,7 +1783,7 @@ const datosComentarios = [
       "mail": "sanpedro@donbosco.org.ar",
       "descripcion": "El Instituto San Pedro es más que una escuela, es un hogar donde florecen los valores, el conocimiento y la amistad. Nuestra comunidad educativa se distingue por su pasión por aprender y crecer juntos. Aquí, cada estudiante es una historia de éxito en proceso, con un equipo de educadores comprometidos en desbloquear su potencial. Desde aulas vibrantes hasta actividades extracurriculares emocionantes, en el Instituto San Pedro, cada día es una aventura educativa que vale la pena vivir. Únete a nosotros y descubre el camino hacia un futuro brillante.",
       "tipo": "Comun",
-      "imagen": foto1,
+      "imagen": sanPedro,
       "caracteristicas": [
           "Prácticas profesionales",
           "Servicios de transporte",
@@ -1778,7 +1804,7 @@ const datosComentarios = [
       "mail": "CINDERELLAJUNCAL@HOTMAIL.COM",
       "descripcion": "El Jardín de Infantes El Centavo es un lugar donde los más pequeños descubren el mundo a través de juegos, creatividad y amor. Nuestro enfoque único combina el aprendizaje con diversión, cultivando mentes curiosas y corazones felices. Con un equipo docente apasionado y un entorno seguro y estimulante, nuestro jardín de infantes es el lugar perfecto para sembrar las semillas del conocimiento y la amistad que florecerán a lo largo de toda la vida. ¡Descubre el mundo con nosotros, centavo a centavo!",
       "tipo": "Comun",
-      "imagen": foto1,
+      "imagen": jardinElCentavo,
       "caracteristicas": [
           "Laboratorios"
       ],
@@ -1796,7 +1822,7 @@ const datosComentarios = [
       "mail": "dep_epc1_de19@bue.edu.ar",
       "descripcion": "El Colegio María Silventi de Amato es un faro de conocimiento y valores. Nuestra misión es cultivar mentes brillantes y corazones compasivos. Con un cuerpo docente dedicado y programas educativos innovadores, estamos comprometidos a preparar a nuestros estudiantes para un futuro exitoso y ético. En nuestro cálido ambiente de aprendizaje, la excelencia académica y el respeto mutuo son los pilares de nuestra comunidad escolar. Únete a nosotros para un viaje de crecimiento y logros inigualables.",
       "tipo": "Comun",
-      "imagen": foto1,
+      "imagen": mariaSilventi,
       "caracteristicas": [
           "Nutrición",
           "Biblioteca",
@@ -1816,7 +1842,7 @@ const datosComentarios = [
       "mail": "COLEGIOSANTALUCIA2005@YAHOO.COM.AR",
       "descripcion": "El Instituto Parroquial Santa Lucía es un lugar donde la educación y la fe se unen para inspirar a nuestros estudiantes a crecer como individuos compasivos y académicamente destacados. Nuestro compromiso con la enseñanza de calidad y los valores cristianos crea un entorno de aprendizaje enriquecedor. Aquí, cultivamos líderes del futuro mientras fortalecemos su conexión con la espiritualidad. Únete a nuestra comunidad y descubre un camino educativo lleno de significado.",
       "tipo": "Comun",
-      "imagen": foto1,
+      "imagen": santaLucia,
       "caracteristicas": [
           "Servicios de transporte",
           "Laboratorios",
@@ -1837,7 +1863,7 @@ const datosComentarios = [
       "mail": "dep_epc17_de5@bue.edu.ar",
       "descripcion": "El Colegio Dr. Pedro Melitón Ledesma es una institución de excelencia comprometida con la educación integral de sus estudiantes. Nuestro enfoque es brindar conocimientos sólidos, fomentar valores éticos y promover la innovación. Contamos con un cuerpo docente apasionado y programas educativos de vanguardia que inspiran el crecimiento académico y personal. En nuestro colegio, cada estudiante encuentra un entorno de aprendizaje inclusivo y de apoyo para alcanzar su máximo potencial. Únete a nosotros y prepárate para un futuro brillante.",
       "tipo": "Comun",
-      "imagen": foto1,
+      "imagen": pedroLedesma,
       "caracteristicas": [
           "Gimnasio",
           "Servicios de transporte",
@@ -1857,7 +1883,7 @@ const datosComentarios = [
       "mail": "EDREC14_DE14@BUE.EDU.AR",
       "descripcion": "La Escuela Integral Interdisciplinaria N° 14 de 14 es un centro educativo excepcional que abraza la diversidad y la excelencia. Nuestra dedicación es proporcionar una educación inclusiva y de calidad, donde cada estudiante encuentra un espacio para crecer y aprender. Contamos con un equipo de profesionales apasionados y un enfoque interdisciplinario que enriquece la experiencia educativa. En nuestra escuela, el conocimiento se une con la creatividad y la inclusión, formando individuos preparados para un futuro brillante.",
       "tipo": "Comun",
-      "imagen": foto1,
+      "imagen": integralInterdiciplinaria,
       "caracteristicas": [
           "Talleres",
           "Gimnasio",
@@ -1877,7 +1903,7 @@ const datosComentarios = [
       "mail": "INTEGRAL_DEL_SUD@YAHOO.COM.AR",
       "descripcion": "El Instituto Integral del Sud es un faro de conocimiento y valores en nuestra comunidad. En nuestro colegio, la curiosidad es aplaudida, la creatividad es alentada y la empatía es cultivada. Somos más que una institución educativa, somos una familia que se preocupa por el crecimiento de cada estudiante. Nuestros valores de respeto, responsabilidad y solidaridad se tejen en el tejido de cada clase y actividad. Aquí, el aprendizaje es un viaje emocionante y juntos, navegamos hacia un futuro lleno de posibilidades. ¡Únete a nosotros y descubre la magia de aprender en comunidad!",
       "tipo": "Comun",
-      "imagen": foto1,
+      "imagen": institutoDelSud,
       "caracteristicas": [
           "Talleres"
       ],
@@ -1895,7 +1921,7 @@ const datosComentarios = [
       "mail": "CSTA_CONGRESO@UCA.EDU.AR",
       "descripcion": "El Colegio Santo Tomás de Aquino - UCA - Congreso es un faro de conocimiento y valores arraigados en la tradición educativa. Nuestra misión es forjar líderes del mañana con sólidos principios éticos y un deseo insaciable de aprendizaje. Aquí, la curiosidad es nuestra brújula y la compasión, nuestro norte. Nuestro cuerpo docente apasionado guía a los estudiantes hacia la excelencia académica mientras cultivamos el espíritu de comunidad y servicio. En Santo Tomás de Aquino, cada día es una aventura intelectual y un viaje hacia la autenticidad. ¡Únete a nuestra familia educativa y descubre un mundo de posibilidades!",
       "tipo": "Comun",
-      "imagen": foto1,
+      "imagen": tomasDeAquino,
       "caracteristicas": [
           "Talleres",
           "Biblioteca",
@@ -1915,7 +1941,7 @@ const datosComentarios = [
       "mail": "dep_epc2_de3@bue.edu.ar",
       "descripcion": "La Escuela Primaria Común N° 02 - Fray Cayetano Rodriguez es un lugar donde los valores de aprendizaje, respeto y solidaridad florecen. Nuestro compromiso es ofrecer una educación de calidad que inspire a los estudiantes a explorar, aprender y crecer. Con un equipo docente dedicado y un ambiente acogedor, fomentamos la curiosidad y la colaboración. En nuestra escuela, cada niño es una pieza valiosa del rompecabezas educativo y juntos formamos una comunidad unida y comprometida con el éxito de todos. ¡Únete a nosotros y sé parte de una experiencia educativa enriquecedora y divertida!",
       "tipo": "Comun",
-      "imagen": foto1,
+      "imagen": frayCayetano,
       "caracteristicas": [
           "Talleres"
       ],
@@ -1933,7 +1959,7 @@ const datosComentarios = [
       "mail": "INFO@PIOIX.EDU.AR/SECRETARIA@PIOIX.EDU.AR",
       "descripcion": "El Instituto Pío IX es un reflejo de la dedicación a la excelencia académica y valores humanos. Nuestro colegio se distingue por cultivar una comunidad que promueve la solidaridad, el respeto y el compromiso con el aprendizaje. Aquí, los estudiantes son alentados a alcanzar sus sueños y a contribuir positivamente a la sociedad. Contamos con un cuerpo docente apasionado y programas educativos innovadores que nutren tanto la mente como el corazón. Únete a nuestra familia escolar y descubre un lugar donde el conocimiento y la compasión se unen para forjar un futuro brillante.",
       "tipo": "Comun",
-      "imagen": foto1,
+      "imagen": pioIX,
       "caracteristicas": [
           "Nutrición",
           "Talleres"
@@ -1952,7 +1978,7 @@ const datosComentarios = [
       "mail": "dem_col13_de18@bue.edu.ar",
       "descripcion": "El Colegio Nº 13 Cnel. de Marina Tomás Espora de 18 es un centro educativo que se destaca por su compromiso con la formación integral de sus estudiantes. Nuestra institución promueve valores de excelencia, trabajo en equipo y respeto por la diversidad. Aquí, cada estudiante es una parte fundamental de nuestra comunidad, donde se fomenta el aprendizaje activo y el desarrollo de habilidades para enfrentar los desafíos del siglo XXI. Nuestro lema es 'Creciendo Juntos', y juntos cultivamos el conocimiento y los valores que guiarán a nuestros alumnos hacia un futuro brillante y lleno de posibilidades. ¡Únete a nuestra familia escolar y crece con nosotros!",
       "tipo": "Comun",
-      "imagen": foto1,
+      "imagen": marinaTomas,
       "caracteristicas": [
           "Gimnasio"
       ],
@@ -1970,7 +1996,7 @@ const datosComentarios = [
       "mail": "dep_epc14_de10@bue.edu.ar / DELBARCO14@YAHOO.COM.AR",
       "descripcion": "La Escuela N° 14 D.E. 10 - Fray Martín Del Barco Centenera es una escuela de conocimiento y valores en el corazón de nuestra comunidad. Nuestra pasión es nutrir las mentes jóvenes con el poder del aprendizaje y la empatía. Aquí, la curiosidad se fomenta, la amistad florece y la responsabilidad se cultiva. Somos un refugio donde la diversidad es celebrada y cada estudiante es una estrella en ascenso. En nuestra escuela, el respeto, la solidaridad y la excelencia son los cimientos de un futuro brillante para todos. Únete a nosotros y descubre un mundo de posibilidades.",
       "tipo": "Comun",
-      "imagen": foto1,
+      "imagen": martinBarco,
       "caracteristicas": [
           "Prácticas profesionales",
           "Servicios de transporte",
@@ -1990,7 +2016,7 @@ const datosComentarios = [
       "mail": "PRIMARIA@AMAPOLA.ESC.EDU.AR",
       "descripcion": "El Colegio Amapola es un oasis de aprendizaje donde florecen los valores de creatividad, amistad y resiliencia. Nuestra comunidad escolar es un jardín diverso donde cada estudiante es una flor única, cuidadosamente cultivada para alcanzar su máximo esplendor. Nuestros programas educativos innovadores nutren tanto la mente como el corazón, fomentando el pensamiento crítico y la empatía. En el Colegio Amapola, creemos que cada pétalo aporta belleza a nuestro mundo, y juntos, cultivamos un futuro lleno de posibilidades. ¡Únete a nosotros y florece en la familia Amapola!",
       "tipo": "Comun",
-      "imagen": foto1,
+      "imagen": amapola,
       "caracteristicas": [
           "Biblioteca",
           "Laboratorios",
@@ -2010,7 +2036,7 @@ const datosComentarios = [
       "mail": "administracion@materdolorosa.edu.ar",
       "descripcion": "El Instituto Máter Dolorosa es un reflejo vivo de la compasión y la excelencia educativa. Nuestra institución se enorgullece de ser un faro de valores arraigados en el respeto, la empatía y la dedicación al aprendizaje. Aquí, cada estudiante es como una semilla cuidadosamente cultivada, floreciendo en un ambiente que fomenta la autenticidad, la colaboración y la solidaridad. Nuestros educadores apasionados guían a nuestros jóvenes a través de un viaje de descubrimiento personal y crecimiento académico, preparándolos para enfrentar los desafíos del mundo con integridad y comprensión. En el Instituto Máter Dolorosa, no solo educamos mentes, sino también corazones, para forjar ciudadanos comprometidos y conscientes de su entorno. ¡Únete a nosotros y déjanos ser tu guía en el camino hacia un futuro luminoso!",
       "tipo": "Comun",
-      "imagen": foto1,
+      "imagen": materDolorosa,
       "caracteristicas": [
           "Prácticas profesionales",
           "Nutrición",
@@ -2032,7 +2058,7 @@ const datosComentarios = [
       "mail": "NIVEL_SECUNDARIO@IEVP.COM.AR",
       "descripcion": "El Instituto Español Virgen del Pilar un lugar donde los valores de tradición, respeto y excelencia se entrelazan para iluminar el camino de nuestros estudiantes hacia un futuro brillante. Nuestra comunidad educativa es como un cálido abrazo familiar, donde cada estudiante es guiado con cariño hacia el descubrimiento de su potencial. Nuestro compromiso con la educación de calidad se refleja en un equipo docente apasionado y programas educativos vanguardistas que cultivan no solo la mente, sino también el espíritu. En el Instituto Español Virgen del Pilar, la sabiduría y la compasión se entrelazan para formar líderes del mañana. ¡Únete a nosotros y sé parte de esta emocionante travesía educativa!",
       "tipo": "Comun",
-      "imagen": foto1,
+      "imagen": virgerDelPilar,
       "caracteristicas": [
           "Talleres"
       ],
@@ -2052,7 +2078,7 @@ const datosComentarios = [
       "mail": "COPELLO364@GMAIL.COM",
       "descripcion": "El Instituto María Bianchi de Copello es una lugar de conocimiento y valores en el corazón de nuestra comunidad. Nuestra pasión por la educación se refleja en cada rincón de nuestra institución. Aquí, cultivamos el respeto, la empatía y la excelencia académica como pilares fundamentales. Nuestros estudiantes son como semillas que cuidamos con esmero, nutriéndolos con sabiduría y valores para que florezcan como ciudadanos comprometidos con un mundo mejor. Únete a nuestra familia educativa y juntos iluminaremos el camino hacia un futuro lleno de posibilidades y valores sólidos.",
       "tipo": "Comun",
-      "imagen": foto1,
+      "imagen": mariaBianchi,
       "caracteristicas": [
           "Prácticas profesionales"
       ],
