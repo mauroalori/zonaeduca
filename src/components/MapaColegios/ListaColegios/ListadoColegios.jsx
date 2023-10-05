@@ -1,7 +1,11 @@
 import { datosColegios } from "../../../data/data"
+import UseColegio from "../../../hooks/UseColegio"
 
 function ListadoColegios() {
 
+  const {saludo} = UseColegio();
+
+  saludo();
 
   return (
     <section className="w-full">

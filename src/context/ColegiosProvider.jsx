@@ -6,11 +6,15 @@ const ColegioContext = createContext();
 const ColegiosProvider = ({children}) => {
 
     // DECLARAR ACA FUNCIONES 
+    function saludo(){
+      alert("buenas buenas")
+    }
+
 
   return (
     <ColegioContext.Provider
     value={{
-        
+        saludo
     }}
     >
     {children}
