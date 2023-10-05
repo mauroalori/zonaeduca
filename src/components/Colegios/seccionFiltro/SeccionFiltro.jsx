@@ -2,7 +2,7 @@ import "./filtro.css"
 function SeccionFiltro(){
     return (
         <>
-        <div className="contenedor">
+        <div className="contenedor-filtro">
             <p className="text">Encuentre su colegio</p>
         <form action="">
             <div class="conForm">
