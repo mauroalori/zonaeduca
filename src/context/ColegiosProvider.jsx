@@ -1,5 +1,6 @@
 import { createContext } from "react"
 import PropTypes from "prop-types";
+import { datosColegios } from "../data/data"
 
 const ColegioContext = createContext();
 
@@ -10,7 +11,7 @@ const ColegiosProvider = ({children}) => {
   return (
     <ColegioContext.Provider
     value={{
-        
+      datosColegios
     }}
     >
     {children}
