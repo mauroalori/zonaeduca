@@ -1,0 +1,65 @@
+.contenedor-filtro{
+    top: 50px;
+    height: 100px;
+    width: 100%;
+}
+.conForm{
+    position:relative;
+    display: flex;
+    flex-direction: row; /* Los elementos hijos se colocan en fila horizontal */ 
+    padding-left: 33px; /* Agrega espacio interno de 20 píxeles al lado izquierdo */
+    padding-right: 20px; /* Agrega espacio interno de 20 píxeles al lado derecho */
+    margin: 8px;
+    height: auto;
+}
+.input-Fil{
+    display:flex;
+    flex-grow: 1;
+    flex-direction: column; /* Los elementos hijos se apilan verticalmente */
+    margin:0px;
+}
+.input-Fil button{
+    margin: 10px;
+    justify-content: center;
+    background-color: #00729A;
+    color: white;
+    border-radius: 4px;
+    width: 166px;
+    height: 55px;
+    position: absolute;
+}
+.text {
+    color: #00405B;
+    font-size: 1.6em;
+    font-weight: 550; 
+    line-height: 1.5;
+    text-indent: 40px;
+}
+.Departamento,.Nivel,.Idioma {
+    border-color: black;
+    border: 1px solid;
+    border-radius: 5px;
+    width: 200px;
+}
+.Departamento,.Nivel,.Idioma, ::placeholder{
+    height: 40px;
+}
+label{
+    color: #5D5D5D;
+    size: 1.3cm;
+}
+.Departamento::placeholder{
+    background-image: url(../../../assets/gifs-iconos/departamento.png);
+    background-size: 15px 15px;
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+@media screen and (max-width: 968px){
+    .conForm{
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
+

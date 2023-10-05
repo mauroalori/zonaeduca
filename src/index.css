@@ -16,3 +16,21 @@ h5,
 h6{
     font-family: 'Poppins', sans-serif;
 }
+
+/* Modificar el estilo del scroll  */
+::-webkit-scrollbar {
+    width: 12px; 
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: transparent; 
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #00729A; 
+    border-radius: 6px; 
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
