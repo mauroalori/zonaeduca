@@ -23,6 +23,11 @@ function MapaColegios() {
           scaledSize: new window.google.maps.Size(60, 60),
         }}
         />
+        {/* {coords.map((coord) => (<Marcador position={coord} 
+        icon={{
+          url: iconMaps,
+          scaledSize: new window.google.maps.Size(60, 60),
+        }}/>))} */}
       </GoogleMap>
     </>
   );
