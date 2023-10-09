@@ -12,6 +12,7 @@ function SeccionFiltro(){
                 <div className="input-Fil">
                     <label for="Departamento">Departamento</label>
                     <select name="departamentos" id="select-departamentos" className="Departamento">
+                        <option value="">Seleccione</option>
                         {departamentos.map(departamento => (
                             <option value={departamento}>{departamento}</option>
                         ))}
@@ -20,6 +21,7 @@ function SeccionFiltro(){
                 <div className="input-Fil" >
                     <label for="Nivel">Nivel</label>
                     <select name="niveles" id="select-niveles" className="Nivel">
+                        <option value="">Seleccione</option> 
                         {niveles.map(nivel => (
                             <option value={nivel}>{nivel}</option>
                         ))}
@@ -28,6 +30,7 @@ function SeccionFiltro(){
                 <div className="input-Fil">
                     <label for="Idioma">Idioma</label>
                     <select name="idiomas" id="select-idiomas" className="Idioma">
+                        <option value="">Seleccione</option>
                         {idiomas.map(idioma => (
                             <option value={idioma}>{idioma}</option>
                         ))}
