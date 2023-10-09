@@ -1,42 +1,7 @@
 import "./filtro.css"
 import UseColegio from "../../../hooks/UseColegio";
 function SeccionFiltro(){
-    const {datosColegios} = UseColegio();
-
-    {/* Recoleccion de los valores para los select desde los datos */}
-    const  
-        departamentos = [],
-        niveles = [],
-        idiomas = [];
-    
-    datosColegios.forEach(colegio => {
-        if(!departamentos.includes(colegio.departamento) && colegio.departamento !== ""){
-            departamentos.push(colegio.departamento);
-        }
-        colegio.idiomas.forEach(idioma =>{
-            if(!idiomas.includes(idioma)){
-                idiomas.push(idioma);
-            }
-        })
-        colegio.nivel.forEach(nivel =>{
-            if(!niveles.includes(nivel)){
-                niveles.push(nivel);
-            }
-        })
-    })
-
-    {/* Ordenamiento de los valores de los select */}
-
-    departamentos.sort((a, b) => {
-        const numeroA = parseInt(a.match(/\d+/));
-        const numeroB = parseInt(b.match(/\d+/));
-        
-        return numeroA - numeroB;
-    });
-
-    niveles.sort()
-
-    idiomas.sort()
+    const {departamentos, niveles, idiomas} = UseColegio();
 
     return (
         <>
