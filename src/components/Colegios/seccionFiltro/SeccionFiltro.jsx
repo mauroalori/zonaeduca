@@ -46,15 +46,27 @@ function SeccionFiltro(){
             <div className="conForm">
                 <div className="input-Fil">
                     <label for="Departamento">Departamento</label>
-                    <input type="text" placeholder="Departamento" className="Departamento" />
+                    <select name="departamentos" id="select-departamentos" className="Departamento">
+                        {departamentos.map(departamento => (
+                            <option value={departamento}>{departamento}</option>
+                        ))}
+                    </select>
                 </div>
                 <div className="input-Fil" >
                     <label for="Nivel">Nivel</label>
-                    <input type="text" placeholder="Nivel" className="Nivel"/>
+                    <select name="niveles" id="select-niveles" className="Nivel">
+                        {niveles.map(nivel => (
+                            <option value={nivel}>{nivel}</option>
+                        ))}
+                    </select>
                 </div>
                 <div className="input-Fil">
                     <label for="Idioma">Idioma</label>
-                    <input type="text" placeholder="Idioma" className="Idioma"/>
+                    <select name="idiomas" id="select-idiomas" className="Idioma">
+                        {idiomas.map(idioma => (
+                            <option value={idioma}>{idioma}</option>
+                        ))}
+                    </select>
                 </div>
                 <div className="input-Fil">
                     <button>Buscar</button>
