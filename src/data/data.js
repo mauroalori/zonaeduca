@@ -8,6 +8,37 @@ import foto6 from "../assets/fotosComentarios/Foto6.jpg";
 
 // FOTOS COLEGIOS 
 
+//DEL 1 AL 25
+
+//DEL 26 AL 50
+import institutoDuayen from "../assets/fotosColegios/institutoDuayen.png";
+import escuelaSigloNuevo from "../assets/fotosColegios/escuelaSigloNuevo.png";
+import institutoBayard from "../assets/fotosColegios/institutoBayard.png";
+import colegioDonBosco from "../assets/fotosColegios/colegioDonBosco.png";
+import padreCastaneda from "../assets/fotosColegios/padreCastaneda.png";
+import institutoCabrini from "../assets/fotosColegios/institutoCabrini.png";
+import institutoElisaHarilaos from "../assets/fotosColegios/institutoElisaHarilaos.png";
+import colegioDelSalvador from "../assets/fotosColegios/colegioDelSalvador.png";
+import institutoDulcisimoNombreDeJesus from "../assets/fotosColegios/institutoDulcisimoNombreDeJesus.png";
+import institutoArgentinoArabeIslamico from "../assets/fotosColegios/institutoArgentinoArabeIslamico.png";
+import colegioDelLibertador from "../assets/fotosColegios/colegioDelLibertador.png";
+import institutoCristoObrero from "../assets/fotosColegios/institutoCristoObrero.png";
+import institutoEducativoAlas from "../assets/fotosColegios/institutoEducativoAlas.png";
+import institutoCarlosSteeb from "../assets/fotosColegios/institutoCarlosSteeb.png";
+import colegioArgentinoBaldomeroFernandezMoreno from "../assets/fotosColegios/colegioArgentinoBaldomeroFernandezMoreno.png";
+import institutoArgentinoGallegoSantiagoApostol from "../assets/fotosColegios/institutoArgentinoGallegoSantiagoApostol.png";
+import institutoEducativoAaronAngel from "../assets/fotosColegios/institutoEducativoAaronAngel.png";
+import institutoEsbaFlores from "../assets/fotosColegios/institutoEsbaFlores.png";
+import jardinDeLosArbolesDe14 from "../assets/fotosColegios/jardinDeLosArbolesDe14.png";
+import institutoPrivadoLaEscuelaDeHilel from "../assets/fotosColegios/institutoPrivadoLaEscuelaDeHilel.png";
+import colegioBeth from "../assets/fotosColegios/colegioBeth.png";
+import elJardinDelFondo from "../assets/fotosColegios/elJardinDelFondo.png";
+import jardinDeInfantesDinDiLat from "../assets/fotosColegios/jardinDeInfantesDinDiLat.png";
+import escuelaArgentina from "../assets/fotosColegios/escuelaArgentina.png";
+import colegioNacionalDeBuenosAires from "../assets/fotosColegios/colegioNacionalDeBuenosAires.png";
+
+//DEL 51 AL 75
+
 //DEL 76 AL 100
 import WilliamMorris from "../assets/fotosColegios/Instituto Escuela Evangélica William Morris.png";
 import carlosVignale from "../assets/fotosColegios/CARLOS VIGNALE.jpg";
@@ -685,7 +716,7 @@ const datosColegios = [
         "mail": "JARDIN@INSTITUTODUAYEN.EDU.AR/PRIMARIA@INSTITUTODUAYEN.EDU.AR/dCUNDARIA@ISTITUTODUAYEN.EDU.AR",
         "descripcion": "Duayen es un colegio comprometido con la educación ambiental, fomentando en nuestros estudiantes una conciencia ecológica profunda. Nuestra enseñanza no solo se enfoca en el desarrollo académico, sino también en la responsabilidad ambiental, promoviendo prácticas sostenibles y respetuosas con el entorno natural.",
         "tipo": "Comun",
-        "imagen": foto1,
+        "imagen": institutoDuayen,
         "caracteristicas": [
             "Biblioteca"
         ],
@@ -708,7 +739,7 @@ const datosColegios = [
         "mail": "info@siglonuevo.edu.ar",
         "descripcion": "Del Siglo Nuevo, también conocido como Fundación Pio Roncoroni, es una institución educativa fundada en 1987, de gestión privada, mixta, de jornada completa y de formación laica. Se enseña el idioma Inglés, con la posibilidad de aplicar a certificaciones internacionales. Su Jardín de Infantes es conocido como ColmenitasDel Siglo Nuevo ofrece servicios educativos en la modalidad de educación común en 3 niveles: jardín maternal, jardin de infantes y nivel primario.",
         "tipo": "Comun",
-        "imagen": foto1,
+        "imagen": escuelaSigloNuevo,
         "caracteristicas": [
             "Prácticas profesionales",
             "Nutrición",
@@ -732,7 +763,7 @@ const datosColegios = [
         "mail": "BAY@BAYARD.ESC.EDU.AR",
         "descripcion": "Bayard es un colegio fundado en 1956, de gestión privada, mixto, de jornada completa y de formación laica. Se enseñan los idiomas inglés y francés, con carácter bilingüe, con la posibilidad de aplicar a certificaciones internacionales.Bayard ofrece servicios educativos en la modalidad de educación común en 4 niveles: jardín maternal, jardin de infantes, nivel primario y nivel secundario. El nivel secundario otorga el título de Bachiller con 2 posibles orientaciones: Ciencias Naturales y Comunicación.",
         "tipo": "Comun",
-        "imagen": foto1,
+        "imagen": institutoBayard,
         "caracteristicas": [
             "Prácticas profesionales",
             "Nutrición",
@@ -758,7 +789,7 @@ const datosColegios = [
         "mail": "SECRETARIASEC@DONBOSCO.EDU.AR",
         "descripcion": "Don Bosco es un colegio de gestión privada, mixto, de jornada completa opcional y con orientación en valores de la religión Católica; disponiendo de infraestructura religiosa propia.Don Bosco ofrece servicios educativos en la modalidad de educación común en 2 niveles: nivel primario, nivel secundario. El nivel secundario otorga el título de Bachiller con 2 posibles orientaciones: Ciencias Sociales & Humanidades y Economía & Administración.",
         "tipo": "Comun",
-        "imagen": foto1,
+        "imagen": colegioDonBosco,
         "caracteristicas": [
             "Ayuda terapéutica",
             "Servicios de transporte"
@@ -782,7 +813,7 @@ const datosColegios = [
         "mail": "dep_epc24_de12@bue.edu.ar",
         "descripcion": "La Escuela Nº 24 DE 12 Padre Castañeda es una escuela de jornada completa de gestión pública perteneciente al Distrito Escolar 12.La escuela, de Educación Primaria, tiene como finalidad garantizar el acceso a saberes, prácticas y experiencias culturales relevantes para la realización integral de las personas; brindar los saberes y experiencias necesarias para que los niños puedan ejercer diferentes maneras de participación en una sociedad democrática y formarse como ciudadanos; promover el desarrollo de la personalidad, el pensamiento crítico, la solidaridad social y el juicio moral autónomo incrementando en los alumnos, la capacidad de conocerse, de conocer el mundo y producir cambios.",
         "tipo": "Comun",
-        "imagen": foto1,
+        "imagen": padreCastaneda,
         "caracteristicas": [
             "Prácticas profesionales",
             "Biblioteca"
@@ -804,7 +835,7 @@ const datosColegios = [
         "mail": "adm.a290@mcabrini.org.ar",
         "descripcion": "Cabrini es un instituto fundado en 1901, de gestión privada, mixto, de jornada extendida y con orientación en valores de la religión Católica; disponiendo de infraestructura religiosa propia.Cabrini ofrece servicios educativos en la modalidad de educación común en 3 niveles: jardin de infantes, nivel primario y nivel secundario.",
         "tipo": "Comun",
-        "imagen": foto1,
+        "imagen": institutoCabrini,
         "caracteristicas": [
             "Gimnasio"
         ],
@@ -828,7 +859,7 @@ const datosColegios = [
         "mail": "IEHARILAOS@GMAIL.COM",
         "descripcion": "Elisa Harilaos, también conocido como Hermanas Rosarinas, es un instituto fundado en 1934, de gestión privada, mixto, de jornada simple y con orientación en valores de la religión Católica; disponiendo de infraestructura religiosa propia.Elisa Harilaos ofrece servicios educativos en la modalidad de educación común en 3 niveles: jardin de infantes, nivel primario y nivel secundario. El nivel secundario otorga el título de Bachiller con 3 posibles orientaciones: Ciencias Naturales, Economía & Administración, Comunicación.",
         "tipo": "Comun",
-        "imagen": foto1,
+        "imagen": institutoElisaHarilaos,
         "caracteristicas": [
             "Servicios de transporte",
             "Prácticas profesionales"
@@ -852,7 +883,7 @@ const datosColegios = [
         "mail": "SECGRAL@COLEGIODELSALVADOR.ESC.EDU.AR",
         "descripcion": "Del Salvador es un colegio fundado en 1868, de gestión privada, mixto, de jornada completa y con orientación en valores de la religión Católica; disponiendo de infraestructura religiosa propia. Se enseñan los idiomas inglés y francés, con la posibilidad de aplicar a certificaciones internacionales.Del Salvador ofrece servicios educativos en la modalidad de educación común en 4 niveles: jardín maternal, jardin de infantes, nivel primario y nivel secundario.",
         "tipo": "Comun",
-        "imagen": foto1,
+        "imagen": colegioDelSalvador,
         "caracteristicas": [
             "Biblioteca",
             "Prácticas profesionales",
@@ -877,7 +908,7 @@ const datosColegios = [
         "mail": "SECUNDARIODNJ@HOTMAIL.COM/PRIMARIODJN@HOTMAIL.COM",
         "descripcion": "Dulcísimo Nombre de Jesús es un instituto de gestión privada, mixto, de jornada simple y con orientación en valores de la religión Católica; disponiendo de infraestructura religiosa propia.Dulcísimo Nombre de Jesús ofrece servicios educativos en la modalidad de educación común en 3 niveles: jardin de infantes, nivel primario y nivel secundario.",
         "tipo": "Comun",
-        "imagen": foto1,
+        "imagen": institutoDulcisimoNombreDeJesus,
         "caracteristicas": [
             "Biblioteca"
         ],
@@ -894,13 +925,13 @@ const datosColegios = [
         "id": 35,
         "jurisdiccion": "Ciudad de Buenos Aires",
         "departamento": "Comuna 3",
-        "nombre": "COLEGIO ARGENTINO ARABE OMAR BIN AL-JATTAB",
+        "nombre": "INSTITUTO ARGENTINO ARABE ISLAMICO",
         "domicilio": "HUMBERTO Iº 3046 SAN CRISTOBAL 3052",
         "telefono": "011 4932-4932-5188 INT 118-119-121-125/ 4931-5934 INT 121/124",
         "mail": "COLEGIO.OMARBINALJATTAB@ISLAM.COM.AR",
         "descripcion": "Argentino Arabe Islámico es un instituto de gestión privada, mixto, de jornada simple y con orientación en valores de la religión Islámica. Es considerada como una institución de colectividad. Se enseñan los idiomas inglés y árabe en un nivel general.Argentino Arabe Islámico ofrece servicios educativos en la modalidad de educación común en 4 niveles: jardín maternal, jardin de infantes, nivel primario y nivel secundario. El nivel secundario otorga el título de Bachiller con orientación en Economía & Administración.",
         "tipo": "Comun",
-        "imagen": foto1,
+        "imagen": institutoArgentinoArabeIslamico,
         "caracteristicas": [
             "Laboratorios"
         ],
@@ -923,7 +954,7 @@ const datosColegios = [
         "mail": "administracion@dellibertador.com.ar",
         "descripcion": "Del Libertador, también conocido como Granaderos de San Martín, es un colegio de gestión privada, mixto, de jornada completa y de formación laica. Se enseña el idioma Inglés, con carácter bilingüe, con la posibilidad de aplicar a certificaciones internacionales.Del Libertador ofrece servicios educativos en la modalidad de educación común en 4 niveles: jardín maternal, jardin de infantes, nivel primario y nivel secundario.",
         "tipo": "Comun",
-        "imagen": foto1,
+        "imagen": colegioDelLibertador,
         "caracteristicas": [
             "Servicios de transporte",
             "Laboratorios",
@@ -948,7 +979,7 @@ const datosColegios = [
         "mail": "analistaico@gmail.com",
         "descripcion": "Cristo Obrero es un instituto fundado en 1936, de gestión privada, mixto, de jornada simple y con orientación en valores de la religión Católica; disponiendo de infraestructura religiosa propia.Cristo Obrero ofrece servicios educativos en la modalidad de educación común en 5 niveles: jardin de infantes, nivel primario, nivel secundario, nivel superior, nivel superior técnico (inet). El nivel secundario otorga el título de Bachiller con 2 posibles orientaciones: Economía & Administración y Informática & Tecnología.",
         "tipo": "Comun",
-        "imagen": foto1,
+        "imagen": institutoCristoObrero,
         "caracteristicas": [
             "Ayuda terapéutica",
             "Gimnasio",
@@ -974,7 +1005,7 @@ const datosColegios = [
         "mail": "INFO@COLEGIOALAS.COM.AR",
         "descripcion": "Alas es un instituto fundado en 1995, de gestión privada, mixto, de jornada completa opcional y de formación laica. Se enseña el idioma Inglés, con la posibilidad de aplicar a certificaciones internacionales.Alas ofrece servicios educativos en la modalidad de educación común en 2 niveles: jardin de infantes y nivel primario.",
         "tipo": "Comun",
-        "imagen": foto1,
+        "imagen": institutoEducativoAlas,
         "caracteristicas": [
             "Biblioteca"
         ],
@@ -997,7 +1028,7 @@ const datosColegios = [
         "mail": "SECRETARIAMEDIA@CARLOSSTEEB.EDU.AR",
         "descripcion": "Carlos Steeb es un instituto fundado en 1953, de gestión privada, mixto, de jornada extendida y con orientación en valores de la religión Católica. Se enseñan los idiomas inglés y italiano, con la posibilidad de aplicar a certificaciones internacionales.Carlos Steeb ofrece servicios educativos en la modalidad de educación común en 4 niveles: jardín maternal, jardin de infantes, nivel primario y nivel secundario. El nivel secundario otorga el título de Bachiller con 3 posibles orientaciones: Ciencias Sociales & Humanidades, Economía & Administración, Arte.",
         "tipo": "Comun",
-        "imagen": foto1,
+        "imagen": institutoCarlosSteeb,
         "caracteristicas": [
             "Talleres"
         ],
@@ -1021,7 +1052,7 @@ const datosColegios = [
         "mail": "COLEGIO_ARGENTINO_BFM@YAHOO.COM.AR",
         "descripcion": "Baldomero Fernández Moreno, también conocido como Colegio Argentino, es un colegio fundado en 1978, de gestión privada, mixto, de jornada simple y de formación laica. Su Jardín de Infantes es conocido como Alelí Baldomero Fernández Moreno ofrece servicios educativos en la modalidad de educación común en 3 niveles: jardín maternal, jardin de infantes y nivel primario.",
         "tipo": "Comun",
-        "imagen": foto1,
+        "imagen": colegioArgentinoBaldomeroFernandezMoreno,
         "caracteristicas": [
             "Nutrición",
             "Prácticas profesionales"
@@ -1045,7 +1076,7 @@ const datosColegios = [
         "mail": "SECUNDARIA@SANTIAGOAPOSTOL.EDU.AR /PRIMARIA@SANTIAGOAPOSTOL.EDU.AR",
         "descripcion": "El Colegio Santiago Apóstol es una obra de la Xunta de Galicia y del Centro Galicia de Buenos Aires –a través de la Fundación Galicia-América– que tiene el propósito de desarrollar un proyecto educativo bicultural en todos los niveles de enseñanza.La creación del primer colegio gallego en el exterior siempre estuvo en la mente de la colectividad gallega en la emigración.",
         "tipo": "Comun",
-        "imagen": foto1,
+        "imagen": institutoArgentinoGallegoSantiagoApostol,
         "caracteristicas": [
             "Nutrición",
             "Biblioteca"
@@ -1070,7 +1101,7 @@ const datosColegios = [
         "mail": "secretaria@escuelabereshit.org.ar",
         "descripcion": "Aaron Angel, también conocido como Instituto Educativo Bereshit, es una institución educativa de gestión privada, mixta, de jornada completa y con orientación en valores de la religión Judía; disponiendo de infraestructura religiosa propia. Es considerada como una institución de colectividad. Se enseñan los idiomas inglés y hebreo en un nivel general.Aaron Angel ofrece servicios educativos en la modalidad de educación común en 3 niveles: jardín maternal, jardin de infantes y nivel primario.",
         "tipo": "Comun",
-        "imagen": foto1,
+        "imagen": institutoEducativoAaronAngel,
         "caracteristicas": [
             "Nutrición",
             "Prácticas profesionales"
@@ -1093,7 +1124,7 @@ const datosColegios = [
         "mail": "ESBAFLORES@ESBAFLORES.EDU.AR",
         "descripcion": "ESBA Flores es una institución educativa de gestión privada, mixta, de jornada simple y de formación laica. Se enseñan los idiomas inglés y portugues, con la posibilidad de aplicar a certificaciones internacionales.ESBA Flores ofrece servicios educativos en la modalidad de educación común en 5 niveles: jardin de infantes, nivel primario, nivel secundario, nivel superior, nivel superior técnico (inet). El nivel secundario otorga el título de Bachiller con 2 posibles orientaciones: Comunicación y Informática & Tecnología.",
         "tipo": "Comun",
-        "imagen": foto1,
+        "imagen": institutoEsbaFlores,
         "caracteristicas": [
             "Laboratorios"
         ],
@@ -1117,7 +1148,7 @@ const datosColegios = [
         "mail": "dei_jii4_de14@bue.edu.ar",
         "descripcion": "Ofrece servicios educativos de gestión estatal en la modalidad de educación común en los niveles de maternal y jardín.El nivel inicial brinda servicio educativo a la población infantil comprendida entre los 45 días de vida y los 5 años de edad, promoviendo ámbitos propicios para cubrir las necesidades afectivas, educativas y de contención social de los niños de la Ciudad y estimulando mecanismos de participación y trabajo conjunto entre las familias y la escuela.",
         "tipo": "Comun",
-        "imagen": foto1,
+        "imagen": jardinDeLosArbolesDe14,
         "caracteristicas": [
             "Talleres",
             "Biblioteca"
@@ -1140,7 +1171,7 @@ const datosColegios = [
         "mail": "rdstoler@gmail.com",
         "descripcion": "La Escuela de Hilel cuenta con la fuerza, la solidez, la trayectoria y el enorme orgullo de saber que nuestros egresados son personas íntegras, exitosas en sus estudios, comprometidos con el prójimo haciendo de éste, un mundo mejor.La Escuela de Hilel, tiene abierta sus puertas para todos los chicos y sus familias, más allá de cualquier situación socio económica, que quieran recibir educación judía en un marco comunitario de cálida contención.",
         "tipo": "Comun",
-        "imagen": foto1,
+        "imagen": institutoPrivadoLaEscuelaDeHilel,
         "caracteristicas": [
             "Gimnasio",
             "Nutrición",
@@ -1164,7 +1195,7 @@ const datosColegios = [
         "mail": "INSTITUCIONAL@BETH.ORG.AR",
         "descripcion": "Beth es un bastión de educación e innovación en Argentina, un colegio judío bilingüe que se destaca por su excelencia académica y su profundo compromiso con la identidad judía y la comunidad. Nuestra visión es ser un faro de referencia en la comunidad educativa, mientras que nuestra misión es formar a estudiantes bilingües en inglés, arraigados en su herencia judía y comprometidos con la sociedad. En un entorno que promueve la creatividad, el bienestar y el respeto por la individualidad, en Beth forjamos ciudadanos globales conscientes, preparados para afrontar los desafíos del mundo moderno y contribuir de manera significativa tanto a la sociedad como a la comunidad judía.",
         "tipo": "Comun",
-        "imagen": foto1,
+        "imagen": colegioBeth,
         "caracteristicas": [
             "Prácticas profesionales"
         ],
@@ -1186,7 +1217,7 @@ const datosColegios = [
         "mail": "JARDINDELFONDO@HOTMAIL.COM",
         "descripcion": "Dulcísimo Nombre de Jesús es un instituto de gestión privada, mixto, de jornada simple y con orientación en valores de la religión Católica; disponiendo de infraestructura religiosa propia.Dulcísimo Nombre de Jesús ofrece servicios educativos en la modalidad de educación común en 3 niveles: jardin de infantes, nivel primario y nivel secundario.",
         "tipo": "Comun",
-        "imagen": foto1,
+        "imagen": elJardinDelFondo,
         "caracteristicas": [
             "Prácticas profesionales",
             "Talleres",
@@ -1210,7 +1241,7 @@ const datosColegios = [
         "mail": "DINDI@FIBERTEL.COM.AR",
         "descripcion": "Din Di Lat es una institución educativa de gestión privada, mixta, de jornada completa opcional y de formación laica. No dicta idiomas.Din Di Lat ofrece servicios educativos en la modalidad de educación común en 2 niveles: jardín maternal, jardin de infantes.",
         "tipo": "Comun",
-        "imagen": foto1,
+        "imagen": jardinDeInfantesDinDiLat,
         "caracteristicas": [
             "Servicios de transporte",
             "Gimnasio"
@@ -1233,7 +1264,7 @@ const datosColegios = [
         "mail": "SECUNDARIA@ARGENTINASCHOOL.EDU.AR",
         "descripcion": "Argentina School es un colegio fundado en 1964, de gestión privada, mixto, de jornada completa y de formación laica. Se enseña el idioma Inglés, con carácter bilingüe, con la posibilidad de aplicar a certificaciones internacionales.Argentina School ofrece servicios educativos en la modalidad de educación común en 4 niveles: jardín maternal, jardin de infantes, nivel primario y nivel secundario.",
         "tipo": "Comun",
-        "imagen": foto1,
+        "imagen": escuelaArgentina,
         "caracteristicas": [
             "Biblioteca",
             "Nutrición"
@@ -1258,7 +1289,7 @@ const datosColegios = [
         "mail": "rectora@cnba.uba.ar.",
         "descripcion": "Buenos Aires es un colegio fundado en 1911, de gestión privada, mixto, de jornada extendida y de formación laica.Buenos Aires ofrece servicios educativos en la modalidad de educación común en 4 niveles: jardín maternal, jardin de infantes, nivel primario y nivel secundario. El nivel secundario otorga el título de Bachiller con orientación en Economía & Administración.",
         "tipo": "Comun",
-        "imagen": foto1,
+        "imagen": colegioNacionalDeBuenosAires,
         "caracteristicas": [
             "Talleres",
             "Laboratorios"
