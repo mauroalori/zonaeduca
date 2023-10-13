@@ -2,6 +2,8 @@
     top: 50px;
     height: 100px;
     width: 100%;
+    margin-top: 65px;
+    margin-bottom: 30px;
 }
 .conForm{
     position:relative;
@@ -19,13 +21,13 @@
     margin:0px;
 }
 .input-Fil button{
-    margin: 10px;
+    margin-top: 16px;
     justify-content: center;
     background-color: #00729A;
     color: white;
     border-radius: 4px;
     width: 166px;
-    height: 55px;
+    height: 40px;
     position: absolute;
 }
 .text {
@@ -36,30 +38,42 @@
     text-indent: 40px;
 }
 .Departamento,.Nivel,.Idioma {
-    border-color: black;
-    border: 1px solid;
-    border-radius: 5px;
-    width: 200px;
+    padding: 0.25em 0.6em;
+    border-radius: 0.3rem;
+    border: 1px solid #d3d6e4;
+    text-align: center;
+    width: 50%;
 }
 .Departamento,.Nivel,.Idioma, ::placeholder{
-    height: 40px;
+    font-weight: 200;
+    background-size: 17px 17px;
+    background-repeat: no-repeat;
+    background-position: left center;
+    outline: none;
+    color: #5D5D5D;
 }
+
 label{
     color: #5D5D5D;
-    size: 1.3cm;
+    size: 1.6cm;
 }
 .Departamento::placeholder{
     background-image: url(../../../assets/gifs-iconos/departamento.png);
-    background-size: 15px 15px;
-    background-repeat: no-repeat;
-    background-position: left center;
+}
+.Idioma::placeholder{
+    background-image: url(../../../assets/gifs-iconos/idioma.png);
+}
+.Nivel::placeholder{
+    background-image: url(../../../assets/gifs-iconos/nivel.png);
 }
 @media screen and (max-width: 968px){
+    .contenedor-filtro{
+        margin-bottom: 230px;
+    }
     .conForm{
         display: flex;
         flex-direction: column;
     }
-
 }
 
 
