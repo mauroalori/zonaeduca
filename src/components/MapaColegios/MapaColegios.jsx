@@ -1,5 +1,5 @@
 import { GoogleMap, useLoadScript, MarkerF as Marcador } from '@react-google-maps/api';
-import iconMaps from "../../assets/gifs-iconos/escuela.png"
+import iconMaps from "../../assets/gifs-iconos/colegio2.png"
 function MapaColegios() {
   const API_KEY = import.meta.env.VITE_REACT_APP_GOOGLE_MAPS_API_KEY;
   const { isLoaded } = useLoadScript({
@@ -20,7 +20,7 @@ function MapaColegios() {
         <Marcador position={center}
         icon={{
           url: iconMaps,
-          scaledSize: new window.google.maps.Size(60, 60),
+          scaledSize: new window.google.maps.Size(150, 90),
         }}
         />
         {/* {coords.map((coord) => (<Marcador position={coord} 
