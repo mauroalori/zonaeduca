@@ -7,7 +7,31 @@ import foto5 from "../assets/fotosComentarios/Foto5.jpg";
 import foto6 from "../assets/fotosComentarios/Foto6.jpg";
 
 // FOTOS COLEGIOS 
-
+//DEL 1 AL 25
+import misericordiaBelgrano from"../assets/fotosColegios/Nuestra señora de la Misericordia Belgrano.png"
+import lasCumbres from "../assets/fotosColegios/Colegio Las Cumbres.png"
+import neumen from "../assets/fotosColegios/ Colegio Neumen.png"
+import daySchool from "../assets/fotosColegios/Colegio Belgrano Day School.png"
+import sanFranciscoJ from "../assets/fotosColegios/Colegio San Francisco Javier.png"
+import schiller from "../assets/fotosColegios/Instituto Schiller.png"
+import jii05 from "../assets/fotosColegios/Jii 05 de 09.png"
+import watson from "../assets/fotosColegios/Colegio Ingles Horacio Watson.png"
+import arcoIris from "../assets/fotosColegios/Colegio Arco Iris.png"
+import deLuca from "../assets/fotosColegios/Colegio Esteban de Luca.png"
+import tours from "../assets/fotosColegios/Instituto San Martin de Tours.png"
+import santaFelicitas from "../assets/fotosColegios/Instituto Santa Felicitas de San Vicente.png"
+import posse from "../assets/fotosColegios/Wenceslao Posee.png"
+import cayetano from "../assets/fotosColegios/San Cayetano.png"
+import corazonMaria from "../assets/fotosColegios/Corazon de Maria.png"
+import sudamericano from "../assets/fotosColegios/Sudamericano Modelo.png"
+import bustillo from "../assets/fotosColegios/Jose Maria Bustillo.png"
+import pedraza from "../assets/fotosColegios/Manuel Pedraza.png"
+import corazonJesus from "../assets/fotosColegios/Corazon de Jesus.png"
+import devotoShool from "../assets/fotosColegios/Villa Devoto School.png"
+import deLaCiudad from "../assets/fotosColegios/Colegio de la Ciudad.png"
+import labrador from "../assets/fotosColegios/Colegio San Isidro Labrador.png"
+import pueyrredon from "../assets/fotosColegios/Juan Martin de Pueyrredon.png"
+import deLujan from "../assets/fotosColegios/Santa Maria de Lujan.png"
 //DEL 76 AL 100
 import WilliamMorris from "../assets/fotosColegios/Instituto Escuela Evangélica William Morris.png";
 import carlosVignale from "../assets/fotosColegios/CARLOS VIGNALE.jpg";
@@ -85,7 +109,7 @@ const datosColegios = [
         "mail": "PRIMARIA@LASCUMBRES.EDU.AR",
         "descripcion": "El colegio Cumbres se encuentra ubicado en el barrio de Recoleta, CABA, en la calle Guido 1880. Es un colegio privado, laico, mixto, de jornada completa y educación bilingüe (inglés). También, se enseña el idioma portugués. Brinda enseñanza en los 3 niveles: Jardin, primaria y secundaria.Es un colegio con orientación en valores de la religión Católica; disponiendo de infraestructura religiosa propia. Se enseñan los idiomas Inglés y Portugues, con carácter bilingüe, con la posibilidad de aplicar a certificaciones internacionales.",
         "tipo": "Comun",
-        "imagen": foto1,
+        "imagen": lasCumbres,
         "caracteristicas": [
             "Servicios de transporte"
         ],
@@ -109,7 +133,7 @@ const datosColegios = [
         "mail": "MAIL@COLEGIONUMEN.COM.AR",
         "descripcion": "En 1970 se fundó en el barrio de Flores el Colegio Numen, una institución laica, mixta y pluralista para generar un espacio donde los chicos se encuentren seguros y respetados y para formarlos intelectualmente autónomos.",
         "tipo": "Comun",
-        "imagen": foto1,
+        "imagen": neumen,
         "caracteristicas": [
             "Biblioteca"
         ],
@@ -132,7 +156,7 @@ const datosColegios = [
         "mail": "INFO@BDSNET.COM.AR",
         "descripcion": "Ubicado en el corazón de la residencial zona de Belgrano, en la ciudad de Buenos Aires, el Belgrano Day School esgrime una tradición centenaria de excelencia académica, logros artísticos extraordinarios plasmados en producciones plásticas, teatrales y musicales y un alto nivel de competitividad deportiva. Nuestra escuela es bilingüe y mixta.Ofrece un currículum nacional e internacional para alumnos de 2 a 18 años de edad. Los graduados obtienen los Certificados Internacionales de la Universidad de Cambridge, (IGCSE, AICE, AS y A levels).",
         "tipo": "Comun",
-        "imagen": foto1,
+        "imagen": daySchool,
         "caracteristicas": [
             "Laboratorios",
             "Servicios de transporte",
@@ -158,7 +182,7 @@ const datosColegios = [
         "mail": "INFORMES@COLEGIOSANJAVIER.COM.AR",
         "descripcion": "La escuela tiene como objetivo crear un entorno en el que los niños y las niñas se sientan acogidos, proporcionándoles las condiciones para su desarrollo creativo y cooperativo. Esto se logra a través de una propuesta variada y enriquecedora que se adapta a diversos intereses, ritmos de aprendizaje y formas de aprender.",
         "tipo": "Comun",
-        "imagen": foto1,
+        "imagen": sanFranciscoJ,
         "caracteristicas": [
             "Nutrición",
             "Prácticas profesionales",
@@ -183,7 +207,7 @@ const datosColegios = [
         "mail": "SECUNDARIA@INSTITUTOSCHILLER.EDU.AR",
         "descripcion": "Schiller Schule es un colegio fundado en 1917, de gestión privada, mixto, de jornada completa y de formación laica. Es considerada como una institución de colectividad. Se enseñan los idiomas inglés y alemán, con carácter bilingüe, con la posibilidad de aplicar a certificaciones internacionales.Schiller Schule ofrece servicios educativos en la modalidad de educación común en 4 niveles: jardín maternal, jardin de infantes, nivel primario y nivel secundario. El nivel secundario otorga el título de Bachiller con orientación en Economía & Administración.",
         "tipo": "Comun",
-        "imagen": foto1,
+        "imagen": schiller,
         "caracteristicas": [
             "Nutrición",
             "Laboratorios"
@@ -208,7 +232,7 @@ const datosColegios = [
         "mail": "dei_jii5_de9@bue.edu.ar",
         "descripcion": "El Jardín de Infantes Integral Nº 5 DE 9 o JII Nº 5 DE 9 es un establecimiento de gestión pública perteneciente al Distrito Escolar 09.El nivel inicial brinda servicio educativo a la población infantil comprendida entre los 45 días de vida y los 5 años de edad, promoviendo ámbitos propicios para cubrir las necesidades afectivas, educativas y de contención social de los niños de la Ciudad y estimulando mecanismos de participación y trabajo conjunto entre las familias y la escuela.Esta Institución es un Jardín de Infantes Integral (JII). Como tal, es una institución de jornada completa que según la organización institucional brindan servicio educativo a niños de 1 a 5 años.",
         "tipo": "Comun",
-        "imagen": foto1,
+        "imagen": jii05,
         "caracteristicas": [
             "Talleres",
             "Gimnasio"
@@ -230,7 +254,7 @@ const datosColegios = [
         "mail": "INFO@WATSON.ESC.EDU.AR",
         "descripcion": "Horace Watson, un joven inglés, emigró a Sudamérica a principios del siglo XX. En Buenos Aires, fundó una escuela llamada 'ENGLISH HIGHER GRADE SCHOOL' con Mr. Robinson, pero debido a problemas de visión, Horace se convirtió en el director. Después de su muerte, su hija Inés tomó el cargo y renombró la escuela como 'Colegio Inglés Horacio Watson.' La familia se dedicó a la enseñanza durante tres generaciones, compartiendo una fuerte vocación y valores educativos. Desde 2020, Julián Massa, descendiente de la familia, es vice director general, formando la cuarta generación involucrada en la educación.",
         "tipo": "Comun",
-        "imagen": foto1,
+        "imagen": watson,
         "caracteristicas": [
             "Talleres",
             "Nutrición",
@@ -255,7 +279,7 @@ const datosColegios = [
         "mail": "info@escuelaarcoiris.com.ar",
         "descripcion": "La institución brinda una educación laica, mixta y bilingüe (inglés) en Nivel Inicial y Primario. Su objetivo es formar ciudadanos éticos, responsables y solidarios, dotándolos de sólidos conocimientos en Castellano e Inglés. El equipo directivo y de coordinadores está altamente capacitado en diversas áreas, mientras que el equipo docente recibe formación continua. Se enfoca en crear un ambiente propicio para el aprendizaje, abordando tanto los contenidos académicos como las áreas expresivas y el desarrollo socioafectivo a través de proyectos interdisciplinarios y espacios sistemáticos que promueven la convivencia. La institución se distingue por su carácter profundamente democrático y su compromiso con la realidad social y la defensa de los derechos humanos.",
         "tipo": "Comun",
-        "imagen": foto1,
+        "imagen": arcoIris,
         "caracteristicas": [
             "Prácticas profesionales",
             "Laboratorios",
@@ -281,7 +305,7 @@ const datosColegios = [
         "mail": "DEAA_EP1_DE6@BUE.EDU.AR",
         "descripcion": "La Escuela Nº 1 DE 6 Esteban de Luca es una escuela de jornada simple de gestión pública perteneciente al Distrito Escolar 06.La escuela, de Educación Primaria, tiene como finalidad garantizar el acceso a saberes, prácticas y experiencias culturales relevantes para la realización integral de las personas; brindar los saberes y experiencias necesarias para que los niños puedan ejercer diferentes maneras de participación en una sociedad democrática y formarse como ciudadanos; promover el desarrollo de la personalidad, el pensamiento crítico, la solidaridad social y el juicio moral autónomo incrementando en los alumnos, la capacidad de conocerse, de conocer el mundo y producir cambios..",
         "tipo": "Comun",
-        "imagen": foto1,
+        "imagen": deLuca,
         "caracteristicas": [
             "Talleres",
             "Gimnasio"
@@ -304,7 +328,7 @@ const datosColegios = [
         "mail": "SECRETARIO@ISMT.EDU.AR/INFO@ISMT.EDU.AR",
         "descripcion": "El Colegio San Martin de Tours es una institución educativa ubicada en Palermo, CABA, que ofrece educación privada para mujeres en los niveles de inicial, primaria y secundaria. Fundado en 1968, es un colegio con una sólida formación católica y una amplia trayectoria en la zona. El colegio cuenta con instalaciones completas, incluyendo biblioteca, laboratorio de computación, campo de deportes y salón de actos. Ofrece una variedad de actividades artísticas, deportivas y comunitarias, además de enseñar inglés y francés. Las alumnas tienen la oportunidad de obtener un Diploma de Bachillerato Internacional, lo que les permite acceder a universidades nacionales e internacionales. También pueden rendir exámenes de certificación en inglés y francés a nivel internacional.",
         "tipo": "Comun",
-        "imagen": foto1,
+        "imagen": tours,
         "caracteristicas": [
             "Ayuda terapéutica"
         ],
@@ -328,7 +352,7 @@ const datosColegios = [
         "mail": "SANTAFELICITAS@FIBERTEL.COM.AR",
         "descripcion": "El Instituto Santa Felicitas, con orígenes a principios del siglo XX, fusiona tradiciones educativas, religiosas, sociales, políticas y arquitectónicas en el barrio de Barracas en Buenos Aires. Durante más de ochenta años, fue gestionado por congregaciones religiosas y compartió la orientación católica típica de la época, centrada en la formación religiosa y pastoral.",
         "tipo": "Comun",
-        "imagen": foto1,
+        "imagen": santaFelicitas,
         "caracteristicas": [
             "Ayuda terapéutica",
             "Biblioteca",
@@ -354,7 +378,7 @@ const datosColegios = [
         "mail": "dep_epc16_de1@bue.edu.ar",
         "descripcion": "La Escuela Nº 16 DE 1 Wenceslao Posse, en Palermo, brinda educación primaria con un enfoque en inglés para grados 1 al 7. Utiliza tecnología y promueve el pensamiento crítico, trabajo en equipo y desarrollo integral de los alumnos. Su objetivo es formar ciudadanos responsables y fomentar la solidaridad social.",
         "tipo": "Comun",
-        "imagen": foto1,
+        "imagen": posse,
         "caracteristicas": [
             "Ayuda terapéutica",
             "Servicios de transporte"
@@ -376,7 +400,7 @@ const datosColegios = [
         "mail": "SECSANCAYETANO@GMAIL.COM",
         "descripcion": "Busca incentivar el desarrollo de la estructuración del pensamiento, la imaginación creativa, así como las habilidades de expresión personal y comunicación verbal y gráfica en los estudiantes.Además, pretende estimular la adopción de hábitos relacionados con la integración social, la convivencia grupal, la solidaridad, la bondad hacia los demás, la cooperación y la preservación del medio ambiente.Por último, busca favorecer el proceso de maduración en los niños y niñas, abordando aspectos como el desarrollo sensorio-motor, la expresión lúdica y estética, el crecimiento socioafectivo y la promoción de valores éticos generales.",
         "tipo": "Comun",
-        "imagen": foto1,
+        "imagen": cayetano,
         "caracteristicas": [
             "Prácticas profesionales"
         ],
@@ -400,7 +424,7 @@ const datosColegios = [
         "mail": "SECRETARIA@MISERICORDIA.EDU.AR",
         "descripcion": "El colegio fue fundado el 10 de Mayo de 1903 por las Hijas de Nuestra Señora de la Misericordia. Desde ese entonces el colegio promueve la educación en la fe, la formación integral del Educando a través de auténticos valores, haciendo así realidad la máxima de Santa Maria Josefa Rossello.",
         "tipo": "Comun",
-        "imagen": foto1,
+        "imagen": misericordiaBelgrano,
         "caracteristicas": [
             "Nutrición",
             "Talleres"
@@ -425,7 +449,7 @@ const datosColegios = [
         "mail": "ICMARIA2002@YAHOO.COM.AR",
         "descripcion": "El colegio es parte de la congregación Hermanas Terciarias Franciscanas de la Caridad (HH.TT.FF) y se dedica a la educación de niños y jóvenes. Su objetivo es promover la realización plena del ser humano, basándose en la dignidad del hombre, los derechos humanos y los valores cristianos. Contribuyen a una sociedad justa y libre, siguiendo la inspiración de su fundadora, Madre Mercedes Guerra del Niño Jesús. La educación se imparte sin discriminación y se enfoca en la fe, la cultura y el desarrollo personal. Siguen el ideal de San Francisco de Asís, formando a los estudiantes como Hijo de Dios, Hermano de los hombres y Señor de las cosas.",
         "tipo": "Comun",
-        "imagen": foto1,
+        "imagen": corazonMaria,
         "caracteristicas": [
             "Nutrición",
             "Prácticas profesionales",
@@ -450,7 +474,7 @@ const datosColegios = [
         "mail": "info@iesm.edu.ar",
         "descripcion": "La institución proporciona a sus estudiantes una sólida formación académica que optimiza y favorece situaciones de aprendizaje. En este proceso, se incorporan conocimientos utilizando recursos de tecnología avanzada, se perfecciona el dominio de la lengua inglesa, se fomenta el espíritu deportivo y se estimula la creatividad artística, todo ello con el objetivo de lograr una formación integral del alumno a través de la implementación de la educación STEAM.",
         "tipo": "Comun",
-        "imagen": foto1,
+        "imagen": sudamericano,
         "caracteristicas": [
             "Laboratorios"
         ],
@@ -474,7 +498,7 @@ const datosColegios = [
         "mail": "dep_epc23_de9@bue.edu.ar",
         "descripcion": "La escuela rinde homenaje al Dr. José María Bustillo (1852-1931), un destacado jurista, escritor y auditor de Guerra y Marina.En 1922, se encomendó a la Srta. Antonia Roca la creación de la escuela con el número 18 del Consejo Escolar 10, y comenzó a funcionar en la casona de la calle Serrano 1261. Sin embargo, en 1982, la escuela se trasladó a su ubicación actual en la calle Thames 1361 en el barrio de Palermo.En 1935, la Escuela N. ° 18 pasó a la jurisdicción del Consejo Escolar N. ° 9, y se le asignó el número 23.",
         "tipo": "Comun",
-        "imagen": foto1,
+        "imagen": bustillo,
         "caracteristicas": [
             "Gimnasio",
             "Prácticas profesionales",
@@ -497,7 +521,7 @@ const datosColegios = [
         "mail": "dep_epc11_de9@bue.edu.ar",
         "descripcion": "La Escuela Nº 11 DE 9 Manuela Pedraza, en Palermo, ofrece educación primaria con enfoque en inglés para grados 1 al 7. Utiliza tecnología moderna, brinda talleres y cursos adicionales, y participa en torneos deportivos y culturales. En 2018, recibió el premio al mejor promedio del distrito escolar. Opera en horario de jornada completa y ofrece la opción de almuerzo en la escuela.",
         "tipo": "Comun",
-        "imagen": foto1,
+        "imagen": pedraza,
         "caracteristicas": [
             "Ayuda terapéutica",
             "Talleres",
@@ -521,7 +545,7 @@ const datosColegios = [
         "mail": "secundariacorazondejesus@hotmail.com - primariacorazondejesus@gmail.com",
         "descripcion": "Corazón de Jesús es un colegio fundado en 1953, de gestión privada, mixto, de jornada simple y con orientación en valores de la religión Católica; disponiendo de infraestructura religiosa propia. Se enseña el idioma Inglés, con la posibilidad de aplicar a certificaciones internacionales.Corazón de Jesús ofrece servicios educativos en la modalidad de educación común en 4 niveles: jardín maternal, jardin de infantes, nivel primario y nivel secundario. El nivel secundario otorga el título de Bachiller con orientación en Ciencias Sociales & Humanidades.",
         "tipo": "Comun",
-        "imagen": foto1,
+        "imagen": corazonJesus,
         "caracteristicas": [
             "Laboratorios",
             "Nutrición"
@@ -545,7 +569,7 @@ const datosColegios = [
         "mail": "VDEVOTO@VDEVOTO.ESC.EDU.AR",
         "descripcion": "El Villa Devoto School fue fundado en 1908 por inmigrantes ingleses en Villa Devoto. Inicialmente, funcionaba en casas de familia y luego en una capilla. A lo largo de los años, creció y pasó por diferentes administraciones. En 1955, bajo la dirección de Mrs. Kathleen Miles, el colegio experimentó un significativo aumento en el número de alumnos. En 1965, se estableció una Asociación Civil sin Fines de Lucro como entidad propietaria. Después de la Guerra de Malvinas, esta asociación quedó compuesta exclusivamente por ciudadanos argentinos.",
         "tipo": "Comun",
-        "imagen": foto1,
+        "imagen": devotoShool,
         "caracteristicas": [
             "Nutrición",
             "Talleres",
@@ -571,7 +595,7 @@ const datosColegios = [
         "mail": "COLEGIO@COLEGIODELACIUDAD.ORG",
         "descripcion": "El Colegio de la Ciudad es un Colegio de Nivel Secundario.Bachillerato con orientación en Ciencias Sociales y Humanidades, con ampliación en Ciencias Naturales.Con una propuesta intensiva de idioma y de formaciones alternativas.",
         "tipo": "Comun",
-        "imagen": foto1,
+        "imagen": deLaCiudad,
         "caracteristicas": [
             "Servicios de transporte",
             "Nutrición"
@@ -593,7 +617,7 @@ const datosColegios = [
         "mail": "SANILABRADOR@FIBERTEL.COM.AR",
         "descripcion": "El Instituto San Isidro Labrador es un centro educativo católico en Buenos Aires que se enfoca en proporcionar una formación integral a sus alumnos, tanto académica como personalmente. Destaca por su enfoque en valores como la responsabilidad, el respeto y la solidaridad. Ofrecen una variedad de actividades extracurriculares en deporte, arte y cultura. Promueven un ambiente de aprendizaje participativo y dialogante para desarrollar habilidades sociales. Las instalaciones incluyen aulas equipadas, laboratorios, biblioteca y espacios recreativos. También brindan orientación vocacional para ayudar a los estudiantes a elegir su carrera futura y descubrir sus intereses y habilidades.",
         "tipo": "Comun",
-        "imagen": foto1,
+        "imagen": labrador,
         "caracteristicas": [
             "Ayuda terapéutica"
         ],
@@ -616,7 +640,7 @@ const datosColegios = [
         "mail": "DEAA_EP14_DE2@BUE.EDU.AR",
         "descripcion": "La Escuela Nº 14 DE 2 Juan Martin de Pueyrredon es una escuela de jornada completa de gestión pública perteneciente al Distrito Escolar 02.La escuela, de Educación Primaria, tiene como finalidad garantizar el acceso a saberes, prácticas y experiencias culturales relevantes para la realización integral de las personas; brindar los saberes y experiencias necesarias para que los niños puedan ejercer diferentes maneras de participación en una sociedad democrática y formarse como ciudadanos; promover el desarrollo de la personalidad, el pensamiento crítico, la solidaridad social y el juicio moral autónomo incrementando en los alumnos, la capacidad de conocerse, de conocer el mundo y producir cambio",
         "tipo": "Comun",
-        "imagen": foto1,
+        "imagen": pueyrredon,
         "caracteristicas": [
             "Prácticas profesionales",
             "Talleres"
@@ -639,7 +663,7 @@ const datosColegios = [
         "mail": "ISML@ISML.ESC.EDU.AR",
         "descripcion": "La Fundación Santa María de Luján, una entidad de bien público sin fines de lucro, ha sido la propietaria del Instituto desde sus inicios hasta la actualidad. La Fundación está bajo la dirección de un Consejo de Administración compuesto por ocho miembros, que pueden incluir ex alumnos, padres de alumnos o ex alumnos, ex docentes o personas afiliadas a la Fundación. El Instituto Santa María de Luján, con sus tres niveles educativos y talleres extracurriculares, se esfuerza por mantenerse fiel a los objetivos fundacionales, adaptándose a los cambios que la evolución de la comunidad exige en la prestación de su servicio educativo.",
         "tipo": "Comun",
-        "imagen": foto1,
+        "imagen": deLujan,
         "caracteristicas": [
             "Talleres"
         ],
