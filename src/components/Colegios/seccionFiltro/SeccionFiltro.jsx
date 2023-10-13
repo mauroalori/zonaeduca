@@ -1,7 +1,10 @@
 import "./filtro.css"
 import UseColegio from "../../../hooks/UseColegio";
-function SeccionFiltro({setSelectedDepartamento, setSelectedNivel, setSelectedIdioma}){
-    const {departamentos, niveles, idiomas} = UseColegio();
+function SeccionFiltro(){
+    const {
+        departamentos, niveles, idiomas,
+        setSelectedDepartamento, setSelectedNivel, setSelectedIdioma
+    } = UseColegio();
 
     const handleDepartamentoChange = e => {
         setSelectedDepartamento(e.target.value);

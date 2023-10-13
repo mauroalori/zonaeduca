@@ -1,13 +1,15 @@
 import { datosColegios } from "../../../data/data"
+import UseColegio from "../../../hooks/UseColegio";
 
 function ListadoColegios() {
 
+  const { datosColegiosFiltrados } = UseColegio();
 
   return (
     <section className="w-full">
       <h1 className="text-[#00405B] text-3xl  m-5 font-medium lg:ml-20 ml-5">Colegios en esta zona</h1>
 
-      {datosColegios.slice(0,3).map((colegio) => (
+      {datosColegiosFiltrados.map((colegio) => (
         <div key={colegio.id} className="w-[90%] h-auto m-auto mt-5 mb-5 lg:h-80 shadow-md shadow-gray-700  bg-[#001A29] rounded-md flex flex-col lg:flex-row justify-around items-center">
           {/* IMAGE  */}
           <div className="p-4">
