@@ -1,0 +1,71 @@
+.colegio-descrip{
+    width: 100%;
+    height: 100%;
+}
+.dato-colegio {
+    top: 50px;
+    height: 100px;
+    width: 100%;
+    margin-top: 6rem;
+    margin-bottom: 0.2rem;
+}
+.icon-flecha{
+    margin-left: 2rem;
+    width: 2.5rem;
+    height: 2rem;
+}
+
+.nombre-colegio {
+    text-align: center;
+    color: #00405B;
+    font-size: 2em;
+    font-weight: 550;
+    line-height: 1.5;
+    text-indent: 40px;
+}
+
+.niveles {
+    display: flex;
+    justify-content: center;
+    color: #00405B;
+
+}
+
+.nivel {
+    margin: 20px;
+    padding: 10px;
+    background-color: #c0fac0;
+    border-radius: 20px;
+    display: inline-block;
+}
+.descripcion{
+    color: #00405B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin: 2rem;
+    height: 25rem
+}
+.descrip-imagen,
+.descrip-cole{
+    width: 50%;
+}
+.img-cole{
+    width: 550px;
+    height: 360px;
+    object-fit: cover;
+}
+.descripcion-cole{
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    width: 600px;
+    height: 240px;
+}
+.contacto-cole{
+    color: #00405B;
+    font-size: 2em;
+    font-weight: 550;
+    margin-left: 4rem;
+}
