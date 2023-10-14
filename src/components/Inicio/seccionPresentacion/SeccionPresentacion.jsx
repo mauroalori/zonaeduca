@@ -16,7 +16,9 @@ export default function SeccionPresentacion() {
               ¡Bienvenidos a ZonaEduca!
             </h3>
             <p className="presentacion">
-              Somos tu guía para encontrar el mejor colegio cerca de tu hogar. Facilitamos la búsqueda al proporcionarte información detallada, comparaciones y reseñas de colegios en tu zona. ¡Encuentra la educación perfecta para tus hijos sin complicaciones en ZonaEduca!
+              En ZonaEduca, entendemos la importancia de la ubicación y la comodidad al elegir un colegio 
+              para tus hijos. Nuestra plataforma te permite explorar una amplia variedad de colegios ubicados 
+              en tu zona, lo que significa menos tiempo de desplazamiento y más tiempo de calidad con tu familia. 
             </p>
             </div>
             <div>
