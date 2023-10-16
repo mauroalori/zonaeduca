@@ -5,8 +5,6 @@ function ListadoColegios() {
 
   const datos = datosColegiosFiltrados.length > 0;
 
-  console.log(datosColegiosFiltrados);
-
   return (
     <section className="w-full">
       <h1 className="text-[#00405B] text-3xl  m-5 font-medium lg:ml-20 ml-5">

@@ -1,84 +1,145 @@
-import { createContext, useState } from "react"
+import { createContext, useState, useEffect } from "react";
 import PropTypes from "prop-types";
-import { datosColegios } from "../data/data"
-import { useEffect } from "react";
-import Geocode from "react-geocode";
-
-// GEOCODER 
-Geocode.setApiKey(import.meta.env.VITE_REACT_APP_GOOGLE_MAPS_API_KEY);
+import { datosColegios } from "../data/data";
 
 const ColegioContext = createContext();
 
-const ColegiosProvider = ({children}) => {
+const ColegiosProvider = ({ children }) => {
+  // DECLARAR ACA FUNCIONES
+  {
+    /* Recoleccion de los valores para los select desde los datos */
+  }
+  const departamentos = [],
+    niveles = [],
+    idiomas = [];
 
-    // DECLARAR ACA FUNCIONES 
-    {/* Recoleccion de los valores para los select desde los datos */}
-    const  
-        departamentos = [],
-        niveles = [],
-        idiomas = [];
-    
-    datosColegios.forEach(colegio => {
-        if(!departamentos.includes(colegio.departamento) && colegio.departamento !== ""){
-            departamentos.push(colegio.departamento);
-        }
-        colegio.idiomas.forEach(idioma =>{
-            if(!idiomas.includes(idioma)){
-                idiomas.push(idioma);
-            }
-        })
-        colegio.nivel.forEach(nivel =>{
-            if(!niveles.includes(nivel)){
-                niveles.push(nivel);
-            }
-        })
-    })
-
-    {/* Ordenamiento de los valores de los select */}
-    departamentos.sort((a, b) => {
-        const numeroA = parseInt(a.match(/\d+/));
-        const numeroB = parseInt(b.match(/\d+/));
-        
-        return numeroA - numeroB;
+  datosColegios.forEach((colegio) => {
+    if (
+      !departamentos.includes(colegio.departamento) &&
+      colegio.departamento !== ""
+    ) {
+      departamentos.push(colegio.departamento);
+    }
+    colegio.idiomas.forEach((idioma) => {
+      if (!idiomas.includes(idioma)) {
+        idiomas.push(idioma);
+      }
     });
-    niveles.sort()
-    idiomas.sort()
+    colegio.nivel.forEach((nivel) => {
+      if (!niveles.includes(nivel)) {
+        niveles.push(nivel);
+      }
+    });
+  });
 
-    {/* Funciones para el manejo de los select */}
-    const defaultSelect = "";
+  {
+    /* Ordenamiento de los valores de los select */
+  }
+  departamentos.sort((a, b) => {
+    const numeroA = parseInt(a.match(/\d+/));
+    const numeroB = parseInt(b.match(/\d+/));
 
-    const [selectedDepartamento, setSelectedDepartamento] = useState(defaultSelect);
-    const [selectedNivel, setSelectedNivel] = useState(defaultSelect);
-    const [selectedIdioma, setSelectedIdioma] = useState(defaultSelect);
+    return numeroA - numeroB;
+  });
+  niveles.sort();
+  idiomas.sort();
 
-    {/* Filtrado de los colegios */}
-    const datosColegiosFiltrados = datosColegios.filter(colegio => {
-        return (
-            (colegio.departamento === selectedDepartamento || selectedDepartamento === defaultSelect) && 
-            (colegio.idiomas.includes(selectedIdioma) || selectedIdioma === defaultSelect) && 
-            (colegio.nivel.includes(selectedNivel) || selectedNivel === defaultSelect) &&
-            !(selectedNivel === defaultSelect && selectedIdioma === defaultSelect && selectedDepartamento === defaultSelect)
-            )
-    })
+  {
+    /* Funciones para el manejo de los select */
+  }
+  const defaultSelect = "";
 
-    // GEOCODER 
-    useEffect(() => {
-        datosColegiosFiltrados.forEach((colegio) => {
-          Geocode.fromAddress(colegio.domicilio)
-            .then((response) => {
-              const { lat, lng } = response.results[0].geometry.location;
-              console.log('Latitud:', lat);
-              console.log('Longitud:', lng);
-            })
-            .catch((error) => {
-              console.error('Error al geocodificar la dirección:', error);
-            });
+  const [selectedDepartamento, setSelectedDepartamento] =
+    useState(defaultSelect);
+  const [selectedNivel, setSelectedNivel] = useState(defaultSelect);
+  const [selectedIdioma, setSelectedIdioma] = useState(defaultSelect);
+
+  {
+    /* Filtrado de los colegios */
+  }
+  const datosColegiosFiltrados = datosColegios.filter((colegio) => {
+    return (
+      (colegio.departamento === selectedDepartamento ||
+        selectedDepartamento === defaultSelect) &&
+      (colegio.idiomas.includes(selectedIdioma) ||
+        selectedIdioma === defaultSelect) &&
+      (colegio.nivel.includes(selectedNivel) ||
+        selectedNivel === defaultSelect) &&
+      !(
+        selectedNivel === defaultSelect &&
+        selectedIdioma === defaultSelect &&
+        selectedDepartamento === defaultSelect
+      )
+    );
+  });
+
+  //COORDENADAS
+
+  // KEY
+  const apiKey = "AIzaSyBGxZRg95VBqkFtjqJE_LEYlVInDjLWxHE";
+
+  // EXTRAER LOS DOMICILIOS FILTRADOS
+  const domiciliosFiltrados = datosColegiosFiltrados.map(
+    (colegio) => colegio.domicilio
+  );
+
+  // CONSULTAR A LA API DE GOOGLE Y BUSCAR LOS DOMICILIO
+  function geocodeAddress(address) {
+    return fetch(
+      `https://maps.googleapis.com/maps/api/geocode/json?address=${encodeURIComponent(
+        address
+      )}&key=${apiKey}`
+    )
+      .then((response) => response.json())
+      .then((data) => {
+        if (data.results.length > 0) {
+          const { lat, lng } = data.results[0].geometry.location;
+          return { lat, lng };
+        } else {
+          console.error(
+            "No se encontraron coordenadas para la dirección:",
+            address
+          );
+          return null;
+        }
+      })
+      .catch((error) => {
+        console.error("Error al geocodificar la dirección:", address, error);
+        return null;
+      });
+  }
+
+  //función para geocodificar todas las direcciones
+  async function geocodeAllAddresses(domiciliosFiltrados) {
+    const promises = domiciliosFiltrados.map(geocodeAddress);
+    const coordinates = await Promise.all(promises);
+    return coordinates.filter((coordinate) => coordinate !== null);
+  }
+
+  const [coordendasArray, setCoordendasArray] = useState([]);
+  const [loadingCoords, setLoadingCoords] = useState(false);
+
+  useEffect(() => {
+    // Evitar el bucle infinito
+    if (domiciliosFiltrados.length > 0 && !loadingCoords) {
+      setLoadingCoords(true); 
+      geocodeAllAddresses(domiciliosFiltrados)
+        .then((coordinates) => {
+          setCoordendasArray(coordinates);
+          setLoadingCoords(false); 
+        })
+        .catch((error) => {
+          console.error("Error al cargar coordenadas:", error);
+          setLoadingCoords(false); 
         });
-      }, [datosColegiosFiltrados]);
+    }
+  }, [domiciliosFiltrados, loadingCoords]);
 
-return (
+  console.log("desde provider",coordendasArray)
+
+  return (
     <ColegioContext.Provider
-    value={{
+      value={{
         datosColegios,
         departamentos,
         niveles,
@@ -86,18 +147,19 @@ return (
         datosColegiosFiltrados,
         setSelectedDepartamento,
         setSelectedNivel,
-        setSelectedIdioma
-    }}
+        setSelectedIdioma,
+        coordendasArray,
+      }}
     >
-    {children}
+      {children}
     </ColegioContext.Provider>
-)
-}
-
-ColegiosProvider.propTypes = {
-    children: PropTypes.node.isRequired,
+  );
 };
 
-export {ColegiosProvider}
+ColegiosProvider.propTypes = {
+  children: PropTypes.node.isRequired,
+};
 
-export default ColegioContext
+export { ColegiosProvider };
+
+export default ColegioContext;

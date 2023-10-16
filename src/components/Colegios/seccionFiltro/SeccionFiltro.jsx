@@ -23,7 +23,8 @@ function SeccionFiltro() {
   };
 
   
-  const handleSearch = () => {
+  const handleSearch = (e) => {
+    e.preventDefault();
     setSelectedDepartamento(selectedValues.departamento);
     setSelectedNivel(selectedValues.nivel);
     setSelectedIdioma(selectedValues.idioma);
@@ -84,7 +85,7 @@ function SeccionFiltro() {
               </select>
             </div>
             <div className="input-Fil">
-              <button type="button" onClick={handleSearch}>
+              <button type="submit" onClick={handleSearch}>
                 Buscar
               </button>
             </div>
