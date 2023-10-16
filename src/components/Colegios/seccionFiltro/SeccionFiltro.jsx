@@ -43,6 +43,7 @@ function SeccionFiltro() {
                 id="select-departamentos"
                 className="Departamento"
                 onChange={handleSelectChange}
+               
               >
                 <option value="">Seleccione</option>
                 {departamentos.map((departamento) => (
@@ -59,6 +60,8 @@ function SeccionFiltro() {
                 id="select-niveles"
                 className="Nivel"
                 onChange={handleSelectChange}
+              
+
               >
                 <option value="">Seleccione</option>
                 {niveles.map((nivel) => (
@@ -75,6 +78,7 @@ function SeccionFiltro() {
                 id="select-idiomas"
                 className="Idioma"
                 onChange={handleSelectChange}
+            
               >
                 <option value="">Seleccione</option>
                 {idiomas.map((idioma) => (

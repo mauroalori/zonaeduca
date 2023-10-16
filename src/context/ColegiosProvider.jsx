@@ -3,7 +3,6 @@ import PropTypes from "prop-types";
 import { datosColegios } from "../data/data";
 
 const ColegioContext = createContext();
-
 const ColegiosProvider = ({ children }) => {
   // DECLARAR ACA FUNCIONES
   {
@@ -76,7 +75,7 @@ const ColegiosProvider = ({ children }) => {
   //COORDENADAS
 
   // KEY
-  const apiKey = "AIzaSyBGxZRg95VBqkFtjqJE_LEYlVInDjLWxHE";
+  const apiKey = import.meta.env.VITE_REACT_APP_GOOGLE_MAPS_API_KEY;
 
   // EXTRAER LOS DOMICILIOS FILTRADOS
   const domiciliosFiltrados = datosColegiosFiltrados.map(
@@ -96,15 +95,14 @@ const ColegiosProvider = ({ children }) => {
           const { lat, lng } = data.results[0].geometry.location;
           return { lat, lng };
         } else {
-          console.error(
-            "No se encontraron coordenadas para la dirección:",
+          console.log(
+            "No se encontraron resultados para la dirección:",
             address
           );
-          return null;
         }
       })
       .catch((error) => {
-        console.error("Error al geocodificar la dirección:", address, error);
+        console.error("Error al geocodificar la dirección:", error);
         return null;
       });
   }
@@ -122,20 +120,20 @@ const ColegiosProvider = ({ children }) => {
   useEffect(() => {
     // Evitar el bucle infinito
     if (domiciliosFiltrados.length > 0 && !loadingCoords) {
-      setLoadingCoords(true); 
+      setLoadingCoords(true);
       geocodeAllAddresses(domiciliosFiltrados)
         .then((coordinates) => {
           setCoordendasArray(coordinates);
-          setLoadingCoords(false); 
+          setLoadingCoords(false);
         })
         .catch((error) => {
           console.error("Error al cargar coordenadas:", error);
-          setLoadingCoords(false); 
+          setLoadingCoords(false);
         });
     }
   }, [domiciliosFiltrados, loadingCoords]);
 
-  console.log("desde provider",coordendasArray)
+  console.log("desde provider", coordendasArray);
 
   return (
     <ColegioContext.Provider
