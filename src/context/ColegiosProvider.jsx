@@ -82,6 +82,33 @@ const ColegiosProvider = ({ children }) => {
     (colegio) => colegio.domicilio
   );
 
+  // ESTADOS 
+  const [coordendasArray, setCoordendasArray] = useState([]);
+  const [loadingCoords, setLoadingCoords] = useState(false);
+
+  
+  useEffect(() => {
+    if (!loadingCoords) {
+      if (domiciliosFiltrados.length > 0) {
+        setLoadingCoords(true);
+        const promises = domiciliosFiltrados.map(geocodeAddress);
+        Promise.all(promises)
+          .then((coordinates) => {
+            setCoordendasArray(coordinates.filter((coordinate) => coordinate !== null));
+            setLoadingCoords(false);
+          })
+          .catch((error) => {
+            console.error("Error al cargar coordenadas:", error);
+            setLoadingCoords(false);
+          });
+      } else {
+        setLoadingCoords(false);
+      }
+    }
+  }, [domiciliosFiltrados, loadingCoords]);
+
+  console.log("desde provider", coordendasArray);
+
   // CONSULTAR A LA API DE GOOGLE Y BUSCAR LOS DOMICILIO
   function geocodeAddress(address) {
     return fetch(
@@ -95,10 +122,8 @@ const ColegiosProvider = ({ children }) => {
           const { lat, lng } = data.results[0].geometry.location;
           return { lat, lng };
         } else {
-          console.log(
-            "No se encontraron resultados para la dirección:",
-            address
-          );
+          console.log("No se encontraron resultados para la dirección:", address);
+          return null;
         }
       })
       .catch((error) => {
@@ -106,34 +131,6 @@ const ColegiosProvider = ({ children }) => {
         return null;
       });
   }
-
-  //función para geocodificar todas las direcciones
-  async function geocodeAllAddresses(domiciliosFiltrados) {
-    const promises = domiciliosFiltrados.map(geocodeAddress);
-    const coordinates = await Promise.all(promises);
-    return coordinates.filter((coordinate) => coordinate !== null);
-  }
-
-  const [coordendasArray, setCoordendasArray] = useState([]);
-  const [loadingCoords, setLoadingCoords] = useState(false);
-
-  useEffect(() => {
-    // Evitar el bucle infinito
-    if (domiciliosFiltrados.length > 0 && !loadingCoords) {
-      setLoadingCoords(true);
-      geocodeAllAddresses(domiciliosFiltrados)
-        .then((coordinates) => {
-          setCoordendasArray(coordinates);
-          setLoadingCoords(false);
-        })
-        .catch((error) => {
-          console.error("Error al cargar coordenadas:", error);
-          setLoadingCoords(false);
-        });
-    }
-  }, [domiciliosFiltrados, loadingCoords]);
-
-  console.log("desde provider", coordendasArray);
 
   return (
     <ColegioContext.Provider
