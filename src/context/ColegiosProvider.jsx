@@ -85,29 +85,23 @@ const ColegiosProvider = ({ children }) => {
   // ESTADOS 
   const [coordendasArray, setCoordendasArray] = useState([]);
   const [loadingCoords, setLoadingCoords] = useState(false);
-
   
+  // CONSULTAR A LA API DE GOOGLE Y BUSCAR LOS DOMICILIO
   useEffect(() => {
-    if (!loadingCoords) {
-      if (domiciliosFiltrados.length > 0) {
-        setLoadingCoords(true);
-        const promises = domiciliosFiltrados.map(geocodeAddress);
-        Promise.all(promises)
-          .then((coordinates) => {
-            setCoordendasArray(coordinates.filter((coordinate) => coordinate !== null));
-            setLoadingCoords(false);
-          })
-          .catch((error) => {
-            console.error("Error al cargar coordenadas:", error);
-            setLoadingCoords(false);
-          });
-      } else {
-        setLoadingCoords(false);
-      }
+    if (!loadingCoords && domiciliosFiltrados.length > 0) {
+      setLoadingCoords(true);
+      const promises = domiciliosFiltrados.map(geocodeAddress);
+      Promise.all(promises)
+        .then((coordinates) => {
+          setCoordendasArray(coordinates.filter((coordinate) => coordinate !== null));
+          setLoadingCoords(false);
+        })
+        .catch((error) => {
+          console.error("Error al cargar coordenadas:", error);
+          setLoadingCoords(false);
+        });
     }
-  }, [domiciliosFiltrados, loadingCoords]);
-
-  console.log("desde provider", coordendasArray);
+  }, [domiciliosFiltrados, loadingCoords, apiKey]);
 
   // CONSULTAR A LA API DE GOOGLE Y BUSCAR LOS DOMICILIO
   function geocodeAddress(address) {
@@ -131,8 +125,9 @@ const ColegiosProvider = ({ children }) => {
         return null;
       });
   }
-
-  return (
+    
+      console.log("desde provider", coordendasArray);
+      return (
     <ColegioContext.Provider
       value={{
         datosColegios,

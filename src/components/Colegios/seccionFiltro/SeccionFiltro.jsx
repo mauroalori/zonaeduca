@@ -1,6 +1,7 @@
 import "./filtro.css";
 import UseColegio from "../../../hooks/UseColegio";
-import { useState } from "react"; // Importa useState si aún no lo has hecho
+import { useState } from "react"; 
+
 
 function SeccionFiltro() {
   const {
@@ -54,7 +55,7 @@ function SeccionFiltro() {
               </select>
             </div>
             <div className="input-Fil">
-              <label htmlFor="Nivel">Nivel</label>
+              <label htmlFor="Nivel" >Nivel</label>
               <select
                 name="nivel"
                 id="select-niveles"
