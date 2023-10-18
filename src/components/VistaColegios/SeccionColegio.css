@@ -1,0 +1,147 @@
+.dato-colegio {
+    width: 100%;
+    height: 100%;
+    color: #00405B;
+}
+
+.nom-colegio {
+    top: 50px;
+    height: 100px;
+    width: 100%;
+    margin-top: 6rem;
+    margin-bottom: 0.2rem;
+}
+
+.icon-flecha {
+    margin-left: 2rem;
+    width: 2.5rem;
+    height: 2rem;
+}
+
+.nombre-colegio {
+    text-align: center;
+    font-size: 2em;
+    font-weight: 550;
+}
+
+.niveles {
+    display: flex;
+    justify-content: center;
+
+}
+
+.nivel {
+    margin: 18px;
+    padding: 12px;
+    background-color: #c0fac0;
+    border-radius: 20px;
+    display: inline-block;
+    gap: 2rem;
+}
+
+.descripcion-colegio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.8rem;
+    margin: 2rem;
+    height: 25rem
+}
+
+.descrip-imagen,
+.descrip-cole {
+    width: 50%;
+    font-size: 1rem;
+}
+
+.img-cole {
+    width: 550px;
+    height: 360px;
+    object-fit: cover;
+}
+
+.contacto {
+    width: 100%;
+    height: 8rem;
+}
+
+.contact-info {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.item-cole {
+    font-size: 1.5em;
+    font-weight: 550;
+    margin-left: 4rem;
+    margin-top: 1.5rem;
+}
+
+.icon-circulo {
+    width: 10px;
+    height: 10px;  
+    margin-right: 10px;
+}
+
+
+.contact-info li,
+.caracteristica li {
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+    margin-bottom: 10px;
+    margin-left: 6rem;
+}
+
+.contact-info p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.contact-info p strong {
+    font-weight: bold;
+}
+.caracter-cole{
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+    margin-left: 4rem;
+}
+.icon-caracter{
+    width: 50px;
+    height: 50px;
+}
+.item2-cole{
+    font-size: 1.5em;
+    font-weight: 550;
+    margin-left: 1rem;
+}
+
+.idiomas {
+    margin-top: 20px; 
+}
+
+.idiomas-list {
+    display: flex; 
+    list-style: none; 
+    padding: 0;
+    margin-left: 6rem;
+    margin-top: 1rem;
+}
+
+.idiomas-item {
+    display: flex; 
+    align-items: center; 
+    margin-right: 50px; 
+}
+
+.idiomas-item img {
+    margin-right: 10px; /* Espacio entre la imagen y el texto */
+}
+
+
+
+
+
+

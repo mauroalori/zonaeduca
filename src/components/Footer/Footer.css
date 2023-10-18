@@ -16,6 +16,7 @@
     max-width: 66.666667%; 
     margin-top: 2rem;   
 }
+
 @media screen and (max-width: 992px){
     .copyright{
         font-size: 14px;
@@ -34,17 +35,25 @@
 /*Pantallas sm Smartphones*/
 @media screen and (max-width: 576px) {
     .copyright{
-        font-size: 10px;
+        font-size: 8px;
     }
     .footer {
         display: flex;
         flex-direction: column;
+        align-items: center;
+        padding: 0.5rem;
     }
     .enlaces {
+        width: auto;
         display: flex;
-        flex-direction: row;
         align-items: flex-start;
         justify-content: flex-start;
         flex-wrap: nowrap;
+        gap: 2rem;
+        margin: 2rem;
+    }
+    .lista-enlace{
+        min-width: 120px;
+        margin: 0;
     }
 }

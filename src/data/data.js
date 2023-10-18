@@ -709,7 +709,7 @@ const datosColegios = [
         "mail": "JARDIN@INSTITUTODUAYEN.EDU.AR/PRIMARIA@INSTITUTODUAYEN.EDU.AR/dCUNDARIA@ISTITUTODUAYEN.EDU.AR",
         "descripcion": "Duayen es un colegio comprometido con la educación ambiental, fomentando en nuestros estudiantes una conciencia ecológica profunda. Nuestra enseñanza no solo se enfoca en el desarrollo académico, sino también en la responsabilidad ambiental, promoviendo prácticas sostenibles y respetuosas con el entorno natural.",
         "tipo": "Comun",
-        "imagen": foto1,
+        "imagen": institutoDuayen,
         "caracteristicas": [
             "Biblioteca"
         ],
@@ -732,7 +732,7 @@ const datosColegios = [
         "mail": "info@siglonuevo.edu.ar",
         "descripcion": "Del Siglo Nuevo, también conocido como Fundación Pio Roncoroni, es una institución educativa fundada en 1987, de gestión privada, mixta, de jornada completa y de formación laica. Se enseña el idioma Inglés, con la posibilidad de aplicar a certificaciones internacionales. Su Jardín de Infantes es conocido como ColmenitasDel Siglo Nuevo ofrece servicios educativos en la modalidad de educación común en 3 niveles: jardín maternal, jardin de infantes y nivel primario.",
         "tipo": "Comun",
-        "imagen": foto1,
+        "imagen": escuelaSigloNuevo,
         "caracteristicas": [
             "Prácticas profesionales",
             "Nutrición",
@@ -756,7 +756,7 @@ const datosColegios = [
         "mail": "BAY@BAYARD.ESC.EDU.AR",
         "descripcion": "Bayard es un colegio fundado en 1956, de gestión privada, mixto, de jornada completa y de formación laica. Se enseñan los idiomas inglés y francés, con carácter bilingüe, con la posibilidad de aplicar a certificaciones internacionales.Bayard ofrece servicios educativos en la modalidad de educación común en 4 niveles: jardín maternal, jardin de infantes, nivel primario y nivel secundario. El nivel secundario otorga el título de Bachiller con 2 posibles orientaciones: Ciencias Naturales y Comunicación.",
         "tipo": "Comun",
-        "imagen": foto1,
+        "imagen": institutoBayard,
         "caracteristicas": [
             "Prácticas profesionales",
             "Nutrición",
@@ -782,7 +782,7 @@ const datosColegios = [
         "mail": "SECRETARIASEC@DONBOSCO.EDU.AR",
         "descripcion": "Don Bosco es un colegio de gestión privada, mixto, de jornada completa opcional y con orientación en valores de la religión Católica; disponiendo de infraestructura religiosa propia.Don Bosco ofrece servicios educativos en la modalidad de educación común en 2 niveles: nivel primario, nivel secundario. El nivel secundario otorga el título de Bachiller con 2 posibles orientaciones: Ciencias Sociales & Humanidades y Economía & Administración.",
         "tipo": "Comun",
-        "imagen": foto1,
+        "imagen": colegioDonBosco,
         "caracteristicas": [
             "Ayuda terapéutica",
             "Servicios de transporte"
@@ -806,7 +806,7 @@ const datosColegios = [
         "mail": "dep_epc24_de12@bue.edu.ar",
         "descripcion": "La Escuela Nº 24 DE 12 Padre Castañeda es una escuela de jornada completa de gestión pública perteneciente al Distrito Escolar 12.La escuela, de Educación Primaria, tiene como finalidad garantizar el acceso a saberes, prácticas y experiencias culturales relevantes para la realización integral de las personas; brindar los saberes y experiencias necesarias para que los niños puedan ejercer diferentes maneras de participación en una sociedad democrática y formarse como ciudadanos; promover el desarrollo de la personalidad, el pensamiento crítico, la solidaridad social y el juicio moral autónomo incrementando en los alumnos, la capacidad de conocerse, de conocer el mundo y producir cambios.",
         "tipo": "Comun",
-        "imagen": foto1,
+        "imagen": padreCastaneda,
         "caracteristicas": [
             "Prácticas profesionales",
             "Biblioteca"
@@ -828,7 +828,7 @@ const datosColegios = [
         "mail": "adm.a290@mcabrini.org.ar",
         "descripcion": "Cabrini es un instituto fundado en 1901, de gestión privada, mixto, de jornada extendida y con orientación en valores de la religión Católica; disponiendo de infraestructura religiosa propia.Cabrini ofrece servicios educativos en la modalidad de educación común en 3 niveles: jardin de infantes, nivel primario y nivel secundario.",
         "tipo": "Comun",
-        "imagen": foto1,
+        "imagen": institutoCabrini,
         "caracteristicas": [
             "Gimnasio"
         ],
@@ -852,7 +852,7 @@ const datosColegios = [
         "mail": "IEHARILAOS@GMAIL.COM",
         "descripcion": "Elisa Harilaos, también conocido como Hermanas Rosarinas, es un instituto fundado en 1934, de gestión privada, mixto, de jornada simple y con orientación en valores de la religión Católica; disponiendo de infraestructura religiosa propia.Elisa Harilaos ofrece servicios educativos en la modalidad de educación común en 3 niveles: jardin de infantes, nivel primario y nivel secundario. El nivel secundario otorga el título de Bachiller con 3 posibles orientaciones: Ciencias Naturales, Economía & Administración, Comunicación.",
         "tipo": "Comun",
-        "imagen": foto1,
+        "imagen": institutoElisaHarilaos,
         "caracteristicas": [
             "Servicios de transporte",
             "Prácticas profesionales"
@@ -876,7 +876,7 @@ const datosColegios = [
         "mail": "SECGRAL@COLEGIODELSALVADOR.ESC.EDU.AR",
         "descripcion": "Del Salvador es un colegio fundado en 1868, de gestión privada, mixto, de jornada completa y con orientación en valores de la religión Católica; disponiendo de infraestructura religiosa propia. Se enseñan los idiomas inglés y francés, con la posibilidad de aplicar a certificaciones internacionales.Del Salvador ofrece servicios educativos en la modalidad de educación común en 4 niveles: jardín maternal, jardin de infantes, nivel primario y nivel secundario.",
         "tipo": "Comun",
-        "imagen": foto1,
+        "imagen": colegioDelSalvador,
         "caracteristicas": [
             "Biblioteca",
             "Prácticas profesionales",
@@ -901,7 +901,7 @@ const datosColegios = [
         "mail": "SECUNDARIODNJ@HOTMAIL.COM/PRIMARIODJN@HOTMAIL.COM",
         "descripcion": "Dulcísimo Nombre de Jesús es un instituto de gestión privada, mixto, de jornada simple y con orientación en valores de la religión Católica; disponiendo de infraestructura religiosa propia.Dulcísimo Nombre de Jesús ofrece servicios educativos en la modalidad de educación común en 3 niveles: jardin de infantes, nivel primario y nivel secundario.",
         "tipo": "Comun",
-        "imagen": foto1,
+        "imagen": institutoDulcisimoNombreDeJesus,
         "caracteristicas": [
             "Biblioteca"
         ],
@@ -918,13 +918,13 @@ const datosColegios = [
         "id": 35,
         "jurisdiccion": "Ciudad de Buenos Aires",
         "departamento": "Comuna 3",
-        "nombre": "COLEGIO ARGENTINO ARABE OMAR BIN AL-JATTAB",
+        "nombre": "INSTITUTO ARGENTINO ARABE ISLAMICO",
         "domicilio": "HUMBERTO Iº 3046 SAN CRISTOBAL 3052",
         "telefono": "011 4932-4932-5188 INT 118-119-121-125/ 4931-5934 INT 121/124",
         "mail": "COLEGIO.OMARBINALJATTAB@ISLAM.COM.AR",
         "descripcion": "Argentino Arabe Islámico es un instituto de gestión privada, mixto, de jornada simple y con orientación en valores de la religión Islámica. Es considerada como una institución de colectividad. Se enseñan los idiomas inglés y árabe en un nivel general.Argentino Arabe Islámico ofrece servicios educativos en la modalidad de educación común en 4 niveles: jardín maternal, jardin de infantes, nivel primario y nivel secundario. El nivel secundario otorga el título de Bachiller con orientación en Economía & Administración.",
         "tipo": "Comun",
-        "imagen": foto1,
+        "imagen": institutoArgentinoArabeIslamico,
         "caracteristicas": [
             "Laboratorios"
         ],
@@ -947,7 +947,7 @@ const datosColegios = [
         "mail": "administracion@dellibertador.com.ar",
         "descripcion": "Del Libertador, también conocido como Granaderos de San Martín, es un colegio de gestión privada, mixto, de jornada completa y de formación laica. Se enseña el idioma Inglés, con carácter bilingüe, con la posibilidad de aplicar a certificaciones internacionales.Del Libertador ofrece servicios educativos en la modalidad de educación común en 4 niveles: jardín maternal, jardin de infantes, nivel primario y nivel secundario.",
         "tipo": "Comun",
-        "imagen": foto1,
+        "imagen": colegioDelLibertador,
         "caracteristicas": [
             "Servicios de transporte",
             "Laboratorios",
@@ -972,7 +972,7 @@ const datosColegios = [
         "mail": "analistaico@gmail.com",
         "descripcion": "Cristo Obrero es un instituto fundado en 1936, de gestión privada, mixto, de jornada simple y con orientación en valores de la religión Católica; disponiendo de infraestructura religiosa propia.Cristo Obrero ofrece servicios educativos en la modalidad de educación común en 5 niveles: jardin de infantes, nivel primario, nivel secundario, nivel superior, nivel superior técnico (inet). El nivel secundario otorga el título de Bachiller con 2 posibles orientaciones: Economía & Administración y Informática & Tecnología.",
         "tipo": "Comun",
-        "imagen": foto1,
+        "imagen": institutoCristoObrero,
         "caracteristicas": [
             "Ayuda terapéutica",
             "Gimnasio",
@@ -998,7 +998,7 @@ const datosColegios = [
         "mail": "INFO@COLEGIOALAS.COM.AR",
         "descripcion": "Alas es un instituto fundado en 1995, de gestión privada, mixto, de jornada completa opcional y de formación laica. Se enseña el idioma Inglés, con la posibilidad de aplicar a certificaciones internacionales.Alas ofrece servicios educativos en la modalidad de educación común en 2 niveles: jardin de infantes y nivel primario.",
         "tipo": "Comun",
-        "imagen": foto1,
+        "imagen": institutoEducativoAlas,
         "caracteristicas": [
             "Biblioteca"
         ],
@@ -1021,7 +1021,7 @@ const datosColegios = [
         "mail": "SECRETARIAMEDIA@CARLOSSTEEB.EDU.AR",
         "descripcion": "Carlos Steeb es un instituto fundado en 1953, de gestión privada, mixto, de jornada extendida y con orientación en valores de la religión Católica. Se enseñan los idiomas inglés y italiano, con la posibilidad de aplicar a certificaciones internacionales.Carlos Steeb ofrece servicios educativos en la modalidad de educación común en 4 niveles: jardín maternal, jardin de infantes, nivel primario y nivel secundario. El nivel secundario otorga el título de Bachiller con 3 posibles orientaciones: Ciencias Sociales & Humanidades, Economía & Administración, Arte.",
         "tipo": "Comun",
-        "imagen": foto1,
+        "imagen": institutoCarlosSteeb,
         "caracteristicas": [
             "Talleres"
         ],
@@ -1045,7 +1045,7 @@ const datosColegios = [
         "mail": "COLEGIO_ARGENTINO_BFM@YAHOO.COM.AR",
         "descripcion": "Baldomero Fernández Moreno, también conocido como Colegio Argentino, es un colegio fundado en 1978, de gestión privada, mixto, de jornada simple y de formación laica. Su Jardín de Infantes es conocido como Alelí Baldomero Fernández Moreno ofrece servicios educativos en la modalidad de educación común en 3 niveles: jardín maternal, jardin de infantes y nivel primario.",
         "tipo": "Comun",
-        "imagen": foto1,
+        "imagen": colegioArgentinoBaldomeroFernandezMoreno,
         "caracteristicas": [
             "Nutrición",
             "Prácticas profesionales"
@@ -1069,7 +1069,7 @@ const datosColegios = [
         "mail": "SECUNDARIA@SANTIAGOAPOSTOL.EDU.AR /PRIMARIA@SANTIAGOAPOSTOL.EDU.AR",
         "descripcion": "El Colegio Santiago Apóstol es una obra de la Xunta de Galicia y del Centro Galicia de Buenos Aires –a través de la Fundación Galicia-América– que tiene el propósito de desarrollar un proyecto educativo bicultural en todos los niveles de enseñanza.La creación del primer colegio gallego en el exterior siempre estuvo en la mente de la colectividad gallega en la emigración.",
         "tipo": "Comun",
-        "imagen": foto1,
+        "imagen": institutoArgentinoGallegoSantiagoApostol,
         "caracteristicas": [
             "Nutrición",
             "Biblioteca"
@@ -1094,7 +1094,7 @@ const datosColegios = [
         "mail": "secretaria@escuelabereshit.org.ar",
         "descripcion": "Aaron Angel, también conocido como Instituto Educativo Bereshit, es una institución educativa de gestión privada, mixta, de jornada completa y con orientación en valores de la religión Judía; disponiendo de infraestructura religiosa propia. Es considerada como una institución de colectividad. Se enseñan los idiomas inglés y hebreo en un nivel general.Aaron Angel ofrece servicios educativos en la modalidad de educación común en 3 niveles: jardín maternal, jardin de infantes y nivel primario.",
         "tipo": "Comun",
-        "imagen": foto1,
+        "imagen": institutoEducativoAaronAngel,
         "caracteristicas": [
             "Nutrición",
             "Prácticas profesionales"
@@ -1117,7 +1117,7 @@ const datosColegios = [
         "mail": "ESBAFLORES@ESBAFLORES.EDU.AR",
         "descripcion": "ESBA Flores es una institución educativa de gestión privada, mixta, de jornada simple y de formación laica. Se enseñan los idiomas inglés y portugues, con la posibilidad de aplicar a certificaciones internacionales.ESBA Flores ofrece servicios educativos en la modalidad de educación común en 5 niveles: jardin de infantes, nivel primario, nivel secundario, nivel superior, nivel superior técnico (inet). El nivel secundario otorga el título de Bachiller con 2 posibles orientaciones: Comunicación y Informática & Tecnología.",
         "tipo": "Comun",
-        "imagen": foto1,
+        "imagen": institutoEsbaFlores,
         "caracteristicas": [
             "Laboratorios"
         ],
@@ -1141,7 +1141,7 @@ const datosColegios = [
         "mail": "dei_jii4_de14@bue.edu.ar",
         "descripcion": "Ofrece servicios educativos de gestión estatal en la modalidad de educación común en los niveles de maternal y jardín.El nivel inicial brinda servicio educativo a la población infantil comprendida entre los 45 días de vida y los 5 años de edad, promoviendo ámbitos propicios para cubrir las necesidades afectivas, educativas y de contención social de los niños de la Ciudad y estimulando mecanismos de participación y trabajo conjunto entre las familias y la escuela.",
         "tipo": "Comun",
-        "imagen": foto1,
+        "imagen": jardinDeLosArbolesDe14,
         "caracteristicas": [
             "Talleres",
             "Biblioteca"
@@ -1164,7 +1164,7 @@ const datosColegios = [
         "mail": "rdstoler@gmail.com",
         "descripcion": "La Escuela de Hilel cuenta con la fuerza, la solidez, la trayectoria y el enorme orgullo de saber que nuestros egresados son personas íntegras, exitosas en sus estudios, comprometidos con el prójimo haciendo de éste, un mundo mejor.La Escuela de Hilel, tiene abierta sus puertas para todos los chicos y sus familias, más allá de cualquier situación socio económica, que quieran recibir educación judía en un marco comunitario de cálida contención.",
         "tipo": "Comun",
-        "imagen": foto1,
+        "imagen": institutoPrivadoLaEscuelaDeHilel,
         "caracteristicas": [
             "Gimnasio",
             "Nutrición",
@@ -1188,7 +1188,7 @@ const datosColegios = [
         "mail": "INSTITUCIONAL@BETH.ORG.AR",
         "descripcion": "Beth es un bastión de educación e innovación en Argentina, un colegio judío bilingüe que se destaca por su excelencia académica y su profundo compromiso con la identidad judía y la comunidad. Nuestra visión es ser un faro de referencia en la comunidad educativa, mientras que nuestra misión es formar a estudiantes bilingües en inglés, arraigados en su herencia judía y comprometidos con la sociedad. En un entorno que promueve la creatividad, el bienestar y el respeto por la individualidad, en Beth forjamos ciudadanos globales conscientes, preparados para afrontar los desafíos del mundo moderno y contribuir de manera significativa tanto a la sociedad como a la comunidad judía.",
         "tipo": "Comun",
-        "imagen": foto1,
+        "imagen": colegioBeth,
         "caracteristicas": [
             "Prácticas profesionales"
         ],
@@ -1210,7 +1210,7 @@ const datosColegios = [
         "mail": "JARDINDELFONDO@HOTMAIL.COM",
         "descripcion": "Dulcísimo Nombre de Jesús es un instituto de gestión privada, mixto, de jornada simple y con orientación en valores de la religión Católica; disponiendo de infraestructura religiosa propia.Dulcísimo Nombre de Jesús ofrece servicios educativos en la modalidad de educación común en 3 niveles: jardin de infantes, nivel primario y nivel secundario.",
         "tipo": "Comun",
-        "imagen": foto1,
+        "imagen": elJardinDelFondo,
         "caracteristicas": [
             "Prácticas profesionales",
             "Talleres",
@@ -1234,7 +1234,7 @@ const datosColegios = [
         "mail": "DINDI@FIBERTEL.COM.AR",
         "descripcion": "Din Di Lat es una institución educativa de gestión privada, mixta, de jornada completa opcional y de formación laica. No dicta idiomas.Din Di Lat ofrece servicios educativos en la modalidad de educación común en 2 niveles: jardín maternal, jardin de infantes.",
         "tipo": "Comun",
-        "imagen": foto1,
+        "imagen": jardinDeInfantesDinDiLat,
         "caracteristicas": [
             "Servicios de transporte",
             "Gimnasio"
@@ -1257,7 +1257,7 @@ const datosColegios = [
         "mail": "SECUNDARIA@ARGENTINASCHOOL.EDU.AR",
         "descripcion": "Argentina School es un colegio fundado en 1964, de gestión privada, mixto, de jornada completa y de formación laica. Se enseña el idioma Inglés, con carácter bilingüe, con la posibilidad de aplicar a certificaciones internacionales.Argentina School ofrece servicios educativos en la modalidad de educación común en 4 niveles: jardín maternal, jardin de infantes, nivel primario y nivel secundario.",
         "tipo": "Comun",
-        "imagen": foto1,
+        "imagen": escuelaArgentina,
         "caracteristicas": [
             "Biblioteca",
             "Nutrición"
@@ -1282,7 +1282,7 @@ const datosColegios = [
         "mail": "rectora@cnba.uba.ar.",
         "descripcion": "Buenos Aires es un colegio fundado en 1911, de gestión privada, mixto, de jornada extendida y de formación laica.Buenos Aires ofrece servicios educativos en la modalidad de educación común en 4 niveles: jardín maternal, jardin de infantes, nivel primario y nivel secundario. El nivel secundario otorga el título de Bachiller con orientación en Economía & Administración.",
         "tipo": "Comun",
-        "imagen": foto1,
+        "imagen": colegioNacionalDeBuenosAires,
         "caracteristicas": [
             "Talleres",
             "Laboratorios"
@@ -1304,7 +1304,7 @@ const datosColegios = [
         "mail": "PRIMARIANSROSARIO@GMAIL.COM/SECUNDARIANSROSARIO@GMAIL.COM",
         "descripcion": "Nuestra Institución nace en 1879 cuando las HERMANAS DOMINICAS francesas llevan adelante la creación del “College de Notre –Dame du Saint Rosaire” en el barrio de  Almagro.Creciendo día a día y fortaleciendo el carisma dominico, nuestra familia educativa, con cada uno de sus profesionales se aboca a la implementación de una pedagogía moderna, respondiendo a los programas oficiales y a su vez a las necesidades de las nuevas generaciones de alumnos.Se destaca más que nada por ser un establecimiento que inculca valores espirituales en su alumnado. Para  quienes optan por jornada completa, por la tarde cuenta con diversos talleres de arte, pintura, teatro.",
         "tipo": "Comun",
-        "imagen": foto1,
+        "imagen": colegioNuestraSeñoraRosario,
         "caracteristicas": [
             "Ayuda terapéutica",
             "Servicios de transporte"
@@ -1329,7 +1329,7 @@ const datosColegios = [
         "mail": "vianneyinstituto@gmail.com",
         "descripcion": "Nuestro proyecto educativo tiene como objetivo general promover sobre todo la formación integral de los miembros de la comunidad educativa, como ciudadanos y como cristianos.Es una comunidad: expresa los valores por medio de auténticas relaciones interpersonales entre los miembros que la componen, y por el análisis individual y comunitario de la realidad en la cual se inserta.Es una comunidad educativa: se esfuerza para que cada uno de sus educandos, logren alcanzar las metas propuestas de crecimiento personal y social, conjuntamente con la familia.La obra educativa se basa en la pedagogía del amor, educando el corazón para la libertad. Se aspira a formar personalidades capaces de decidir y relacionarse libremente con responsabilidad creativa, laboriosa y reflexiva.",
         "tipo": "Comun",
-        "imagen": foto1,
+        "imagen": institutoSanJuanMaria,
         "caracteristicas": [
             "Prácticas profesionales",
             "Nutrición",
@@ -1354,7 +1354,7 @@ const datosColegios = [
         "mail": "DIVINOCORAZONINFO@DIVINOCORAZON.EDU.AR",
         "descripcion": "Nuestro colegio es un lugar de humanización integral donde se promueve el desarrollo de las capacidades de cada uno de nuestros alumnos en el orden personal, social y trascendente.Nos proponemos cultivar con asiduo cuidado las facultades intelectuales, desarrollar la capacidad del recto juicio, promover el sentido de los valores, preparar para la vida profesional, posibilitando la integración de cada uno de los miembros de la comunidad para que sean protagonistas y no espectadores o consumidores de cultura.Es por esto que seguimos creciendo, apuntando a construir una excelencia académica bajo la luz del Evangelio, a lograr calidad educativa impulsando teorías actualizadas de aprendizaje desde una antropología cristiana que permita que los alumnos aprendan a pensar, aprendan a aprender, aprendan a convivir, aprendan a hacer, aprendan a ser, aprendan a emprender activamente y obtengan buenos resultados para poner sus conocimientos al servicio de los demás, respetando e impulsando la diversidad y que crezcan armónica, humana y espiritualmente. Un lugar donde todos aprenden, es decir, una “comunidad de aprendizaje”.",
         "tipo": "Comun",
-        "imagen": foto1,
+        "imagen": colegioDivinoCorazon,
         "caracteristicas": [
             "Biblioteca",
             "Talleres",
@@ -1379,7 +1379,7 @@ const datosColegios = [
         "mail": "CESFJ_MEDIO@YAHOO.COM.AR  /  RECTORIASECUNDARIA@CESFJ.EDU.AR",
         "descripcion": "Nuestra escuela apunta a crear ese escenario en el cual los niños y las niñas se sientan alojados, brindándoles condiciones para su despliegue creativo y cooperativo, a partir de una propuesta variada y rica que responda a distintos intereses, ritmos de aprendizaje y formas de aprender.Trabajamos con proyectos donde los niños y las niñas sean protagonistas de su propio aprendizaje en un clima de trabajo participativo, colaborativo y fraterno, ofreciendo herramientas y estrategias que propicien el crecimiento personal junto al acompañamiento de todo el equipo docente, directivo y pedagógico.Durante nuestro trayecto educativo se acompañará a los jóvenes en la elaboración del propio proyecto de vida y en el descubrimiento de su vocación específica dentro de la comunidad y como cristianos comprometidos en medio del mundo, teniendo como pilares fundamentales los valores del Evangelio, los saberes necesarios y las habilidades básicas para proseguir sus estudios Universitarios y/ Terciarios o Superiores.",
         "tipo": "Comun",
-        "imagen": foto1,
+        "imagen": colegioSanFranciscoJavier,
         "caracteristicas": [
             "Gimnasio",
             "Biblioteca",
@@ -1405,7 +1405,7 @@ const datosColegios = [
         "mail": "INFO@PHILIPS.EDU.AR",
         "descripcion": "Somos una Escuela de nivel Secundario de Jornada Completa que desde 1951 aporta personal de primer nivel, al Mundo Empresario y Universitario, Nacional e Internacional. Nuestra experiencia pedagógica y seriedad científica nos permiten la formación integral de nuestros jóvenes para que puedan insertarse en el mundo laboral y en el campo social. Nuestra filosofía parte de una premisa fundamental: la consideración del alumno como persona. Contamos con un Cuerpo Profesional Docente de Excelencia, apoyado por moderna infraestructura edilicia, maquinarias, aparatos e instrumental de avanzada.",
         "tipo": "Comun",
-        "imagen": foto1,
+        "imagen": escuelaTecnicaPhilips,
         "caracteristicas": [
             "Talleres"
         ],
@@ -1426,7 +1426,7 @@ const datosColegios = [
         "mail": "INFO@COLEGIOURIARTE.COM.AR",
         "descripcion": "Fue fundado por una familia que dedicó su vida a la educación desde sus más tempranos comienzos. El 1º de octubre de 1988 comenzaron las obras para poner en funcionamiento un edificio del que -en primera instancia- se reciclarían un aula, un hall central y las instalaciones de cocina y baños. Nacido como un pequeño jardín de infantes, pronto surgió la necesidad de abrir más salas que permitieran la división de los niños por edades y la habilitación de un amplio espacio de juego como parte de la propuesta brindada a los niños.Sus fundadores buscaban integrar el IDIOMA INGLÉS como parte de la formación académica, considerando que una educación bilingüe representaba parte de las herramientas de vanguardia que debían brindársele a los niños.",
         "tipo": "Comun",
-        "imagen": foto1,
+        "imagen": colegioUriarte,
         "caracteristicas": [
             "Biblioteca",
             "Ayuda terapéutica"
@@ -1449,7 +1449,7 @@ const datosColegios = [
         "mail": "COLEBETANIA@GMAIL.COM",
         "descripcion": "El colegio Betania fue fundado en 1950 a partir de la iniciativa de la parroquia Santa María de Betania. Se trata de una escuela en la que el conocimiento y la atención personalizada de cada alumno constituye un claro distintivo del ideario que inspira su proyecto educativo, en el que el objetivo es lograr la formación integral de las personas, es decir el desarrollo y la integración armónica de sus posibilidades en las dimensiones espiritual, intelectual, humana y social siendo su lema el Integer Homo.",
         "tipo": "Comun",
-        "imagen": foto1,
+        "imagen": institutoBetania,
         "caracteristicas": [
             "Laboratorios"
         ],
@@ -1472,7 +1472,7 @@ const datosColegios = [
         "mail": "INFO@RINCONDELDUENDE.COM.AR",
         "descripcion": "Nuestra casa, ubicada en Bacacay 2561 del barrio de Flores, a metros de la estación y 1 cuadra de la plaza, dispone de 2 plantas (400 m2 cubiertos) totalmente equipadas con todo lo necesario para el desarrollo de nuestras actividades, y cumple íntegramente con las disposiciones de seguridad e higiene que exigen las instituciones reguladoras. Un amplio espacio para Maternal con división para cunas, cambiado y juegos, salas de 1, 2, 3, 4 y 5 años, y un gran patio con jardín de 170 m2, con juegos, muchos árboles y plantas, son las características que distinguen a nuestro lugar.",
         "tipo": "Comun",
-        "imagen": foto1,
+        "imagen": jardinRinconDelDuende,
         "caracteristicas": [
             "Nutrición",
             "Biblioteca"
@@ -1495,7 +1495,7 @@ const datosColegios = [
         "mail": "ESCUELALIBREMICAEL@GMAIL.COM",
         "descripcion": "La Escuela Libre Micael surge como un impulso conjunto de un grupo de padres, madres, y de maestros formados en la pedagogía Waldorf. Como un encuentro entre la necesidad de este grupo de familias, que quería elegir para sus hijos e hijas una institución educativa cuyo ideario respondiera a sus convicciones filosóficas y éticas, y docentes que, habiendo conocido la pedagogía Waldorf, profundizaron su formación en los seminarios específicos, e interpretaron la necesidad de que en esta zona de la Ciudad de Buenos Aires, barrio de Floresta existiera un colegio con esta pedagogía.Eran necesarios estos tres componentes (padres, niños y maestros capacitados) para que el impulso inicial tomara la fuerza necesaria, y enfrentará todos los obstáculos y se convirtiera en realidad palpable.A través de la creación de la Asociación Civil Escuela Libre Micael, entidad sin fines de lucro, se garantiza el libre y desinteresado desarrollo de la institución, como patrimonio del mundo y no de las personas que la constituyen.",
         "tipo": "Comun",
-        "imagen": foto1,
+        "imagen": escuelaLibreMicael,
         "caracteristicas": [
             "Prácticas profesionales"
         ],
@@ -1518,7 +1518,7 @@ const datosColegios = [
         "mail": "INFO@BUENOSAIRESMONTESSORI.COM",
         "descripcion": "Nuestra escuela ofrece una experiencia educativa Montessori auténtica, rica e individualizada, que guía y nutre el desarrollo natural de cada niño. Promovemos y alentamos a través del método Montessori el desarrollo integral físico, psíquico y social de nuestros niños.El trabajo realizado diariamente con los niños refuerza la confianza en sí mismos y su independencia ya que ambas características son cruciales para la máxima expresión del potencial humano. Respetamos los estilos personales de aprendizaje de cada niño y sus etapas de desarrollo.Dentro de nuestros ambientes “multiedad” enfatizamos el desarrollo social de los niños, el cual se da naturalmente. A medida que ellos aprenden a respetarse se tornan solidarios y cooperativos entre si. Creemos que el aprendizaje que se basa en experiencias vividas y compartidas es significativo y duradero.",
         "tipo": "Comun",
-        "imagen": foto1,
+        "imagen": colegioBuenosAiresMontessori,
         "caracteristicas": [
             "Gimnasio",
             "Nutrición"
@@ -1541,7 +1541,7 @@ const datosColegios = [
         "mail": "COLEGIO@TOGNONI.EDU.AR",
         "descripcion": "Nuestra escuela TOGNONI cuenta con una larga trayectoria en el barrio donde se encuentran docentes, ex-alumnos, alumnos y padres, que de generación en generación compartimos los mismos ideales y valores.Como escuela parroquial, junto al ideario de la Iglesia Católica, brindamos un espacio abierto a todos, buscando desarrollar las potencialidades de cada uno de nuestros alumnos y reconociéndolos como personas únicas en libre comunicación consigo misma, con el medio que la rodea y con Dios.",
         "tipo": "Comun",
-        "imagen": foto1,
+        "imagen": institutoAmbrosioTognoni,
         "caracteristicas": [
             "Gimnasio"
         ],
@@ -1564,7 +1564,7 @@ const datosColegios = [
         "mail": "INFO@COLEGIOGUIDOSPANO.COM",
         "descripcion": "El Instituto Nuevo Guido Spano es una familia de trabajadores, docentes y no docentes, comprometidos con una educación inclusiva, basada en la diversidad de miradas, en el respeto mutuo, en la importancia de la palabra del otro, en el valor de la imaginación y la creatividad y en la preponderancia del conocimiento. A lo largo de este trayecto aprendimos a confiar en nuestra fuerza como profesionales, unidos en un proyecto educativo sólido y duradero. Esto nos permitió sostenernos en el tiempo, superando las adversidades, siempre en la búsqueda de un objetivo mayor.Como asociados de una Cooperativa, encarnamos un proyecto que busca honrar los cimientos que hicieron fuerte a este establecimiento, pero tenemos también la responsabilidad de desarrollar una propuesta renovadora, que se adecue a los paradigmas de una sociedad que nos obliga a flexibilizar nuestras prácticas y pensar nuevos horizontes.Junto a ustedes, que han confiado desde siempre en el compromiso, la entrega y la pasión de todos los que hicieron y hacen el Guido Spano, esperamos construir una Nueva Historia, que sea digna de las páginas que nos preceden y que sea portadora de ese sueño con el que hoy llegan a Nuestro Colegio.",
         "tipo": "Comun",
-        "imagen": foto1,
+        "imagen": colegioGuidoSpano,
         "caracteristicas": [
             "Ayuda terapéutica",
             "Talleres"
@@ -1588,7 +1588,7 @@ const datosColegios = [
         "mail": "INFO@JARDINDELTIEMPO.COM.AR",
         "descripcion": "Tenemos el agrado de llegar por este medio a todas aquellos familias que están interesadas por la educación de sus hijos desde temprana edad, por esto queremos presentarles los servicios que brinda nuestra Escuela Infantil Jardín Del Tiempo. Sabemos que la sociabilidad del hombre se inicia en sus primeros años de vida, cuando comienza a comprender a las personas que lo rodean y a integrar sus vivencias, con todos los estímulos que el medio ambiente proporciona. Nuestra institución posee objetivos claros para que esto suceda, y queremos compartirlos con aquellos papas que están buscando un lugar para la integración y formación de sus hijos.Por todo esto queremos que usted tenga en cuenta que los tiempos han cambiado, que las instituciones como la nuestra, que trabajamos con niños de temprana edad son muy importantes en la estructura social y educativa. Hoy esta contemplada como “Educación Inicial” y esta se lleva a cabo en la “Escuela Infantil”, con un plantel de docentes, directores y profesionales especialmente capacitado como cuenta nuestra escuela.Con todos estos objetivos, somos la respuesta al crecimiento integral del niño, un proyecto educativo que atiende a los más pequeños y a las familias que confían en nosotros.",
         "tipo": "Comun",
-        "imagen": foto1,
+        "imagen": jardinDelTiempo,
         "caracteristicas": [
             "Servicios de transporte",
             "Gimnasio",
@@ -1612,7 +1612,7 @@ const datosColegios = [
         "mail": "DOLORESARG@HOTMAIL.COM",
         "descripcion": "Fundado en 1983, en Coghlan School acompañamos el crecimiento de los más chicos desde sus primeros años. Brindamos una educación de calidad para desarrollar los aspectos básicos de nuestros alumnos estimulando el lenguaje, la motricidad y la interacción entre pares.Queremos que nuestros egresados incorporan una base educativa esencial para continuar formándose en su próxima etapa educativa.Nos destacamos por nuestra calidad educativa, responsabilidad en el cuidado de nuestros alumnos y su buena alimentación.Lo invitamos a ponerse en contacto con nosotros para brindarle más información sobre nuestro programa educativo.",
         "tipo": "Comun",
-        "imagen": foto1,
+        "imagen": colegioCoghlan,
         "caracteristicas": [
             "Ayuda terapéutica",
             "Laboratorios",
@@ -1635,7 +1635,7 @@ const datosColegios = [
         "mail": "INFO@COLEGIOREYFAHD.ORG.AR",
         "descripcion": "El Colegio Rey Fahd es mixto y abierto a la comunidad. Está incorporado a la enseñanza oficial (A-1419) y bajo el lema “Educar en Valores”, propone como proyecto educativo la “Educación para la paz”.Es un proceso que debe estar presente en el desarrollo de la personalidad que debe ser continuo y permanente, para enseñar a 'aprender a vivir en la no violencia', y que confía en la creación de ámbitos de justicia, de respeto, de tolerancia y felicidad gradualmente más amplios. Educativamente pretendemos un proceso de enseñanza-aprendizaje de la cultura de la paz que implica una ética personal y social fundamentada en la convivencia en libertad y en igualdad, es decir, plenamente democrática.Esta concepción se inspira en el respeto y reconocimiento de todos los convenios internacionales que reconocen los Derechos Humanos, favorecen un concepto internacionalista y global de la sociedad humana, se fundamentan en carácter intercultural, pretendiendo el desarrollo de todos los pueblos en paz y libertad.",
         "tipo": "Comun",
-        "imagen": foto1,
+        "imagen": colegioReyFahd,
         "caracteristicas": [
             "Biblioteca",
             "Talleres"
@@ -1658,7 +1658,7 @@ const datosColegios = [
         "mail": "COLEGIO@NUEVOSRUMBOS.EDU.AR",
         "descripcion": "En 1985 abrimos las puertas de nuestra institución con un proyecto educativo cuya esencia se mantiene vigente.Estimulamos a cada uno de nuestros alumnos para que desarrolle al máximo su capacidad intelectual y creativa, alentando el esfuerzo personal y la responsabilidad en un camino de autonomía creciente.Formamos niños reflexivos, solidarios y comprometidos con la realidad.Trabajamos para que, al finalizar la escolaridad, nuestros egresados enfrenten exitosamente los siguientes niveles educativos, con una adecuada formación académica y humanística.Mantenemos con las familias un diálogo fluido, favoreciendo el seguimiento de todos los aspectos que hacen al desarrollo de cada niño.Nuestros docentes forman parte de un equipo de trabajo sólido y estable, que garantiza la continuidad pedagógica y afectiva de la propuesta educativa.Ofrecemos un ámbito donde es posible crecer respetando y valorando a cada uno, en un clima de seguridad y afecto.",
         "tipo": "Comun",
-        "imagen": foto1,
+        "imagen": colegioNuevosRumbos,
         "caracteristicas": [
             "Nutrición",
             "Laboratorios",
@@ -1683,7 +1683,7 @@ const datosColegios = [
         "mail": "CPDEVOTOTERCIARIO@GMAIL.COM Y CEVDEVOTO@YAHOO.COM.AR",
         "descripcion": "Nuestro colegio se basa en los Proyectos novedosos: en cada Asignatura los docentes proponen a los alumnos la realización de diferentes Proyectos vinculados a su área, que se materializan en Exposiciones, Trabajos Prácticos, Festivales de Arte, Feria de Naciones, Visitas Solidarias, Campeonatos Deportivos Intercolegiales, etc. Estos Proyectos promueven el desarrollo de la creatividad y aportan a la construcción de la vocación del adolescente.La construcción cotidiana de una sana convivencia para promover aprendizajes exitosos se lleva a cabo instalando el valor de la palabra y el diálogo como herramientas privilegiadas para lograrlo.",
         "tipo": "Comun",
-        "imagen": foto1,
+        "imagen": colegioPresencia,
         "caracteristicas": [
             "Biblioteca",
             "Prácticas profesionales"
@@ -1705,7 +1705,7 @@ const datosColegios = [
         "mail": "CONTACTO@COLEGIOPALERMOCHICO.EDU.AR",
         "descripcion": "En el Colegio motivamos a nuestros alumnos para que, al obrar, lo hagan guiados por la solidaridad, el respeto, la verdad y la justicia, siendo fieles a principios y valores que no cambian aunque varíen las exigencias de su tiempo.Para nuestra comunidad, obrar es obrar con otros y, muchas veces, por y para otros.«Solidaridad y Respeto» es nuestro lema, para formar a nuestros alumnos en una profunda actitud de servicio.",
         "tipo": "Comun",
-        "imagen": foto1,
+        "imagen": colegioPalermoChico,
         "caracteristicas": [
             "Gimnasio",
             "Talleres"
@@ -1729,7 +1729,7 @@ const datosColegios = [
         "mail": "INFO@COLEGIOPAIDEIA.EDU.AR",
         "descripcion": "El Colegio Paideia fue fundado en 1988, después de la dictadura militar, con el objetivo de revitalizar la educación secundaria. Se centró en estimular el pensamiento crítico, la creatividad y la expresión. Adoptaron un plan de estudios innovador que incluyó talleres y asignaturas adicionales, como lectura silenciosa sostenida, talleres de diversas disciplinas y un enfoque bilingüe. También realizaron simulacros de exámenes internacionales y evaluaciones integrales. Los estudiantes completaron sus estudios con una tesina. La metodología y evaluación se diseñaron para preparar a los estudiantes para la universidad. Además, organizaron viajes de estudio, campamentos y actividades comunitarias. A lo largo de los años, estas actualizaciones fortalecieron el proyecto y atrajeron a más familias, alcanzando una población de 250 alumnos. El proyecto pedagógico Paideia se ha consolidado en la educación media y se proyecta en la vida de sus egresados, listos para enfrentar nuevos desafíos.",
         "tipo": "Comun",
-        "imagen": foto1,
+        "imagen": colegioPaideia,
         "caracteristicas": [
             "Gimnasio",
             "Ayuda terapéutica",
@@ -1752,7 +1752,7 @@ const datosColegios = [
         "mail": "OXFORD@VANEDUC.EDU.AR",
         "descripcion": "Oxford High School es un Colegio perteneciente al Grupo VANEDUC. Inició sus actividades en 1991 bajo la conducción de la profesora Hebe Zemborain.El grupo VANEDUC es un centro de investigación y asesoramiento educativo con sede en Argentina. Inició sus actividades en el año 1942 bajo la conducción del Profesor Alberto Dandreu y del Dr. Antonio Canale. En la actualidad se desempeña como Asesor General el Dr. Edgardo Néstor De Vincenzi.Con más de 70 años de experiencia en educación, esta organización ha desarrollado en el ámbito nacional e internacional una serie de proyectos educativos, tendiendo a lograr el máximo aprovechamiento del potencial humano. En su vasta trayectoria y a través de las instituciones que la representan, han pasado más de 100.000 familias y en la actualidad alberga 20.000 más.Conforman el personal permanente de Vaneduc, 2.500 educadores, docentes altamente capacitados, recibiendo permanente actualización en cada área del conocimiento, que desempeñan su trabajo en las áreas administrativa y pedagógica, junto a un plantel de Asesoría General.VANEDUC cuenta con 1.200.000 m2 destinados a la enseñanza entre sus 7 colegios, su Universidad y oficinas, ubicados en Capital Federal y Gran Buenos Aires. Equipados con tecnología de avanzada, biblioteca, videoteca, laboratorios de idioma e informática y gimnasios propios en cada colegio, ofreciendo los siguientes niveles de enseñanza: Educación Inicial (Jardín Maternal y Jardín de Infantes), Educación Primaria, Educación Secundaria, Educación Superior (Nivel Terciario, Nivel Universitario y Nivel Cuaternario).",
         "tipo": "Comun",
-        "imagen": foto1,
+        "imagen": colegioOxford,
         "caracteristicas": [
             "Talleres",
             "Biblioteca",
@@ -1778,7 +1778,7 @@ const datosColegios = [
         "mail": "INFO@SMT.EDU.AR",
         "descripcion": "La Fundación San Martín de Tours es propietaria del Colegio San Martín de Tours Mujeres, cuyo lema es Crecer juntos en el conocimiento, el amor y la fe.Sus fundadores fueron 110 matrimonios, junto con la parroquia San Martín de Tours. Está integrada por un Consejo Directivo de diez padres y una Comisión de Fiscalización, formada por dos miembros designados por el Vicario de la parroquia San Martín de Tours que asesora doctrinalmente al Consejo Directivo. Este último elige a sus miembros entre padres y madres de la comunidad. La Fundación San Martín de Tours no tiene fines de lucro y está orientada hacia los principios de la religión católica, respetando la libertad de conciencia religiosa y permaneciendo desvinculada de toda actividad política.",
         "tipo": "Comun",
-        "imagen": foto1,
+        "imagen": colegioSanMartinDeTours,
         "caracteristicas": [
             "Laboratorios",
             "Gimnasio"
@@ -1803,7 +1803,7 @@ const datosColegios = [
         "mail": "karibujardin@gmail.com",
         "descripcion": "Karibú nace con la llegada de Paloma a nuestras vidas. Ello nos motivo a investigar acerca de las necesidades de un recién nacido y de sus familias, a la hora de confiar en un jardín que reuniera todas las condiciones para albergar a los niños. ​Elegir la Institución adecuada es una decisión importante. Por esta razón, en Karibú, nos esforzamos en crear un ambiente adecuado utilizando una gran variedad de materiales diseñados y seleccionados acorde a las edades y actividades a realizar. Contamos con el personal calificado para llevarlo a cabo y recibir a sus hijos en un ambiente cálido.",
         "tipo": "Comun",
-        "imagen": foto1,
+        "imagen": jardinKaribu,
         "caracteristicas": [
             "Servicios de transporte"
         ],
@@ -1825,7 +1825,7 @@ const datosColegios = [
         "mail": "INFOHERMANOSOL@GMAIL.COM",
         "descripcion": "Funciona en el barrio desde hace más de 20 años; sosteniendo un proyecto pedagógico basado en el afecto, como pilar del proceso educativo; partiendo del juego como herramienta fundamental; y del conocimiento que cada maestra jardinera tiene de la etapa evolutiva en que cada nene se encuentra para ofrecerle una estimulación adecuada.Tenemos como objetivo estimular el desarrollo de las potencialidades que cada nene trae consigo, siempre desde una mirada lúdica.",
         "tipo": "Comun",
-        "imagen": foto1,
+        "imagen": jardinModeloHermanoSol,
         "caracteristicas": [
             "Ayuda terapéutica"
         ],
@@ -1847,7 +1847,7 @@ const datosColegios = [
         "mail": "INFO@JUANADEARCO.ORG",
         "descripcion": "La Escuela Waldorf Juana de Arco es una escuela de pedagogía Waldorf con niveles inicial, primario y secundario en la Ciudad de Buenos Aires. Trabaja en el logro de un arte pedagógico que acompañe las etapas evolutivas del desarrollo del niño de acuerdo con los principios de la Antroposofía. Aspira a la plena realización del ser humano en libertad, según el impulso del alma consciente llevado por Juana de Arco.",
         "tipo": "Comun",
-        "imagen": foto1,
+        "imagen": institutoJuanaDeArco,
         "caracteristicas": [
             "Laboratorios",
             "Biblioteca",
@@ -1872,7 +1872,7 @@ const datosColegios = [
         "mail": "HUGOBUTERA@HOTMAIL.COM",
         "descripcion": "Nacimos como institución educativa en 1995, nuestros primeros pasos los dimos con la creación del Jardín de Infantes ALADINO, que comenzó funcionando en una casa del barrio de Villa Lugano, en la calle Fonrouge, entre Av. Eva Perón y Hubac, de la Ciudad Autónoma de Buenos Aires. Pequeño mundo de alegrías, así era el lema del Jardín, desde el comienzo fuimos un entusiasta grupo de docentes con definida vocación por brindar una educación diferente acorde con los grandes cambios que se vivían. Nos acompañaba un grupo de familias comprometidas con la misma mirada: el mejor legado que podían brindarle a sus hijos era una educación de calidad.Sabemos que nos encontramos ante un desafío muy grande: la formación de una nueva generación de argentinos capaces de cambiar los viejos modelos. Esto exige un trabajo de equipo comprometido, permanente y serio.",
         "tipo": "Comun",
-        "imagen": foto1,
+        "imagen": institutoNacionesUnidas,
         "caracteristicas": [
             "Biblioteca",
             "Gimnasio"
