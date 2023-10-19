@@ -6,6 +6,7 @@ import {
 import iconMaps from "../../assets/gifs-iconos/escuela.png";
 import UseColegio from "../../hooks/UseColegio";
 
+
 function MapaColegios() {
   const { coordendasArray } = UseColegio();
 
