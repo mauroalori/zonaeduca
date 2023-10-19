@@ -10,6 +10,30 @@ import foto6 from "../assets/fotosComentarios/Foto6.jpg";
 
 
 //DEL 1 AL 25
+import misericordiaBelgrano from"../assets/fotosColegios/Nuestra señora de la Misericordia Belgrano.jpg";
+import lasCumbres from "../assets/fotosColegios/Colegio Las Cumbres.png";
+import neumen from "../assets/fotosColegios/Colegio Neumen.jpg";
+import daySchool from "../assets/fotosColegios/Colegio Belgrano Day School.jpg";
+import sanFranciscoJ from "../assets/fotosColegios/Colegio San Francisco Javier.png";
+import schiller from "../assets/fotosColegios/Instituto Schiller.jpg";
+import jii05 from "../assets/fotosColegios/Jii 05 de 09.png";
+import watson from "../assets/fotosColegios/Colegio Ingles Horacio Watson.jpg";
+import arcoIris from "../assets/fotosColegios/Escuela Arco Iris.png";
+import deLuca from "../assets/fotosColegios/Colegio Esteban de Luca.jpg";
+import tours from "../assets/fotosColegios/Instituto San Martin de Tours.png";
+import santaFelicitas from "../assets/fotosColegios/Instituto Santa Felicitas de San Vicente.jpg";
+import posse from "../assets/fotosColegios/Wenceslao Posee.png";
+import cayetano from "../assets/fotosColegios/San Cayetano.png";
+import corazonMaria from "../assets/fotosColegios/Corazon de Maria.png";
+import sudamericano from "../assets/fotosColegios/Sudamericano Modelo.png";
+import bustillo from "../assets/fotosColegios/Jose Maria Bustillo.png";
+import pedraza from "../assets/fotosColegios/Manuel Pedraza.png";
+import corazonJesus from "../assets/fotosColegios/Corazon de Jesus.png";
+import devotoShool from "../assets/fotosColegios/Villa Devoto School.jpg";
+import deLaCiudad from "../assets/fotosColegios/Colegio de la Ciudad.jpg";
+import labrador from "../assets/fotosColegios/Instituto San Isidro Labrador.png";
+import pueyrredon from "../assets/fotosColegios/Juan Martin de Pueyrredon.jpg";
+import deLujan from "../assets/fotosColegios/Santa Maria de Lujan.png"
 
 //DEL 26 AL 50
 import institutoDuayen from "../assets/fotosColegios/institutoDuayen.png";
