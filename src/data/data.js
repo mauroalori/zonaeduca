@@ -8,6 +8,7 @@ import foto6 from "../assets/fotosComentarios/Foto6.jpg";
 
 // FOTOS COLEGIOS 
 
+
 //DEL 1 AL 25
 
 //DEL 26 AL 50
