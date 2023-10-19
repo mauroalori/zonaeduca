@@ -7,6 +7,8 @@ import foto5 from "../assets/fotosComentarios/Foto5.jpg";
 import foto6 from "../assets/fotosComentarios/Foto6.jpg";
 
 // FOTOS COLEGIOS 
+
+
 //DEL 1 AL 25
 import misericordiaBelgrano from"../assets/fotosColegios/Nuestra señora de la Misericordia Belgrano.jpg";
 import lasCumbres from "../assets/fotosColegios/Colegio Las Cumbres.png";

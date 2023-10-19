@@ -1,6 +1,15 @@
-import { GoogleMap, useLoadScript, MarkerF as Marcador } from '@react-google-maps/api';
-import iconMaps from "../../assets/gifs-iconos/colegio2.png"
+import {
+  GoogleMap,
+  useLoadScript,
+  MarkerF as Marcador,
+} from "@react-google-maps/api";
+import iconMaps from "../../assets/gifs-iconos/escuela.png";
+import UseColegio from "../../hooks/UseColegio";
+
+
 function MapaColegios() {
+  const { coordendasArray } = UseColegio();
+
   const API_KEY = import.meta.env.VITE_REACT_APP_GOOGLE_MAPS_API_KEY;
   const { isLoaded } = useLoadScript({
     googleMapsApiKey: API_KEY,
@@ -8,29 +17,40 @@ function MapaColegios() {
 
   if (!isLoaded) return <div>Loading...</div>;
 
-  const center = {lat: -34.612181, lng: -58.441959}
+  const center = { lat: -34.612181, lng: -58.441959 };
+
+  const hayDatos = coordendasArray.length > 0;
 
   return (
     <>
-      <GoogleMap 
-        zoom={12} 
-        center={center} 
+      <GoogleMap
+        zoom={12}
+        center={center}
         mapContainerClassName="h-screen w-full"
       >
-        <Marcador position={center}
-        icon={{
-          url: iconMaps,
-          scaledSize: new window.google.maps.Size(150, 90),
-        }}
-        />
-        {/* {coords.map((coord) => (<Marcador position={coord} 
-        icon={{
-          url: iconMaps,
-          scaledSize: new window.google.maps.Size(60, 60),
-        }}/>))} */}
+        {hayDatos ? (
+          coordendasArray.map((coordenada, index) => (
+            <Marcador
+              key={index}
+              position={{ lat: coordenada.lat, lng: coordenada.lng }}
+              icon={{
+                url: iconMaps,
+                scaledSize: new window.google.maps.Size(60, 60),
+              }}
+            />
+          ))
+        ) : (
+          <Marcador
+            position={center}
+            icon={{
+              url: iconMaps,
+              scaledSize: new window.google.maps.Size(60, 60),
+            }}
+          />
+        )}
       </GoogleMap>
     </>
   );
 }
 
-export default MapaColegios
+export default MapaColegios;
