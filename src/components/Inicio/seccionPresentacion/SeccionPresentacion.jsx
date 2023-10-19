@@ -1,6 +1,7 @@
 import fotoSup from "../../../assets/fondo1.png"
 import fotoInf from "../../../assets/fotoP.png"
 import "./seccionPresentacion.css"
+import {Link} from "react-router-dom"
 
 export default function SeccionPresentacion() {
     return (
@@ -22,7 +23,9 @@ export default function SeccionPresentacion() {
             </p>
             </div>
             <div>
+              <Link to="/colegios">
                 <button className="btn-colegio">COLEGIOS</button>
+              </Link>
             </div>
         </div>
       </div>

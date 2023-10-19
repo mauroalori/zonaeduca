@@ -1,4 +1,5 @@
 import UseColegio from "../../../hooks/UseColegio";
+import { Link } from "react-router-dom";
 
 function ListadoColegios() {
   const { datosColegiosFiltrados } = UseColegio();
@@ -34,10 +35,11 @@ function ListadoColegios() {
               <p className="text-white text-left mt-5 text-sm font-medium w-full h-32 overflow-auto">
                 {colegio.descripcion}
               </p>
-
-              <button className="m-auto w-32 h-10 mt-5 bg-[#00729A] hover:bg-[#165870] duration-200 text-white rounded-lg">
-                VER
-              </button>
+              <Link to={`/colegio/${colegio.id}`}>
+                <button className="m-auto w-32 h-10 mt-5 bg-[#00729A] hover:bg-[#165870] duration-200 text-white rounded-lg">
+                  VER
+                </button>
+              </Link>
             </div>
           </div>
         ))
