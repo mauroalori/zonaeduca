@@ -10,6 +10,10 @@ function SeccionColegio(idColegio) {
     // if (!colegio) {
     //     return <div>El colegio seleccionado no existe.</div>;
     // }
+
+    // Dirigirme a la parte superior de la vista
+    window.scrollTo(0, 0);
+
     return (
         <>
             <div className="dato-colegio">
