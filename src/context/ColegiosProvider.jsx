@@ -1,4 +1,4 @@
-import { createContext, useState, useEffect } from "react";
+import { createContext, useState } from "react";
 import PropTypes from "prop-types";
 import { datosColegios } from "../data/data";
 
@@ -72,61 +72,7 @@ const ColegiosProvider = ({ children }) => {
     );
   });
 
-  //COORDENADAS
-
-  // KEY
-  const apiKey = import.meta.env.VITE_REACT_APP_GOOGLE_MAPS_API_KEY;
-
-  // EXTRAER LOS DOMICILIOS FILTRADOS
-  const domiciliosFiltrados = datosColegiosFiltrados.map(
-    (colegio) => colegio.domicilio
-  );
-
-  // ESTADOS 
-  const [coordendasArray, setCoordendasArray] = useState([]);
-  const [loadingCoords, setLoadingCoords] = useState(false);
-  
-  // CONSULTAR A LA API DE GOOGLE Y BUSCAR LOS DOMICILIO
-  useEffect(() => {
-    if (!loadingCoords && domiciliosFiltrados.length > 0) {
-      setLoadingCoords(true);
-      const promises = domiciliosFiltrados.map(geocodeAddress);
-      Promise.all(promises)
-        .then((coordinates) => {
-          setCoordendasArray(coordinates.filter((coordinate) => coordinate !== null));
-          setLoadingCoords(false);
-        })
-        .catch((error) => {
-          console.error("Error al cargar coordenadas:", error);
-          setLoadingCoords(false);
-        });
-    }
-  }, [domiciliosFiltrados, loadingCoords, apiKey]);
-
-  // CONSULTAR A LA API DE GOOGLE Y BUSCAR LOS DOMICILIO
-  function geocodeAddress(address) {
-    return fetch(
-      `https://maps.googleapis.com/maps/api/geocode/json?address=${encodeURIComponent(
-        address
-      )}&key=${apiKey}`
-    )
-      .then((response) => response.json())
-      .then((data) => {
-        if (data.results.length > 0) {
-          const { lat, lng } = data.results[0].geometry.location;
-          return { lat, lng };
-        } else {
-          console.log("No se encontraron resultados para la dirección:", address);
-          return null;
-        }
-      })
-      .catch((error) => {
-        console.error("Error al geocodificar la dirección:", error);
-        return null;
-      });
-  }
     
-      console.log("desde provider", coordendasArray);
       return (
     <ColegioContext.Provider
       value={{
@@ -138,7 +84,6 @@ const ColegiosProvider = ({ children }) => {
         setSelectedDepartamento,
         setSelectedNivel,
         setSelectedIdioma,
-        coordendasArray,
       }}
     >
       {children}
