@@ -1,18 +1,24 @@
-import { datosColegios } from "../../data/data";
+import UseColegio from "../../hooks/UseColegio";
 import flecha from "../../assets/gifs-iconos/flecha.png";
 import circulo from "../../assets/gifs-iconos/circulo.png";
 import caracteristica from "../../assets/gifs-iconos/caracteristica.png";
 import './SeccionColegio.css';
+import { useParams } from "react-router-dom";
 
 function SeccionColegio(idColegio) {
+    // Dirigirme a la parte superior de la vista
+    window.scrollTo(0, 0);
+
+    const { datosColegios } = UseColegio();
+
+    let {id} = useParams();
     // const colegio = datosColegios[idColegio];
-    const colegio = datosColegios[52];
+    const colegio = datosColegios.find(colegio => colegio.id === Number.parseInt(id))
     // if (!colegio) {
     //     return <div>El colegio seleccionado no existe.</div>;
     // }
 
-    // Dirigirme a la parte superior de la vista
-    window.scrollTo(0, 0);
+    
 
     return (
         <>
