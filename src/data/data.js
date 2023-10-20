@@ -34,6 +34,7 @@ import deLaCiudad from "../assets/fotosColegios/Colegio de la Ciudad.jpg";
 import labrador from "../assets/fotosColegios/Instituto San Isidro Labrador.png";
 import pueyrredon from "../assets/fotosColegios/Juan Martin de Pueyrredon.jpg";
 import deLujan from "../assets/fotosColegios/Santa Maria de Lujan.png"
+import et37StellaMaris from "../assets/fotosColegios/et37StellaMaris.jpg"
 
 //DEL 26 AL 50
 import institutoDuayen from "../assets/fotosColegios/institutoDuayen.png";
@@ -743,7 +744,7 @@ const datosColegios = [
         "mail": "det_37_de11@bue.edu.ar",
         "descripcion": "La Escuela Técnica 37 'Hogar Naval Stella Maris' todos los años se ve excedida en la cantidad de vacantes por aspirantes al ingreso. Cuenta con más de 700 alumnos, goza de prestigio académico en su especialidad. La escuela realimenta su planta docente con egresados y sus estudiantes han participado en exposiciones internacionales en representación de la Nación Argentina.",
         "tipo": "Comun",
-        "imagen": foto1,
+        "imagen": et37StellaMaris,
         "caracteristicas": [
             "Nutrición",
             "Laboratorios"
