@@ -5,7 +5,7 @@ import caracteristica from "../../assets/gifs-iconos/caracteristica.png";
 import './SeccionColegio.css';
 import { Link, useParams } from "react-router-dom";
 
-function SeccionColegio(idColegio) {
+function SeccionColegio() {
     // Dirigirme a la parte superior de la vista
     window.scrollTo(0, 0);
 
