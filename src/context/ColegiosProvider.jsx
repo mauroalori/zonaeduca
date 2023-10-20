@@ -72,6 +72,8 @@ const ColegiosProvider = ({ children }) => {
     );
   });
 
+  // Colegios Recomendados aleatorios
+  const colegiosRecomendados = datosColegios.sort(() => Math.random() - 0.5).slice(0, 10);
     
       return (
     <ColegioContext.Provider
@@ -81,6 +83,7 @@ const ColegiosProvider = ({ children }) => {
         niveles,
         idiomas,
         datosColegiosFiltrados,
+        colegiosRecomendados,
         setSelectedDepartamento,
         setSelectedNivel,
         setSelectedIdioma,
