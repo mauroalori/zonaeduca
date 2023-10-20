@@ -3,7 +3,7 @@ import {
   useLoadScript,
   MarkerF as Marcador,
 } from "@react-google-maps/api";
-import iconMaps from "../../assets/gifs-iconos/escuela.png";
+import iconMaps from "../../assets/gifs-iconos/ubiColegio.png";
 import UseColegio from "../../hooks/UseColegio";
 
 
@@ -35,7 +35,7 @@ function MapaColegios() {
               position={{ lat: coordenada.lat, lng: coordenada.lng }}
               icon={{
                 url: iconMaps,
-                scaledSize: new window.google.maps.Size(60, 60),
+                scaledSize: new window.google.maps.Size(150, 90),
               }}
             />
           ))
@@ -44,7 +44,7 @@ function MapaColegios() {
             position={center}
             icon={{
               url: iconMaps,
-              scaledSize: new window.google.maps.Size(60, 60),
+              scaledSize: new window.google.maps.Size(150, 90),
             }}
           />
         )}
