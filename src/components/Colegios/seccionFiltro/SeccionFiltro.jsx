@@ -9,12 +9,13 @@ function SeccionFiltro() {
     setSelectedDepartamento, setSelectedNivel, setSelectedIdioma
   } = UseColegio();
 
-
+  // ESTADOS 
   const [selectedValues, setSelectedValues] = useState({
     departamento: "",
     nivel: "",
     idioma: ""
   });
+  const [open, setOpen] = useState(false);
 
   const handleSelectChange = (e) => {
     setSelectedValues({
@@ -26,9 +27,20 @@ function SeccionFiltro() {
   
   const handleSearch = (e) => {
     e.preventDefault();
-    setSelectedDepartamento(selectedValues.departamento);
-    setSelectedNivel(selectedValues.nivel);
-    setSelectedIdioma(selectedValues.idioma);
+
+
+    if (
+      selectedValues.departamento ||
+      selectedValues.nivel ||
+      selectedValues.idioma
+    ) {
+      setOpen(false)
+      setSelectedDepartamento(selectedValues.departamento);
+      setSelectedNivel(selectedValues.nivel);
+      setSelectedIdioma(selectedValues.idioma);
+    } else {
+      setOpen(true)
+    }
   };
 
   return (
@@ -46,13 +58,14 @@ function SeccionFiltro() {
                 onChange={handleSelectChange}
                
               >
-                <option value="">Seleccione</option>
+                <option value="" >Seleccione</option>
                 {departamentos.map((departamento) => (
                   <option key={departamento} value={departamento}>
                     {departamento}
                   </option>
                 ))}
               </select>
+              {open ? <p className="text-red-500 w-30 "> seleccione al menos un campo </p> : <p className="w-30">  </p>}
             </div>
             <div className="input-Fil">
               <label htmlFor="Nivel" >Nivel</label>
@@ -61,8 +74,6 @@ function SeccionFiltro() {
                 id="select-niveles"
                 className="Nivel"
                 onChange={handleSelectChange}
-              
-
               >
                 <option value="">Seleccione</option>
                 {niveles.map((nivel) => (
@@ -70,7 +81,9 @@ function SeccionFiltro() {
                     {nivel}
                   </option>
                 ))}
+                            
               </select>
+
             </div>
             <div className="input-Fil">
               <label htmlFor="Idioma">Idioma</label>
@@ -88,6 +101,7 @@ function SeccionFiltro() {
                   </option>
                 ))}
               </select>
+       
             </div>
             <div className="input-Fil">
               <button type="submit" onClick={handleSearch}>
@@ -96,6 +110,8 @@ function SeccionFiltro() {
             </div>
           </div>
         </form>
+
+
       </div>
     </>
   );

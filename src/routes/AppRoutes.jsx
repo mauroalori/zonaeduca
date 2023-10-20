@@ -13,7 +13,7 @@ function AppRoutes() {
             <Route path="/" element={<Inicio/>}/>
             <Route path="/colegios" element={<Colegios/>}/>
             <Route path="/contacto" element={<Contacto/>}/>
-            <Route path="/colegio/:id" element={<VistaColegio/>}/>
+            <Route path="/colegios/:id" element={<VistaColegio/>}/>
         </Routes>
     </Router>
     </>

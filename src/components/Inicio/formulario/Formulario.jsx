@@ -7,12 +7,12 @@ function Formulario() {
   return (
 
     // DIV GENERAL 
-    <div className={`flex responsive items-center justify-center md:h-[80vh] h-[90vh] m-5 mb-32`}>
+    <div className={`flex responsive items-center justify-center md:h-[80vh] h-[90vh] m-5 mb-32 `}>
 
       {/* FORM  */}
         <form
           action=""
-          className="md:w-96 md:h-[90%] w-80 flex flex-col justify-center   shadow-lg shadow-gray-300 p-5"
+          className="w-96 md:max-h-[90%] flex flex-col justify-center   shadow-lg shadow-gray-300 p-5 overflow-auto"
         >
 
         <h3 className="text-xl text-[#666666]">Contactanos</h3>
@@ -42,7 +42,7 @@ function Formulario() {
         </div>
 
      
-         <div className="flex justify-center items-center mt-8 mb-2">
+         <div className="flex justify-center items-center mt-8  mb-2">
          <button type="submit" className="m-auto bg-[#3DCCFF] text-white w-20 p-1 rounded-md hover:bg-[#1e8eb7] duration-200">
             Enviar
           </button>
@@ -53,9 +53,9 @@ function Formulario() {
 
 
       {/* CAJA GRADIENTE  */}
-      <div className="w-80 h-[90%] flex  justify-center items-center fondoFormulario shadow-lg shadow-gray-300">
+      <div className="w-96 h-[28em]  flex  justify-center items-center fondoFormulario shadow-lg shadow-gray-300">
         {/* CONTENEDOR ITEMS  */}
-        <div className="m-auto flex flex-col justify-center items-center md:gap-5 gap-2">
+        <div className="m-auto flex  flex-col justify-center items-center md:gap-5 gap-2">
           {/* ITEMS  */}
           <div className="flex items-center p-1">
             <img src={ubicacion} alt="ubicacion" className="w-10" />

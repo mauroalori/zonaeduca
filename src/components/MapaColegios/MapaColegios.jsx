@@ -6,9 +6,10 @@ import {
 import iconMaps from "../../assets/gifs-iconos/ubiColegio.png";
 import UseColegio from "../../hooks/UseColegio";
 
-
 function MapaColegios() {
-  const { coordendasArray } = UseColegio();
+  const { datosColegiosFiltrados } = UseColegio();
+
+  const hayDatos = datosColegiosFiltrados.length > 0;
 
   const API_KEY = import.meta.env.VITE_REACT_APP_GOOGLE_MAPS_API_KEY;
   const { isLoaded } = useLoadScript({
@@ -19,27 +20,16 @@ function MapaColegios() {
 
   const center = { lat: -34.612181, lng: -58.441959 };
 
-  const hayDatos = coordendasArray.length > 0;
-
   return (
     <>
-      <GoogleMap
-        zoom={12}
-        center={center}
-        mapContainerClassName="h-screen w-full"
-      >
-        {hayDatos ? (
-          coordendasArray.map((coordenada, index) => (
-            <Marcador
-              key={index}
-              position={{ lat: coordenada.lat, lng: coordenada.lng }}
-              icon={{
-                url: iconMaps,
-                scaledSize: new window.google.maps.Size(150, 90),
-              }}
-            />
-          ))
-        ) : (
+
+      {hayDatos ? (
+        <div>
+        <GoogleMap
+          zoom={12}
+          center={center}
+          mapContainerClassName="h-screen w-full"
+        >
           <Marcador
             position={center}
             icon={{
@@ -47,8 +37,29 @@ function MapaColegios() {
               scaledSize: new window.google.maps.Size(150, 90),
             }}
           />
-        )}
-      </GoogleMap>
+        </GoogleMap>
+        </div>
+      ) : (
+        <div>
+          <h1 className="text-center m-8 text-2xl text-[#00729A]">No se encuentran colegios</h1>
+
+
+          <GoogleMap
+            zoom={12}
+            center={center}
+            mapContainerClassName="h-screen w-full"
+          >
+            <Marcador
+              position={center}
+              icon={{
+                url: iconMaps,
+                scaledSize: new window.google.maps.Size(150, 90),
+              }}
+            />
+          </GoogleMap>
+   
+        </div>
+      )}
     </>
   );
 }
