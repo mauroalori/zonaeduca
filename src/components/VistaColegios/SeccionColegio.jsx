@@ -1,24 +1,32 @@
-import { datosColegios } from "../../data/data";
+import UseColegio from "../../hooks/UseColegio";
 import flecha from "../../assets/gifs-iconos/flecha.png";
 import circulo from "../../assets/gifs-iconos/circulo.png";
 import caracteristica from "../../assets/gifs-iconos/caracteristica.png";
 import './SeccionColegio.css';
+import { Link, useParams } from "react-router-dom";
 
-function SeccionColegio(idColegio) {
+function SeccionColegio() {
+    // Dirigirme a la parte superior de la vista
+    window.scrollTo(0, 0);
+
+    const { datosColegios } = UseColegio();
+
+    let {id} = useParams();
     // const colegio = datosColegios[idColegio];
-    const colegio = datosColegios[52];
+    const colegio = datosColegios.find(colegio => colegio.id === Number.parseInt(id))
     // if (!colegio) {
     //     return <div>El colegio seleccionado no existe.</div>;
     // }
 
-    // Dirigirme a la parte superior de la vista
-    window.scrollTo(0, 0);
+    
 
     return (
         <>
             <div className="dato-colegio">
                 <div className="nom-colegio">
-                    <img src={flecha} alt="" className="icon-flecha" />
+                    <Link to={"/colegios"}>
+                        <img src={flecha} alt="" className="icon-flecha" />
+                    </Link>
                     <h1 className="nombre-colegio">{colegio.nombre}</h1>
                 </div>
                 <div className="niveles">
