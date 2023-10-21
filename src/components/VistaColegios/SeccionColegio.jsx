@@ -25,7 +25,7 @@ function SeccionColegio() {
             <div className="dato-colegio">
                 <div className="nom-colegio">
                     <Link to={"/colegios"}>
-                        <img src={flecha} alt="" className="icon-flecha" />
+                        <img src={flecha} alt="" className="icon-flecha fixed" />
                     </Link>
                     <h1 className="nombre-colegio">{colegio.nombre}</h1>
                 </div>
