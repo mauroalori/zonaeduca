@@ -880,8 +880,8 @@ const datosColegios = [
             "Alemán"
         ],
         "coordenadas": {
-            "latitud": -34.,
-            "longitud": -58.
+            "latitud": -34.5786634,
+            "longitud": -58.4730035
         }
     },
     {
@@ -908,8 +908,8 @@ const datosColegios = [
             "Italiano"
         ],
         "coordenadas": {
-            "latitud": -34.,
-            "longitud": -58.
+            "latitud": -34.5843197,
+            "longitud": -58.4522174
         }
     },
     {
@@ -938,8 +938,8 @@ const datosColegios = [
             "Portugués"
         ],
         "coordenadas": {
-            "latitud": -34.,
-            "longitud": -58.
+            "latitud": -34.5782197,
+            "longitud": -58.4055488
         }
     },
     {
@@ -966,8 +966,8 @@ const datosColegios = [
             "Italiano"
         ],
         "coordenadas": {
-            "latitud": -34.,
-            "longitud": -58.
+            "latitud": -34.6119544,
+            "longitud": -58.3902695
         }
     },
     {
@@ -992,8 +992,8 @@ const datosColegios = [
             "Inglés"
         ],
         "coordenadas": {
-            "latitud": -34.,
-            "longitud": -58.
+            "latitud": -34.6266439,
+            "longitud": -58.4827603
         }
     },
     {
@@ -1020,8 +1020,8 @@ const datosColegios = [
             "Inglés"
         ],
         "coordenadas": {
-            "latitud": -34.,
-            "longitud": -58.
+            "latitud": -34.6090779,
+            "longitud": -58.468512
         }
     },
     {
@@ -1048,8 +1048,8 @@ const datosColegios = [
             "Alemán"
         ],
         "coordenadas": {
-            "latitud": -34.,
-            "longitud": -58.
+            "latitud": -34.6453676,
+            "longitud": -58.4583834
         }
     },
     {
@@ -1077,8 +1077,8 @@ const datosColegios = [
             "Italiano"
         ],
         "coordenadas": {
-            "latitud": -34.,
-            "longitud": -58.
+            "latitud": -34.6027209,
+            "longitud": -58.3929505
         }
     },
     {
@@ -1104,8 +1104,8 @@ const datosColegios = [
             "Portugués"
         ],
         "coordenadas": {
-            "latitud": -34.,
-            "longitud": -58.
+            "latitud": -34.5604824,
+            "longitud": -58.4904756
         }
     },
     {
@@ -1131,8 +1131,8 @@ const datosColegios = [
             "Portugués"
         ],
         "coordenadas": {
-            "latitud": -34.,
-            "longitud": -58.
+            "latitud": -34.6236759,
+            "longitud": -58.4080848
         }
     },
     {
@@ -1160,8 +1160,8 @@ const datosColegios = [
             "Italiano"
         ],
         "coordenadas": {
-            "latitud": -34.,
-            "longitud": -58.
+            "latitud": -34.6355195,
+            "longitud": -58.4685558
         }
     },
     {
@@ -1190,8 +1190,8 @@ const datosColegios = [
             "Alemán"
         ],
         "coordenadas": {
-            "latitud": -34.,
-            "longitud": -58.
+            "latitud": -34.6631265,
+            "longitud": -58.4381253
         }
     },
     {
@@ -1217,8 +1217,8 @@ const datosColegios = [
             "Alemán"
         ],
         "coordenadas": {
-            "latitud": -34.,
-            "longitud": -58.
+            "latitud": -34.6017429,
+            "longitud": -58.436219
         }
     },
     {
@@ -1245,8 +1245,8 @@ const datosColegios = [
             "Inglés"
         ],
         "coordenadas": {
-            "latitud": -34.,
-            "longitud": -58.
+            "latitud": -34.6149578,
+            "longitud": -58.4832957
         }
     },
     {
@@ -1273,8 +1273,8 @@ const datosColegios = [
             "Inglés"
         ],
         "coordenadas": {
-            "latitud": -34.,
-            "longitud": -58.
+            "latitud": -34.644363,
+            "longitud": -58.519497
         }
     },
     {
@@ -1302,8 +1302,8 @@ const datosColegios = [
             "Alemán"
         ],
         "coordenadas": {
-            "latitud": -34.,
-            "longitud": -58.
+            "latitud": -34.6091741,
+            "longitud": -58.4029358
         }
     },
     {
@@ -1329,8 +1329,8 @@ const datosColegios = [
             "Alemán"
         ],
         "coordenadas": {
-            "latitud": -34.,
-            "longitud": -58.
+            "latitud": -34.5953079,
+            "longitud": -58.4387865
         }
     },
     {
@@ -1357,8 +1357,8 @@ const datosColegios = [
             "Italiano"
         ],
         "coordenadas": {
-            "latitud": -34.,
-            "longitud": -58.
+            "latitud": -34.631239,
+            "longitud": -58.465768
         }
     },
     {
@@ -1384,8 +1384,8 @@ const datosColegios = [
             "Portugués"
         ],
         "coordenadas": {
-            "latitud": -34.,
-            "longitud": -58.
+            "latitud": -34.5917615,
+            "longitud": -58.4788122
         }
     },
     {
@@ -1412,8 +1412,8 @@ const datosColegios = [
             "Francés"
         ],
         "coordenadas": {
-            "latitud": -34.,
-            "longitud": -58.
+            "latitud": -34.6077197,
+            "longitud": -58.4876676
         }
     },
     {
@@ -1438,8 +1438,8 @@ const datosColegios = [
             "Portugués"
         ],
         "coordenadas": {
-            "latitud": -34.,
-            "longitud": -58.
+            "latitud": -34.583471,
+            "longitud": -58.4248708
         }
     },
     {
@@ -1466,8 +1466,8 @@ const datosColegios = [
             "Francés"
         ],
         "coordenadas": {
-            "latitud": -34.,
-            "longitud": -58.
+            "latitud": -34.5690499,
+            "longitud": -58.4897112
         }
     },
     {
@@ -1493,8 +1493,8 @@ const datosColegios = [
             "Alemán"
         ],
         "coordenadas": {
-            "latitud": -34.,
-            "longitud": -58.
+            "latitud": -34.6289253,
+            "longitud": -58.3739852
         }
     },
     {
@@ -1522,8 +1522,8 @@ const datosColegios = [
             "Inglés"
         ],
         "coordenadas": {
-            "latitud": -34.,
-            "longitud": -58.
+            "latitud": -34.580413,
+            "longitud": -58.4549269
         }
     },
     {
@@ -1548,8 +1548,8 @@ const datosColegios = [
             "Portugués"
         ],
         "coordenadas": {
-            "latitud": -34.,
-            "longitud": -58.
+            "latitud": -34.6110364,
+            "longitud": -58.3739631
         }
     },
     {
