@@ -4,14 +4,10 @@ import circulo from "../../assets/gifs-iconos/circulo.png";
 import caracteristica from "../../assets/gifs-iconos/caracteristica.png";
 import './SeccionColegio.css';
 
-function SeccionColegio(idColegio) {
-    // const colegio = datosColegios[idColegio];
-    const colegio = datosColegios[52];
-    // if (!colegio) {
-    //     return <div>El colegio seleccionado no existe.</div>;
-    // }
+function SeccionColegio() {
 
-    // Dirigirme a la parte superior de la vista
+    const colegio = datosColegios[52];
+
     window.scrollTo(0, 0);
 
     return (
