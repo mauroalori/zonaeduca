@@ -30,13 +30,20 @@ function MapaColegios() {
           center={center}
           mapContainerClassName="h-screen w-full"
         >
-          <Marcador
-            position={center}
-            icon={{
-              url: iconMaps,
-              scaledSize: new window.google.maps.Size(150, 90),
-            }}
-          />
+          {datosColegiosFiltrados.map(colegio => (
+            <Marcador
+              key={colegio.id}
+              position={{
+                lat: colegio.coordenadas.latitud,
+                lng: colegio.coordenadas.longitud,
+              }}
+              icon={{
+                url: iconMaps,
+                scaledSize: new window.google.maps.Size(150, 90),
+              }}
+            />
+          ))}
+
         </GoogleMap>
         </div>
       ) : (
