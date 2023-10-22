@@ -110,8 +110,6 @@ function SeccionFiltro() {
             </div>
           </div>
         </form>
-
-
       </div>
     </>
   );
