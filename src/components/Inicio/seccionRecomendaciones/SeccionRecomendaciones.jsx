@@ -1,10 +1,5 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 
-// IMPORTO EL OBJETO DESDE DATA PARA RECORRERLO 
-import { datosColegios } from "../../../data/data";
-
-const datosRecorrer = datosColegios.slice(0,10)
-
 // STYLES 
 import 'swiper/css';
 import 'swiper/css/pagination';
@@ -12,7 +7,10 @@ import './SeccionRecomendaciones.css'
 
 // MODULOS 
 import { Pagination } from 'swiper/modules';
+import UseColegio from '../../../hooks/UseColegio';
 function SeccionRecomendaciones() {
+  const { colegiosRecomendados } = UseColegio()
+
   return (
     <>
         <h3 className='text-white text-2xl bg-[#00405B] p-3 pl-12'>Nuestras recomendaciones</h3>
@@ -33,7 +31,7 @@ function SeccionRecomendaciones() {
               }}
             >
               {/* MAPEO LOS DATOS DENTRO DEL SWIPER PARA QUE ME CREE LAS CARDS  */}
-              {datosRecorrer.map((escuela) => (
+              {colegiosRecomendados.map((escuela) => (
                   <SwiperSlide
                   // le paso el id de cada card 
                   key={escuela.id}
