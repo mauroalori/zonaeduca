@@ -64,7 +64,7 @@ function MapaColegios() {
                     className="w-full h-32"
                   />
                   <p className="h-20 overflow-hidden mt-5 mb-2">{selectedColegio.descripcion}</p>
-
+                  
                   <Link to={`/colegios/${selectedColegio.id}`} >
                     <p className="m-auto  font-medium  rounded-lg text-[#00729A] hover:text-[#1f4d5e] duration-100">Ver detalles</p>
                   </Link>
