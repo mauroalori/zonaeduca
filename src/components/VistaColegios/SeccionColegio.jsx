@@ -40,9 +40,10 @@ function SeccionColegio() {
         </div>
         <div className="descripcion-colegio">
           <div className="descrip-imagen">
-            <img src={colegio.imagen} alt="" className="img-cole" />
+            <img src={colegio.imagen} alt="" className="img-cole rounded-lg shadow-md shadow-gray-500" />
           </div>
           <div className="descrip-cole">
+            <h2 className="item-cole">Descripcion</h2>
             <p>{colegio.descripcion}</p>
           </div>
         </div>
