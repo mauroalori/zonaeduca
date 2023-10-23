@@ -31,7 +31,9 @@ function Navbar() {
     <nav className={`navBar ${Open && "open"} ${scrolling && "scrolled"}`}>
 
       <div className={`navLogo ${Open && "open"}`}>
+        <Link to={"/"}>
       <img src={logo} alt="logo" className="w-44"/>
+        </Link>
       </div>
 
         <div className={`items ${Open && "open"} justify-start text-center items-center flex`}>

@@ -2,9 +2,12 @@ import {
   GoogleMap,
   useLoadScript,
   MarkerF as Marcador,
+  InfoWindow,
 } from "@react-google-maps/api";
 import iconMaps from "../../assets/gifs-iconos/ubiColegio.png";
 import UseColegio from "../../hooks/UseColegio";
+import { useState } from "react";
+import { Link } from "react-router-dom";
 
 function MapaColegios() {
   const { datosColegiosFiltrados } = UseColegio();
@@ -16,40 +19,65 @@ function MapaColegios() {
     googleMapsApiKey: API_KEY,
   });
 
+  const [selectedColegio, setSelectedColegio] = useState(null);
   if (!isLoaded) return <div>Loading...</div>;
 
   const center = { lat: -34.612181, lng: -58.441959 };
 
   return (
     <>
-
       {hayDatos ? (
-        <div>
-        <GoogleMap
-          zoom={12}
-          center={center}
-          mapContainerClassName="h-screen w-full"
-        >
-          {datosColegiosFiltrados.map(colegio => (
-            <Marcador
-              key={colegio.id}
-              position={{
-                lat: colegio.coordenadas.latitud,
-                lng: colegio.coordenadas.longitud,
-              }}
-              icon={{
-                url: iconMaps,
-                scaledSize: new window.google.maps.Size(150, 90),
-              }}
-            />
-          ))}
+        <>
+          <GoogleMap
+            zoom={12}
+            center={center}
+            mapContainerClassName="h-screen w-full"
+          >
+            {datosColegiosFiltrados.map((colegio) => (
+              <Marcador
+                key={colegio.id}
+                position={{
+                  lat: colegio.coordenadas.latitud,
+                  lng: colegio.coordenadas.longitud,
+                }}
+                icon={{
+                  url: iconMaps,
+                  scaledSize: new window.google.maps.Size(150, 90),
+                }}
+                onClick={() => setSelectedColegio(colegio)} 
+              />
+            ))}
 
-        </GoogleMap>
-        </div>
+            {selectedColegio && (
+              <InfoWindow
+                position={{
+                  lat: selectedColegio.coordenadas.latitud,
+                  lng: selectedColegio.coordenadas.longitud,
+                }}
+                onCloseClick={() => setSelectedColegio(null)} 
+              >
+                <div className="w-44 h-32">
+                  <h2 className="font-semibold mb-5">{selectedColegio.nombre}</h2>
+                  <img
+                    src={selectedColegio.imagen}
+                    alt="imagen"
+                    className="w-full h-32"
+                  />
+                  <p className="h-20 overflow-hidden mt-5 mb-2">{selectedColegio.descripcion}</p>
+                  
+                  <Link to={`/colegios/${selectedColegio.id}`} >
+                    <p className="m-auto  font-medium  rounded-lg text-[#00729A] hover:text-[#1f4d5e] duration-100">Ver detalles</p>
+                  </Link>
+                </div>
+              </InfoWindow>
+            )}
+          </GoogleMap>
+        </>
       ) : (
         <div>
-          <h1 className="text-center m-8 text-2xl text-[#00729A]">No se encuentran colegios</h1>
-
+          <h1 className="text-center m-8 text-2xl text-[#00729A]">
+            No se encuentran colegios
+          </h1>
 
           <GoogleMap
             zoom={12}
@@ -64,7 +92,6 @@ function MapaColegios() {
               }}
             />
           </GoogleMap>
-   
         </div>
       )}
     </>
