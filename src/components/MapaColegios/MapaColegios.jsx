@@ -56,17 +56,16 @@ function MapaColegios() {
                 }}
                 onCloseClick={() => setSelectedColegio(null)} 
               >
-                <div className="w-44 h-32">
+                <div className="w-44">
                   <h2 className="font-semibold mb-5">{selectedColegio.nombre}</h2>
                   <img
                     src={selectedColegio.imagen}
                     alt="imagen"
                     className="w-full h-32"
                   />
-                  <p className="h-20 overflow-hidden mt-5 mb-2">{selectedColegio.descripcion}</p>
                   
                   <Link to={`/colegios/${selectedColegio.id}`} >
-                    <p className="m-auto  font-medium  rounded-lg text-[#00729A] hover:text-[#1f4d5e] duration-100">Ver detalles</p>
+                    <p className="w-24 p-2 m-auto mt-3 border-solid border-2 border-[#00729A] hover:border-[#1f4d5e] text-center font-medium  rounded-lg text-[#00729A] hover:text-[#1f4d5e] duration-100">Ver detalles</p>
                   </Link>
                 </div>
               </InfoWindow>
