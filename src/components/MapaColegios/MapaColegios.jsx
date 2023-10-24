@@ -42,7 +42,7 @@ function MapaColegios() {
                 }}
                 icon={{
                   url: iconMaps,
-                  scaledSize: new window.google.maps.Size(150, 90),
+                  scaledSize: new window.google.maps.Size(50, 70),
                 }}
                 onClick={() => setSelectedColegio(colegio)} 
               />
@@ -87,7 +87,7 @@ function MapaColegios() {
               position={center}
               icon={{
                 url: iconMaps,
-                scaledSize: new window.google.maps.Size(150, 90),
+                scaledSize: new window.google.maps.Size(50, 70),
               }}
             />
           </GoogleMap>
