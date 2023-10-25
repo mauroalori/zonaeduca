@@ -38,7 +38,7 @@ function Formulario() {
         {/* mensaje  */}
         <div className="flex flex-col mt-5">
             <label htmlFor="mensaje" className="text-[#666666]">Mensaje</label>
-            <textarea name="" id="mensaje" className="w-72 h-14 bordes text-xs text-[#03ABE6] p-1" type="text" placeholder="Mensaje" cols="10" rows="10" required></textarea>
+            <textarea name="" id="mensaje" className="w-72 h-16 bordes text-xs text-[#03ABE6] p-1 resize-none" type="text" placeholder="Mensaje" cols="10" rows="10" required></textarea>
         </div>
 
      
@@ -53,7 +53,7 @@ function Formulario() {
 
 
       {/* CAJA GRADIENTE  */}
-      <div className="w-96 h-[28em]  flex  justify-center items-center fondoFormulario shadow-lg shadow-gray-300">
+      <div className="w-96 h-[28.4em]  flex  justify-center items-center fondoFormulario shadow-lg shadow-gray-300">
         {/* CONTENEDOR ITEMS  */}
         <div className="m-auto flex  flex-col justify-center items-center md:gap-5 gap-2">
           {/* ITEMS  */}

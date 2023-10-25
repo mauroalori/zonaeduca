@@ -2,6 +2,7 @@ import UseColegio from "../../hooks/UseColegio";
 import flecha from "../../assets/gifs-iconos/flecha.png";
 import circulo from "../../assets/gifs-iconos/circulo.png";
 import caracteristica from "../../assets/gifs-iconos/caracteristica.png";
+import {BsArrowUpCircleFill} from "react-icons/bs"
 import "./SeccionColegio.css";
 import { Link, useParams } from "react-router-dom";
 import iconMaps from "../../assets/gifs-iconos/ubiColegio.png";
@@ -24,10 +25,16 @@ function SeccionColegio() {
     <>
       <div className="dato-colegio">
         <div className="nom-colegio">
-          <Link to={"/colegios"}>
+          <Link to={"/colegios"} >
             <img src={flecha} alt="" className="icon-flecha fixed" />
           </Link>
-          <h1 className="nombre-colegio">{colegio.nombre}</h1>
+          <h1 id="inicioDePagina" className="nombre-colegio">{colegio.nombre}</h1>
+        </div>
+        {/* FLECHA PARA ARRIBAR  */}
+        <div>
+        <Link>
+        <BsArrowUpCircleFill className="text-[#00405B] hover:text-[#316d86] duration-200 text-5xl  right-0 m-6 z-10 bottom-0 fixed"/>
+        </Link>
         </div>
         <div className="niveles">
           <ul>
