@@ -1,6 +1,7 @@
 import UseColegio from "../../hooks/UseColegio";
 import flecha from "../../assets/gifs-iconos/flecha.png";
 import circulo from "../../assets/gifs-iconos/circulo.png";
+import Ubicacion1 from "../../assets/gifs-iconos/ubica1.png";
 import caracteristica from "../../assets/gifs-iconos/caracteristica.png";
 import {BsArrowUpCircleFill} from "react-icons/bs"
 import "./SeccionColegio.css";
@@ -26,7 +27,7 @@ function SeccionColegio() {
       <div className="dato-colegio">
         <div className="nom-colegio">
           <Link to={"/colegios"} >
-            <img src={flecha} alt="" className="icon-flecha fixed" />
+            <img src={flecha} alt="" className="icon-flecha" />
           </Link>
           <h1 id="inicioDePagina" className="nombre-colegio">{colegio.nombre}</h1>
         </div>
@@ -49,8 +50,9 @@ function SeccionColegio() {
           <div className="descrip-imagen">
             <img src={colegio.imagen} alt="" className="img-cole rounded-lg shadow-md shadow-gray-500" />
           </div>
-          <div className="descrip-cole">
-            <h2 className="item-cole">Descripcion</h2>
+
+          <div className="descrip-cole mb-26">
+            <h2 className="item2-cole mb-4 ml-0">Descripcion</h2>
             <p>{colegio.descripcion}</p>
           </div>
         </div>
@@ -120,9 +122,13 @@ function SeccionColegio() {
 
         {/* MAPA  */}
         <div>
-            <div className="p-5">
-            <h1 className="font-bold text-2xl">Ubicacion</h1>
-            <p>{colegio.domicilio}</p>
+            <div className="">
+              <div className="caracter-cole mt-12">
+                <img src={Ubicacion1} alt="" className="icon-ubica" />
+                <h2 className="item2-cole">Ubicacion</h2>
+              </div>
+              
+              <p className="mt-8 mb-8 ml-16">{colegio.domicilio}</p>
             </div>
           <GoogleMap
             zoom={12}

@@ -53,6 +53,9 @@
     width: 50%;
     font-size: 1rem;
 }
+.descrip-cole{
+    width: 30rem;
+}
 
 .img-cole {
     width: 550px;
@@ -139,7 +142,14 @@
 .idiomas-item img {
     margin-right: 10px; /* Espacio entre la imagen y el texto */
 }
-
+.icon-flecha{
+    height: auto;
+    width: 60px;
+}
+.icon-ubica{
+    width: 36px;
+    height: 35px;
+}
 
 
 

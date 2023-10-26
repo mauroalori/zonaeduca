@@ -12,9 +12,6 @@ function VistaColegio () {
         {/* SECCION COLEGIO  */}
         <SeccionColegio/>
 
-        {/* SECCION UBICACION */}
-        
-        
         {/* SECCION COMENTARIOS  */}
         <SeccionComentarios/>
 
