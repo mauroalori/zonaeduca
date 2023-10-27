@@ -136,7 +136,7 @@ function SeccionColegio() {
               }}
               icon={{
                 url: iconMaps,
-                scaledSize: new window.google.maps.Size(150, 90),
+                scaledSize: new window.google.maps.Size(50, 70),
               }}
             />
           </GoogleMap>
