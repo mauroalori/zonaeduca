@@ -16,7 +16,7 @@ function ListadoColegios() {
         datosColegiosFiltrados.map((colegio) => (
           <div
             key={colegio.id}
-            className="w-[90%] h-auto m-auto mt-5 mb-5 lg:h-80 shadow-md shadow-gray-700  bg-[#001A29] rounded-md flex flex-col lg:flex-row justify-around items-center"
+            className="w-[70%] lg:w-[90%] h-auto m-auto mt-5 mb-5 lg:h-80 shadow-md shadow-gray-700  bg-[#001A29] rounded-md flex flex-col lg:flex-row justify-around items-center"
           >
             {/* IMAGE  */}
             <div className="p-4">
@@ -27,7 +27,7 @@ function ListadoColegios() {
               />
             </div>
             {/* INFORMACION  */}
-            <div className="flex flex-col w-96 lg:p-0 p-10">
+            <div className="flex flex-col w-[90%] lg:w-2/4  lg:p-0 p-10">
               <h3 className="text-white text-center text-xl font-medium">
                 {colegio.nombre}
               </h3>
