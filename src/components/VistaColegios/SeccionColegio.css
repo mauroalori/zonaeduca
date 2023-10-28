@@ -53,7 +53,8 @@
     width: 50%;
     font-size: 1rem;
 }
-.descrip-cole{
+
+.descrip-cole {
     width: 30rem;
 }
 
@@ -83,7 +84,7 @@
 
 .icon-circulo {
     width: 10px;
-    height: 10px;  
+    height: 10px;
     margin-right: 10px;
 }
 
@@ -105,53 +106,104 @@
 .contact-info p strong {
     font-weight: bold;
 }
-.caracter-cole{
+
+.caracter-cole {
     display: flex;
     align-items: center;
     margin-top: 1rem;
     margin-left: 4rem;
 }
-.icon-caracter{
+
+.icon-caracter {
     width: 50px;
     height: 50px;
 }
-.item2-cole{
+
+.item2-cole {
     font-size: 1.5em;
     font-weight: 550;
     margin-left: 1rem;
 }
 
 .idiomas {
-    margin-top: 20px; 
+    margin-top: 20px;
 }
 
 .idiomas-list {
-    display: flex; 
-    list-style: none; 
+    display: flex;
+    list-style: none;
     padding: 0;
     margin-left: 6rem;
     margin-top: 1rem;
 }
 
 .idiomas-item {
-    display: flex; 
-    align-items: center; 
-    margin-right: 50px; 
+    display: flex;
+    align-items: center;
+    margin-right: 50px;
 }
 
 .idiomas-item img {
-    margin-right: 10px; /* Espacio entre la imagen y el texto */
+    margin-right: 10px;
+    /* Espacio entre la imagen y el texto */
 }
-.icon-flecha{
+
+.icon-flecha {
     height: auto;
     width: 60px;
 }
-.icon-ubica{
+
+.icon-ubica {
     width: 36px;
     height: 35px;
 }
 
+@media screen and (max-width: 968px) {
+    .descrip-imagen,
+    .descrip-cole {
+        width: 20rem;
+        font-size: 15px;
+    }
+}
 
+@media screen and (max-width: 768px) {
+    .descrip-imagen,
+    .descrip-cole {
+        width: 26rem;
+        font-size: 15px;
+    }
 
+    .nombre-colegio {
+        font-size: 1.5em;
+    }
 
+    .item2-cole,
+    .item-cole {
+        font-size: 1.2em;
+    }
+    .descripcion-colegio {
+        height: 800px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 
+}
+
+@media screen and (max-width: 576px) {
+    .descrip-imagen,
+    .descrip-cole {
+        width: 22rem;
+        font-size: 14.5px;
+    }
+
+    .nombre-colegio {
+        font-size: 1.2em;
+    }
+
+    .item2-cole,
+    .item-cole {
+        font-size: 1em;
+    }
+}
