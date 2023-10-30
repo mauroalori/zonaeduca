@@ -12,7 +12,7 @@ function Formulario() {
       {/* FORM  */}
         <form
           action=""
-          className="w-96 md:max-h-[90%] flex flex-col justify-center   shadow-lg shadow-gray-300 p-5 overflow-auto"
+          className="w-96 md:max-h-[28.4em] h-[900px] flex flex-col justify-center   shadow-lg shadow-gray-300 p-5 overflow-auto"
         >
 
         <h3 className="text-xl text-[#666666]">Contactanos</h3>
