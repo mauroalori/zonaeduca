@@ -1,20 +1,21 @@
 :root{
-    --ancho-imagen-grande: 480px;
-    --alto-imagen-grande: 440px;
-    --ancho-imagen-chica: 250px;
-    --alto-imagen-chica: 280px;
+    --ancho-imagen-grande: min(60%,480px);
+    --alto-imagen-grande: min(60%,440px);
+    --ancho-imagen-chica: min(60%,250px);
+    --alto-imagen-chica: min(60%,280px);
 }
 
 .container-presentacion{
     width: 100%;
-    height: 100vh;
+    min-height: 50vh;
+    padding: 4rem 0;
     position: relative;
     display: flex;
 }
 .container-imagen{
     position: relative;
     width: 50%;
-    padding: 1.5rem;
+    margin: 0 1.5rem;
 }
 
 .container-frase{
@@ -23,7 +24,7 @@
     flex-direction: column; 
     justify-content: center; 
     align-items: center;
-    padding: 1.5rem; 
+    padding: 0 1.5rem; 
 }
 .imagen-grande{
     object-fit: cover;
@@ -108,10 +109,10 @@
 
 @media screen and (max-width: 992px){
     :root{
-        --ancho-imagen-grande: 240px;
-        --alto-imagen-grande: 220px;
-        --ancho-imagen-chica: 160px;
-        --alto-imagen-chica: 180px;
+        --ancho-imagen-grande: min(60%,240px);
+        --alto-imagen-grande: min(60%,220px);
+        --ancho-imagen-chica: min(60%,160px);
+        --alto-imagen-chica: min(60%,180px);
     }
     .container-presentacion{
         max-width: 968px; /* Ancho máximo del contenedor */
@@ -127,10 +128,6 @@
         justify-content: center;
         padding: 0.5rem;
         right: calc((var(--ancho-imagen-grande) + var(--ancho-imagen-chica)/2)/4);
-    }
-    .container-frase{
-        width: 100%;
-        height: 280px;
     }
     .imagen-grande{
         margin: 0px;
@@ -157,16 +154,13 @@
 /*Pantallas sm Smartphones*/
 @media screen and (max-width: 576px) {
     :root{
-        --ancho-imagen-grande: 220px;
-        --alto-imagen-grande: 200px;
-        --ancho-imagen-chica: 140px;
-        --alto-imagen-chica: 150px;
+        --ancho-imagen-grande: min(60%,220px);
+        --alto-imagen-grande: min(60%,200px);
+        --ancho-imagen-chica: min(60%,140px);
+        --alto-imagen-chica: min(60%,150px);
     }
     .container-imagen{
         right: 0;
-    }
-    .container-frase{
-        height: auto;
     }
     .titulo,
     .presentacion,
