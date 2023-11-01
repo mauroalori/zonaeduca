@@ -7,11 +7,11 @@ export default function SeccionPresentacion() {
     return (
       <>
       <div className="container-presentacion bg-[#00B0E4] bg-opacity-20">
-        <div className="container-imagen w-[50%]">
+        <div className="container-imagen md:w-1/2 w-2/3 min-h-[300px]">
               <img src={fotoSup} alt="" className="imagen-grande"/>
               <img src={fotoInf} alt=""  className="imagen-chica"/>
         </div>
-        <div className="container-frase w-[50%]">
+        <div className="container-frase md:w-1/2 w-2/3">
             <div >
             <h3 className="titulo">
               ¡Bienvenidos a ZonaEduca!

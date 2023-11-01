@@ -1,0 +1,10 @@
+/* Elimino la flecha para abajo del objeto InfoWindow del mapa */
+.gm-style-iw-tc{
+    display: none;
+}
+
+/*  */
+.gm-style-iw-t .gm-style-iw-c .gm-ui-hover-effect span{
+    display: none; 
+}
+

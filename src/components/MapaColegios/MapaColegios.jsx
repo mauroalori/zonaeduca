@@ -1,3 +1,4 @@
+import "./MapaColegios.css"
 import {
   GoogleMap,
   useLoadScript,
