@@ -45,17 +45,16 @@
     align-items: center;
     gap: 1.8rem;
     margin: 2rem;
-    height: 25rem
 }
 
-.descrip-imagen,
-.descrip-cole {
-    width: 50%;
+.descrip-imagen {
+    width: 40%;
     font-size: 1rem;
 }
 
 .descrip-cole {
-    width: 30rem;
+    width: 60%;
+    font-size: 1rem;
 }
 
 .img-cole {
@@ -157,12 +156,41 @@
     width: 36px;
     height: 35px;
 }
+.contac-ubicacion{
+    height: 100%;
+}
+.two-column-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1px;
+    height: 100%;
+}
+.left-section {
+    flex: 1;
+    max-width: 800px;
+    margin-top: 23px;
+}
+
+.right-section {
+    max-width: 800px;  
+}
+
 
 @media screen and (max-width: 968px) {
     .descrip-imagen,
     .descrip-cole {
-        width: 20rem;
-        font-size: 15px;
+        width: 80%;
+        font-size: 20px;
+    }
+    .descripcion-colegio {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .two-column-container {
+        display: block; 
+        height: auto; 
     }
 }
 
@@ -181,15 +209,12 @@
     .item-cole {
         font-size: 1.2em;
     }
-    .descripcion-colegio {
-        height: 800px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+    .two-column-container {
+        display: block; 
+        height: auto; 
     }
-
 }
+
 
 @media screen and (max-width: 576px) {
     .descrip-imagen,
@@ -197,7 +222,6 @@
         width: 22rem;
         font-size: 14.5px;
     }
-
     .nombre-colegio {
         font-size: 1.2em;
     }
@@ -205,5 +229,9 @@
     .item2-cole,
     .item-cole {
         font-size: 1em;
+    }
+    .two-column-container {
+        display: block; 
+        height: auto; 
     }
 }

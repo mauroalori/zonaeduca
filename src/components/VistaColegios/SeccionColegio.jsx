@@ -56,6 +56,9 @@ function SeccionColegio() {
             <p>{colegio.descripcion}</p>
           </div>
         </div>
+        <div className="contac-ubicacion">
+        <div className="two-column-container">
+        <div className="left-section">
         <div className="contacto">
           <div>
             <h2 className="item-cole">Contacto</h2>
@@ -119,9 +122,10 @@ function SeccionColegio() {
             ))}
           </ul>
         </div>
+        </div>
 
         {/* MAPA  */}
-        <div>
+        <div className="right-section">
             <div className="">
               <div className="caracter-cole mt-12">
                 <img src={Ubicacion1} alt="" className="icon-ubica" />
@@ -131,9 +135,9 @@ function SeccionColegio() {
               <p className="mt-8 mb-8 ml-16">{colegio.domicilio}</p>
             </div>
           <GoogleMap
-            zoom={12}
+            zoom={13}
             center={center}
-            mapContainerClassName="h-screen w-full"
+            mapContainerStyle={{ height: '330px', width: '100%' }} 
           >
             <Marcador
               position={{
@@ -147,6 +151,8 @@ function SeccionColegio() {
             />
           </GoogleMap>
         </div>
+      </div>
+      </div>
       </div>
     </>
   );
