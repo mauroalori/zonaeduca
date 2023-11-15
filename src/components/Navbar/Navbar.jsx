@@ -40,7 +40,7 @@ function Navbar() {
         <Link to={'/'}>Inicio</Link>
         <Link to={'/Colegios'}>Colegios</Link>
         <Link to={'/Contacto'}>Contacto</Link>
-        <Link >Ayuda </Link>
+        <Link to={'/Ayuda'}>Ayuda </Link>
 
         {window.innerWidth < 968 && Open && (
               <div className="mt-10">
