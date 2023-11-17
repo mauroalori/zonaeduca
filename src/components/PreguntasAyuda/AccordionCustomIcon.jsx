@@ -54,6 +54,7 @@ export function AccordionCustomIcon() {
 }
 
 Icon.propTypes = {
-  id: PropTypes.func.isRequired,
-  open: PropTypes.func.isRequired,
+  id: PropTypes.number.isRequired,
+  open: PropTypes.number.isRequired,
 };
+
