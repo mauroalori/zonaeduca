@@ -35,7 +35,7 @@ function SliderComentarios() {
             <SwiperSlide
             // le paso el id de cada card 
             key={dato.id}
-            className='flex justify-center items-center'
+            className='flex justify-center items-center '
             >
                 {/* DISEÑO LA CARD  */}
                 <div className='bg-[#001A29] h-80 rounded-xl m-2 md:w-64 w-72 flex flex-col justify-evenly items-center'>

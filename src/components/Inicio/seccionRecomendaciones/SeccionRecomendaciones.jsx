@@ -35,10 +35,10 @@ function SeccionRecomendaciones() {
                   <SwiperSlide
                   // le paso el id de cada card 
                   key={escuela.id}
-                  className='flex justify-center items-center'
+                  className='flex justify-center items-center '
                   >
                       {/* DISEÑO LA CARD  */}
-                      <div  className='bg-white h-96 rounded-xl m-2 p-4 md:w-64 w-72 flex flex-col justify-evenly items-center'>
+                      <div  className='bg-white shadow-md shadow-gray-600 h-96 rounded-xl m-2 p-4 md:w-64 w-72 flex flex-col justify-evenly items-center'>
                         <img src={escuela.imagen} alt="foto de una escuela" className='h-1/3 object-cover rounded-xl'  />
                         <h3 className='text-center text-[#00405B]'>{escuela.nombre}</h3>
                         <div className='h-1/3 overflow-hidden px-1 relative'>
