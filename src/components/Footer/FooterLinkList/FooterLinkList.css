@@ -1,0 +1,14 @@
+.lista-enlace{
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem; /* Ajusta el valor según la unidad que estés utilizando */
+    min-width: 180px;
+    color: #718096; /* Ajusta el valor de color según tu paleta de colores */
+}
+@media screen and (max-width: 576px) {
+
+    .lista-enlace{
+        min-width: 120px;
+        margin: 0;
+    }
+}

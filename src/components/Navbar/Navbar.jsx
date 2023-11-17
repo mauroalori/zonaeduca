@@ -1,40 +1,60 @@
-import  {useState} from "react";
+import  {useState, useEffect} from "react";
 import logo from './../../assets/logo.png'
 import { Link } from "react-router-dom";
-import './Navbar.css'
+import './Navbar.css';
 
 function Navbar() {
-    // to change burger classes
 
-
-    // toggle burger menu change
     const [Open, setOpen] = useState(false);
+
+    const [scrolling, setScrolling] = useState(false);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            if (window.scrollY > 0) {
+                setScrolling(true);
+            } else {
+                setScrolling(false);
+            }
+        };
+
+        window.addEventListener("scroll", handleScroll);
+
+        return () => {
+            window.removeEventListener("scroll", handleScroll);
+        };
+    }, []);
 
 
   return (
     <>
-    <nav className={`navBar ${Open && "open"}`}>
+    <nav className={`navBar ${Open && "open"} ${scrolling && "scrolled"}`}>
 
       <div className={`navLogo ${Open && "open"}`}>
+        <Link to={"/"}>
       <img src={logo} alt="logo" className="w-44"/>
+        </Link>
       </div>
 
-      <div className={`items ${Open && "open"} flex  `}>
+        <div className={`items ${Open && "open"} justify-start text-center items-center flex`}>
+        <Link to={'/'}>Inicio</Link>
+        <Link to={'/Colegios'}>Colegios</Link>
+        <Link to={'/Contacto'}>Contacto</Link>
+        <Link to={'/Ayuda'}>Ayuda </Link>
 
-        <Link >Inicio</Link>
-        <Link >Colegios</Link>
-        <Link  >Contacto </Link>
-        <Link  >Ayuda </Link>
-        
-        <div className="gap-5 mr-5 flex justify-center md:ml-60 ml-0"   >
-          <div className="text-center items-center flex md:gap-2 gap-5 text-white md:mt-0 mt-16">
-          <Link  >Registrarse </Link>
-          <Link  >Ingresar </Link>
-          </div>
+        {window.innerWidth < 968 && Open && (
+              <div className="mt-10">
+                  <Link>Registrarse</Link>
+                  <Link>Ingresar</Link>
+              </div>
+        )}
+
         </div>
-
-      </div>
-
+      
+        <div className={`items justify-center gap-5 text-center items-center flex`}>
+        <Link  >Registrarse</Link>
+        <Link  >Ingresar </Link>
+        </div>
 
 
       <div
@@ -45,7 +65,6 @@ function Navbar() {
         <span></span>
         <span></span>
       </div>
-
 
     </nav>
     </>

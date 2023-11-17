@@ -1,0 +1,55 @@
+.contenedor {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+  }
+  
+  .imagen {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    filter: brightness(0.4);
+
+  }
+  .texto {
+    position: absolute;
+    top: 50%; /* Centra verticalmente en el centro del contenedor */
+    left: 50%; /* Centra horizontalmente en el centro del contenedor */
+    transform: translate(-50%, -50%); /* Ajusta la posición para centrar perfectamente */
+    text-align: center; 
+    font-size: 2.6em;
+    font-weight: 500;
+    color: white; 
+    line-height: 1.5;
+  }
+
+  @media screen and (max-width: 968px){
+    .texto{
+    font-size: 3em;
+    }
+    .contenedor{
+    padding: 0px; /* Añade relleno según sea necesario ?? sacar*/
+    height: 100vh;
+    width: 100%;
+    }
+    .imagen{
+    width: 100%; /* La imagen ocupa todo el ancho del contenedor */
+    height: 100%;
+    }
+  }
+  @media screen and (max-width: 768px) {
+      .texto {
+        font-size: 1.6em; /* Cambia el tamaño de fuente para pantallas más pequeñas */
+      }
+      
+      .contenedor {
+        height: 100vh;
+        width: 100%;
+      }
+      
+      .imagen {
+        width: 100%; /* La imagen ocupa todo el ancho del contenedor */
+        height: 100%;
+      }
+    }
+    

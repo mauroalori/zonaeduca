@@ -1,0 +1,86 @@
+.contenedor-filtro{
+    top: 50px;
+    height: 100px;
+    width: 100%;
+    margin-top: 65px;
+    margin-bottom: 30px;
+}
+.conForm{
+    position:relative;
+    display: flex;
+    flex-direction: row; /* Los elementos hijos se colocan en fila horizontal */ 
+    padding-left: 33px; /* Agrega espacio interno de 20 píxeles al lado izquierdo */
+    padding-right: 20px; /* Agrega espacio interno de 20 píxeles al lado derecho */
+    margin: 8px;
+    height: auto;
+}
+.input-Fil{
+    display:flex;
+    flex-grow: 1;
+    flex-direction: column; /* Los elementos hijos se apilan verticalmente */
+    margin:0px;
+}
+.input-Fil button{
+    margin-top: 16px;
+    justify-content: center;
+    background-color: #00729A;
+    color: white;
+    border-radius: 4px;
+    width: 166px;
+    height: 40px;
+    position: absolute;
+    transition: .5s ease;
+
+}
+.input-Fil button:hover{
+    background-color: #02435b;
+    transition: .5s ease;
+    color: white;
+}
+.text {
+    color: #00405B;
+    font-size: 1.6em;
+    font-weight: 550; 
+    line-height: 1.5;
+    text-indent: 40px;
+}
+.Departamento,.Nivel,.Idioma {
+    padding: 0.25em 0.6em;
+    border-radius: 0.3rem;
+    border: 1px solid #d3d6e4;
+    text-align: center;
+    width: 50%;
+}
+.Departamento,.Nivel,.Idioma, ::placeholder{
+    font-weight: 200;
+    background-size: 17px 17px;
+    background-repeat: no-repeat;
+    background-position: left center;
+    outline: none;
+    color: #5D5D5D;
+}
+
+label{
+    color: #5D5D5D;
+    size: 1.6cm;
+}
+.Departamento::placeholder{
+    background-image: url(../../../assets/gifs-iconos/departamento.png);
+}
+.Idioma::placeholder{
+    background-image: url(../../../assets/gifs-iconos/idioma.png);
+}
+.Nivel::placeholder{
+    background-image: url(../../../assets/gifs-iconos/nivel.png);
+}
+@media screen and (max-width: 968px){
+    .contenedor-filtro{
+        margin-bottom: 230px;
+    }
+    .conForm{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+

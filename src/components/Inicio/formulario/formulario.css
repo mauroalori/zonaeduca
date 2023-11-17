@@ -1,0 +1,15 @@
+.fondoFormulario{
+    background-image: linear-gradient(120deg,  #0D6F91, #68D8FF)
+}
+
+.bordes{
+    outline: none;
+    border-bottom:1px solid gray;
+}
+
+
+@media (max-width: 768px) {
+    .responsive {
+      flex-direction: column;
+    }
+}

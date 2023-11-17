@@ -1,14 +1,33 @@
 import Navbar from "../components/Navbar/Navbar"
-import fondo from "../assets/fondo.png"
-import '../styles/inicio.css';
+import SeccionPortada from "../components/Inicio/seccionPortada/SeccionPortada";
+import SeccionRecomendaciones from "../components/Inicio/seccionRecomendaciones/SeccionRecomendaciones";
+import SeccionComentarios from "../components/Inicio/seccionComentarios/SeccionComentarios";
+import SeccionPresentacion from "../components/Inicio/seccionPresentacion/SeccionPresentacion";
+import Formulario from "../components/Inicio/formulario/Formulario";
+import Footer from "../components/Footer/Footer";
+
 function Inicio() {
   return (
     <>
       <Navbar/>
-      <div className="contenedor">
-        <img src={fondo} alt="" className="imagen"/>
-        <p className="texto">Te ayudamos a encontrar el mejor <br /> colegio para tus hijos</p>
-      </div>
+
+      {/* SECCION PORTADA  */}
+      <SeccionPortada/>
+
+      {/* SECCION PRESENTACION  */}
+      <SeccionPresentacion/>
+
+      {/* SECCION RECOMENDACIONES  */}
+      <SeccionRecomendaciones/>
+
+      {/* SECCION COMENTARIOS  */}
+      <SeccionComentarios/>
+
+      {/* FORMULARIO CONTACTO */}
+      <Formulario/>
+
+      {/* FOOTER  */}
+      <Footer/>
     </>
   )
 }
