@@ -117,6 +117,59 @@ import virgerDelPilar from "../assets/fotosColegios/INSTITUTO ESPAÑOL VIRGEN DE
 import mariaBianchi from "../assets/fotosColegios/INST MARIA BIANCHI DE COPELLO.jpg";
 import martinBarco from "../assets/fotosColegios/Fray Martín Del Barco Centenera.png"
 
+const preguntasAyuda = [
+    {
+        id:1,
+        pregunta: "¿Cómo funciona la búsqueda de colegios por zona en esta página?",
+        respuesta: "          Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, commodi cumque praesentium at minus voluptas quaerat consectetur pariatur fugiat consequatur accusantium tenetur ipsum exercitationem rerum soluta veritatis sunt quae eveniet."
+    },
+    {
+        id:2,
+        pregunta: "¿Cómo puedo encontrar colegios en una ubicación específica?",
+        respuesta: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, commodi cumque praesentium at minus voluptas quaerat consectetur pariatur fugiat consequatur accusantium tenetur ipsum exercitationem rerum soluta veritatis sunt quae eveniet."
+    },
+    {
+        id:3,
+        pregunta: "¿Qué información proporciona cada perfil de colegio en los resultados de búsqueda?",
+        respuesta: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, commodi cumque praesentium at minus voluptas quaerat consectetur pariatur fugiat consequatur accusantium tenetur ipsum exercitationem rerum soluta veritatis sunt quae eveniet."
+    },
+    {
+        id:4,
+        pregunta: "¿Puedo filtrar los resultados de búsqueda por criterios específicos, como nivel educativo, calificaciones, instalaciones, etc.?",
+        respuesta: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, commodi cumque praesentium at minus voluptas quaerat consectetur pariatur fugiat consequatur accusantium tenetur ipsum exercitationem rerum soluta veritatis sunt quae eveniet."
+    },
+    {
+        id:5,
+        pregunta: "¿Cuál es la fuente de los datos y la información de los colegios en la página?",
+        respuesta: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, commodi cumque praesentium at minus voluptas quaerat consectetur pariatur fugiat consequatur accusantium tenetur ipsum exercitationem rerum soluta veritatis sunt quae eveniet."
+    },
+    {
+        id:6,
+        pregunta: "¿Hay alguna función para recibir notificaciones o actualizaciones sobre los colegios que me interesan?",
+        respuesta: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, commodi cumque praesentium at minus voluptas quaerat consectetur pariatur fugiat consequatur accusantium tenetur ipsum exercitationem rerum soluta veritatis sunt quae eveniet."
+    },
+    {
+        id:7,
+        pregunta: "¿Es necesario registrarse para usar todas las funciones de la página?",
+        respuesta: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, commodi cumque praesentium at minus voluptas quaerat consectetur pariatur fugiat consequatur accusantium tenetur ipsum exercitationem rerum soluta veritatis sunt quae eveniet."
+    },
+    {
+        id:8,
+        pregunta: "¿Cómo puedo contactar a un colegio?",
+        respuesta: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, commodi cumque praesentium at minus voluptas quaerat consectetur pariatur fugiat consequatur accusantium tenetur ipsum exercitationem rerum soluta veritatis sunt quae eveniet."
+    },
+    {
+        id:9,
+        pregunta: "¿Cuál es la política de privacidad y cómo se manejan los datos personales de los usuarios?",
+        respuesta: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, commodi cumque praesentium at minus voluptas quaerat consectetur pariatur fugiat consequatur accusantium tenetur ipsum exercitationem rerum soluta veritatis sunt quae eveniet."
+    },
+    {
+        id:10,
+        pregunta: "¿Cómo puedo informar un error en la información de un colegio?",
+        respuesta: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, commodi cumque praesentium at minus voluptas quaerat consectetur pariatur fugiat consequatur accusantium tenetur ipsum exercitationem rerum soluta veritatis sunt quae eveniet."
+    }
+]
+
 const datosComentarios = [
     {
     id: 1,
@@ -2926,4 +2979,4 @@ const datosColegios = [
     }
 ]
 
-export { datosComentarios, datosColegios };
+export { datosComentarios, datosColegios, preguntasAyuda };
