@@ -91,7 +91,7 @@ function SeccionColegio() {
 
           {/* MAPA  */}
           <div className="max-w-600 mt-2 md:w-1/2 ">
-            <div className="text-sm sm: ml-10 lg: ml-2">
+            <div className="text-sm sm: ml-10 lg:ml-2">
               <div className="flex items-center mt-14">
                 <img src={Ubicacion1} alt="" className="w-8 h-8" />
                 <h2 className="text-xl md:text-2xl font-semibold ml-2">Ubicacion</h2>
