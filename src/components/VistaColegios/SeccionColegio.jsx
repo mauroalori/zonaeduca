@@ -19,8 +19,6 @@ function SeccionColegio() {
     (colegio) => colegio.id === Number.parseInt(id)
   );
 
-  const center = { lat: -34.612181, lng: -58.441959 };
-
   return (
     <>
       <div className="text-[#00405B]">
@@ -101,7 +99,10 @@ function SeccionColegio() {
             </div>
             <GoogleMap
               zoom={13}
-              center={center}
+              center={{
+                lat: colegio.coordenadas.latitud,
+                lng: colegio.coordenadas.longitud
+              }}
               mapContainerStyle={{ height: '300px', width: '100%' }}
             >
               <Marcador
