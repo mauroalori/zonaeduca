@@ -1,6 +1,6 @@
-import { createContext, useState } from "react";
+import { createContext, useState, useEffect } from "react";
 import PropTypes from "prop-types";
-import { datosColegios } from "../data/data";
+import { Colegios } from "../data/data";
 
 const ColegioContext = createContext();
 const ColegiosProvider = ({ children }) => {
@@ -8,7 +8,26 @@ const ColegiosProvider = ({ children }) => {
   {
     /* Recoleccion de los valores para los select desde los datos */
   }
-  const departamentos = [],
+  const rutaAPIColegios = 'https://apicolegioszonaeduca.up.railway.app/colegios'
+  const [datosColegios, setDatosColegios] = useState ([]);
+  
+  {/* CONSUMO DE NUESTRA API */}
+  useEffect (() => {
+    // función asíncrona para hacer el fetch
+    (async function() {
+      try {
+        const respuesta = await fetch (rutaAPIColegios);
+        const datosColegios = await respuesta.json ();
+        setDatosColegios (datosColegios);
+      } catch (error) {
+        console.error ('Error al obtener los datos de los colegios:', error);
+        setDatosColegios (Colegios);
+      }
+    }());
+  }, []);
+
+  const 
+    departamentos = [],
     niveles = [],
     idiomas = [];
 

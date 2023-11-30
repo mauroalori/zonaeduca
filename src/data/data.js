@@ -209,7 +209,7 @@ const datosComentarios = [
     },
 ];
 
-const datosColegios = [
+const Colegios = [
     {
         "id": 1,
         "jurisdiccion": "Ciudad de Buenos Aires",
@@ -2979,4 +2979,4 @@ const datosColegios = [
     }
 ]
 
-export { datosComentarios, datosColegios, preguntasAyuda };
+export { datosComentarios, Colegios, preguntasAyuda };
