@@ -121,52 +121,52 @@ const preguntasAyuda = [
     {
         id:1,
         pregunta: "¿Cómo funciona la búsqueda de colegios por zona en esta página?",
-        respuesta: "          Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, commodi cumque praesentium at minus voluptas quaerat consectetur pariatur fugiat consequatur accusantium tenetur ipsum exercitationem rerum soluta veritatis sunt quae eveniet."
+        respuesta: " En nuestra página, la búsqueda de colegios por zona se lleva a cabo mediante una base de datos actualizada, la cual se enriquece con los datos proporcionados por las autoridades educativas nacionales argentinas. Gracias a esta colaboración, contamos con información detallada sobre la ubicación de los establecimientos educativos, así como sus datos de contacto. Los usuarios pueden afinar su búsqueda seleccionando criterios como departamento, idioma y nivel educativo."
     },
     {
         id:2,
         pregunta: "¿Cómo puedo encontrar colegios en una ubicación específica?",
-        respuesta: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, commodi cumque praesentium at minus voluptas quaerat consectetur pariatur fugiat consequatur accusantium tenetur ipsum exercitationem rerum soluta veritatis sunt quae eveniet."
+        respuesta: " En nuestra página, la búsqueda de colegios por zona se realiza de manera sencilla a través de tres criterios principales. Al dirigirte a la sección Colegio, encontrarás tres filtros fundamentales: departamento, idioma y nivel educativo. Simplemente selecciona tus preferencias en cada uno de estos criterios y haz clic en el botón Buscar. Este proceso activará la búsqueda en nuestra base de datos, y los resultados se mostrarán de manera visual en el mapa. Al hacer clic en un colegio específico, se desplegará toda la información detallada relacionada con ese establecimiento educativo."
     },
     {
         id:3,
         pregunta: "¿Qué información proporciona cada perfil de colegio en los resultados de búsqueda?",
-        respuesta: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, commodi cumque praesentium at minus voluptas quaerat consectetur pariatur fugiat consequatur accusantium tenetur ipsum exercitationem rerum soluta veritatis sunt quae eveniet."
+        respuesta: " Cada perfil de colegio en los resultados de búsqueda ofrece una visión completa y detallada de la institución. Los elementos clave incluyen una breve Descripción, Fotografías que ofrecen una vista visual del entorno y las instalaciones del colegio,  Datos de Infraestructura, tales como aulas, laboratorios, áreas deportivas, entre otros.Tambien ofrecemos el Contacto del establecimiento, como números telefónicos y direcciones de correo electrónico, para facilitar la comunicación con el colegio. Por ultimo te mostramos la ubicacion precisa y comentarios y opiniones proporcionados por otros usuarios que han tenido experiencias con la institucion, ofrciendo perspectivas adicionales y ayudando a la toma de decisiones."
     },
     {
         id:4,
         pregunta: "¿Puedo filtrar los resultados de búsqueda por criterios específicos, como nivel educativo, calificaciones, instalaciones, etc.?",
-        respuesta: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, commodi cumque praesentium at minus voluptas quaerat consectetur pariatur fugiat consequatur accusantium tenetur ipsum exercitationem rerum soluta veritatis sunt quae eveniet."
+        respuesta: " Sí, puedes personalizar y refinar tu búsqueda utilizando los filtros disponibles en la sección de colegios. Ofrecemos opciones de filtrado que te permiten seleccionar criterios específicos, como departamento, nivel educativo y idioma. Estos filtros proporcionan una búsqueda más específica y personalizada, permitiéndote encontrar colegios que se ajusten a tus necesidades particulares. Esta funcionalidad facilita la identificación de instituciones educativas que cumplen con tus criterios específicos y brinda una experiencia de búsqueda más eficiente."
     },
     {
         id:5,
         pregunta: "¿Cuál es la fuente de los datos y la información de los colegios en la página?",
-        respuesta: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, commodi cumque praesentium at minus voluptas quaerat consectetur pariatur fugiat consequatur accusantium tenetur ipsum exercitationem rerum soluta veritatis sunt quae eveniet."
+        respuesta: " La información y los datos sobre los colegios en nuestra página provienen de fuentes confiables, principalmente colaboraciones con las autoridades educativas nacionales y locales. Nos aseguramos de mantener una base de datos actualizada y precisa al recopilar información de instituciones educativas, utilizando datos proporcionados por el sistema nacional de educación y otras fuentes gubernamentales. Esto garantiza que la información presentada en nuestra página sea confiable y refleje con precisión la situación de los colegios. Regularmente actualizamos estos datos para proporcionar a nuestros usuarios la información más reciente y relevante."
     },
     {
         id:6,
         pregunta: "¿Hay alguna función para recibir notificaciones o actualizaciones sobre los colegios que me interesan?",
-        respuesta: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, commodi cumque praesentium at minus voluptas quaerat consectetur pariatur fugiat consequatur accusantium tenetur ipsum exercitationem rerum soluta veritatis sunt quae eveniet."
+        respuesta: " Actualmente, no contamos con una función específica para recibir notificaciones o actualizaciones sobre los colegios de tu interés. Sin embargo, estamos trabajando en el desarrollo de esta característica para mejorar la experiencia del usuario. Mientras tanto, te invitamos a ponerte en contacto con nosotros a través de la sección de contacto. Estamos disponibles para responder a tus preguntas, proporcionar información adicional y recibir tus comentarios. En el futuro, planeamos implementar la función de notificaciones para mantener a nuestros usuarios informados sobre novedades y actualizaciones relevantes."
     },
     {
         id:7,
         pregunta: "¿Es necesario registrarse para usar todas las funciones de la página?",
-        respuesta: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, commodi cumque praesentium at minus voluptas quaerat consectetur pariatur fugiat consequatur accusantium tenetur ipsum exercitationem rerum soluta veritatis sunt quae eveniet."
+        respuesta: " Actualmente, no es necesario registrarse para utilizar las funciones básicas de la página. Sin embargo, estamos trabajando en el desarrollo de una funcionalidad de registro que permitirá a los usuarios acceder a características adicionales y desbloquear nuevas funciones. El registro proporcionará una experiencia más personalizada, permitiendo a los usuarios guardar sus preferencias, recibir notificaciones y acceder a herramientas mejoradas. Estamos comprometidos a mejorar continuamente nuestra plataforma, y la implementación del registro será una forma de ofrecer beneficios adicionales a nuestros usuarios."
     },
     {
         id:8,
         pregunta: "¿Cómo puedo contactar a un colegio?",
-        respuesta: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, commodi cumque praesentium at minus voluptas quaerat consectetur pariatur fugiat consequatur accusantium tenetur ipsum exercitationem rerum soluta veritatis sunt quae eveniet."
+        respuesta: " Para contactar a un colegio, simplemente visita el perfil del colegio de tu interés en nuestra página. En el perfil, encontrarás información detallada, incluyendo datos de contacto, como números de teléfono y direcciones de correo electrónico. Puedes utilizar esta información para comunicarte directamente con el colegio y realizar cualquier pregunta adicional que puedas tener. Si necesitas más asistencia o información específica, también puedes utilizar la sección de contacto de nuestra página para comunicarte con nuestro equipo de soporte, y estaremos encantados de ayudarte en lo que necesites."
     },
     {
         id:9,
         pregunta: "¿Cuál es la política de privacidad y cómo se manejan los datos personales de los usuarios?",
-        respuesta: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, commodi cumque praesentium at minus voluptas quaerat consectetur pariatur fugiat consequatur accusantium tenetur ipsum exercitationem rerum soluta veritatis sunt quae eveniet."
+        respuesta: " La privacidad y seguridad de los datos de nuestros usuarios son de la máxima importancia para nosotros. Al registrar una cuenta, todos los datos personales proporcionados por los usuarios serán tratados con estricta confidencialidad y se almacenarán de forma segura. Nos comprometemos a no compartir, vender ni divulgar esta información a terceros sin el consentimiento explícito del usuario."
     },
     {
         id:10,
         pregunta: "¿Cómo puedo informar un error en la información de un colegio?",
-        respuesta: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, commodi cumque praesentium at minus voluptas quaerat consectetur pariatur fugiat consequatur accusantium tenetur ipsum exercitationem rerum soluta veritatis sunt quae eveniet."
+        respuesta: " Si encuentras algún error en la información de un colegio o tienes alguna preocupación, por favor, contáctanos a través de nuestra sección de contacto. Apreciamos tu colaboración y estaremos encantados de resolver cualquier problema que hayas identificado. ¡Gracias!"
     }
 ]
 
