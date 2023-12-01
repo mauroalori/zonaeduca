@@ -16,7 +16,7 @@ function SeccionColegio() {
 
   let { id } = useParams();
   const colegio = datosColegios.find(
-    (colegio) => colegio.id === Number.parseInt(id)
+    (colegio) => colegio._id === id || colegio.id === Number.parseInt(id)
   );
 
   return (
@@ -44,7 +44,7 @@ function SeccionColegio() {
             ))}
           </ul>
         </div>
-        <img src={colegio.imagen} alt="" className="w-full h-70 object-fill shadow-md shadow-gray-500" />
+        <img src={typeof colegio.imagen === 'string' ? colegio.imagen : colegio.imagen.secure_url} alt="" className="w-full h-70 object-fill shadow-md shadow-gray-500" />
         <h2 className="text-xl md:text-2xl font-semibold ml-8 mt-8">Descripcion</h2>
         <p className="text-sm md:text-lg ml-8 mt-4">{colegio.descripcion}</p>
         <div className="flex flex-col md:flex-row h-full">
