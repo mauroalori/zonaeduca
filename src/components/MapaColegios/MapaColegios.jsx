@@ -34,12 +34,12 @@ function MapaColegios() {
             center={center}
             mapContainerClassName="h-screen w-full"
           >
-            {datosColegiosFiltrados.map((colegio) => (
+            {datosColegiosFiltrados.map((colegio, index) => (
               <Marcador
-                key={colegio.id}
+                key={index}
                 position={{
-                  lat: colegio.coordenadas.latitud,
-                  lng: colegio.coordenadas.longitud,
+                  lat: colegio?.coordenadas?.latitud,
+                  lng: colegio?.coordenadas?.longitud,
                 }}
                 icon={{
                   url: iconMaps,
