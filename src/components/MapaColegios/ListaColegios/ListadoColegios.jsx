@@ -13,9 +13,9 @@ function ListadoColegios() {
       </h1>
 
       {datos ? (
-        datosColegiosFiltrados.map((colegio,index) => (
+        datosColegiosFiltrados.map((colegio) => (
           <div
-            key={index}
+            key={colegio.id || colegio._id}
             className="w-[70%] lg:w-[90%] h-auto m-auto mt-5 mb-5 lg:h-80 shadow-md shadow-gray-700  bg-[#001A29] rounded-md flex flex-col lg:flex-row justify-around items-center"
           >
             {/* IMAGE  */}
@@ -35,7 +35,7 @@ function ListadoColegios() {
               <p className="text-white text-left mt-5 text-sm font-medium w-full h-32 overflow-auto">
                 {colegio.descripcion}
               </p>
-              <Link className="m-auto" to={`/colegios/${colegio.id}`}>
+              <Link className="m-auto" to={`/colegios/${colegio.id || colegio._id}`}>
                 <button className="m-auto w-32 h-10 mt-5 bg-[#00729A] hover:bg-[#165870] duration-200 text-white rounded-lg">
                   VER
                 </button>

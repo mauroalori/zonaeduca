@@ -34,9 +34,9 @@ function MapaColegios() {
             center={center}
             mapContainerClassName="h-screen w-full"
           >
-            {datosColegiosFiltrados.map((colegio, index) => (
+            {datosColegiosFiltrados.map((colegio) => (
               <Marcador
-                key={index}
+                key={colegio.id || colegio._id}
                 position={{
                   lat: colegio?.coordenadas?.latitud,
                   lng: colegio?.coordenadas?.longitud,
@@ -65,7 +65,7 @@ function MapaColegios() {
                     className="w-full h-32"
                   />
                   
-                  <Link to={`/colegios/${selectedColegio.id}`} >
+                  <Link to={`/colegios/${selectedColegio.id || selectedColegio._id}`} >
                     <p className="w-24 p-2 m-auto mt-3 border-solid border-2 border-[#00729A] hover:border-[#1f4d5e] text-center font-medium  rounded-lg text-[#00729A] hover:text-[#1f4d5e] duration-100">Ver detalles</p>
                   </Link>
                 </div>

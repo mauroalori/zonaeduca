@@ -16,7 +16,7 @@ function SeccionColegio() {
 
   let { id } = useParams();
   const colegio = datosColegios.find(
-    (colegio) => colegio.id === Number.parseInt(id)
+    (colegio) => colegio._id === id || colegio.id === Number.parseInt(id)
   );
 
   return (

@@ -11,8 +11,6 @@ import UseColegio from '../../../hooks/UseColegio';
 function SeccionRecomendaciones() {
   const { colegiosRecomendados } = UseColegio()
 
-  console.log(colegiosRecomendados)
-
   return (
     <>
         <h3 className='text-white text-2xl bg-[#00405B] p-3 pl-12'>Nuestras recomendaciones</h3>
@@ -33,10 +31,10 @@ function SeccionRecomendaciones() {
               }}
             >
               {/* MAPEO LOS DATOS DENTRO DEL SWIPER PARA QUE ME CREE LAS CARDS  */}
-              {colegiosRecomendados.map((escuela,index) => (
+              {colegiosRecomendados.map((escuela) => (
                   <SwiperSlide
                   // le paso el id de cada card 
-                  key={index}
+                  key={escuela.id || escuela._id}
                   className='flex justify-center items-center '
                   >
                       {/* DISEÑO LA CARD  */}
