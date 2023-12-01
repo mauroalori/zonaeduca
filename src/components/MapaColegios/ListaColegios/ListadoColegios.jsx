@@ -13,15 +13,15 @@ function ListadoColegios() {
       </h1>
 
       {datos ? (
-        datosColegiosFiltrados.map((colegio) => (
+        datosColegiosFiltrados.map((colegio,index) => (
           <div
-            key={colegio.id}
+            key={index}
             className="w-[70%] lg:w-[90%] h-auto m-auto mt-5 mb-5 lg:h-80 shadow-md shadow-gray-700  bg-[#001A29] rounded-md flex flex-col lg:flex-row justify-around items-center"
           >
             {/* IMAGE  */}
             <div className="p-4">
               <img
-                src={colegio.imagen}
+                src={typeof colegio.imagen === 'string' ? colegio.imagen : colegio.imagen.secure_url}
                 alt={colegio.nombre}
                 className="w-72 h-72 rounded-md"
               />

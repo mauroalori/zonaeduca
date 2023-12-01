@@ -60,7 +60,7 @@ function MapaColegios() {
                 <div className="w-44">
                   <h2 className="font-semibold mb-5">{selectedColegio.nombre}</h2>
                   <img
-                    src={selectedColegio.imagen}
+                    src={typeof selectedColegio.imagen === 'string' ? selectedColegio.imagen : selectedColegio.imagen.secure_url}
                     alt="imagen"
                     className="w-full h-32"
                   />
