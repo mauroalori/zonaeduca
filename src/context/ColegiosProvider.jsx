@@ -8,7 +8,8 @@ const ColegiosProvider = ({ children }) => {
   {
     /* Recoleccion de los valores para los select desde los datos */
   }
-  const rutaAPIColegios = ''
+
+  const rutaAPIColegios = 'https://apicolegioszonaeduca.up.railway.app/colegios'
   const [datosColegios, setDatosColegios] = useState ([]);
   
   {/* CONSUMO DE NUESTRA API */}
