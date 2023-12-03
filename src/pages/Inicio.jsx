@@ -5,11 +5,21 @@ import SeccionComentarios from "../components/Inicio/seccionComentarios/SeccionC
 import SeccionPresentacion from "../components/Inicio/seccionPresentacion/SeccionPresentacion";
 import Formulario from "../components/Inicio/formulario/Formulario";
 import Footer from "../components/Footer/Footer";
+import ModalRegistrar from "../components/Navbar/Modals/ModalRegistrar";
+import React, {useState} from "react";
 
 function Inicio() {
+  const [showModal, setShowModal] = useState(false);
+  const openModal = () => {
+    setShowModal(true);
+  };
+
+  const closeModal = () => {
+    setShowModal(false);
+  };
   return (
     <>
-      <Navbar/>
+      <Navbar openModal={openModal}/>
 
       {/* SECCION PORTADA  */}
       <SeccionPortada/>
@@ -28,6 +38,7 @@ function Inicio() {
 
       {/* FOOTER  */}
       <Footer/>
+      <ModalRegistrar showModal={showModal} setShowModal={closeModal} />
     </>
   )
 }
