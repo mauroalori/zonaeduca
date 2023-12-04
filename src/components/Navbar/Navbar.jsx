@@ -28,45 +28,43 @@ function Navbar() {
 
   return (
     <>
-    <nav className={`navBar ${Open && "open"} ${scrolling && "scrolled"}`}>
+      <nav className={`navBar ${Open && "open"} ${scrolling && "scrolled"}`}>
 
-      <div className={`navLogo ${Open && "open"}`}>
-        <Link to={"/"}>
-      <img src={logo} alt="logo" className="w-44"/>
-        </Link>
-      </div>
+        <div className={`navLogo ${Open && "open"}`}>
+          <Link to={"/"}>
+            <img src={logo} alt="logo" className="w-44"/>
+          </Link>
+        </div>
 
         <div className={`items ${Open && "open"} justify-start text-center items-center flex`}>
-        <Link to={'/'}>Inicio</Link>
-        <Link to={'/Colegios'}>Colegios</Link>
-        <Link to={'/Contacto'}>Contacto</Link>
-        <Link to={'/Ayuda'}>Ayuda </Link>
+          <Link to={'/'}>Inicio</Link>
+          <Link to={'/Colegios'}>Colegios</Link>
+          <Link to={'/Contacto'}>Contacto</Link>
+          <Link to={'/Ayuda'}>Ayuda </Link>
 
-        {window.innerWidth < 968 && Open && (
-              <div className="mt-10">
-                  <Link>Registrarse</Link>
-                  <Link>Ingresar</Link>
-              </div>
-        )}
-
+          {window.innerWidth < 968 && Open && (
+            <div className="mt-10">
+                <Link>Registrarse</Link>
+                <Link>Ingresar</Link>
+            </div>
+          )}
         </div>
-      
+        
         <div className={`items justify-center gap-5 text-center items-center flex`}>
-        <Link  >Registrarse</Link>
-        <Link  >Ingresar </Link>
+          <Link>Registrarse</Link>
+          <Link>Ingresar </Link>
         </div>
 
+        <div
+          className={`toggle ${Open && "open"}`}
+          onClick={() => setOpen(!Open)}
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
 
-      <div
-        className={`toggle ${Open && "open"}`}
-        onClick={() => setOpen(!Open)}
-      >
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-
-    </nav>
+      </nav>
     </>
   );
 }
