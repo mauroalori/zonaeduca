@@ -42,17 +42,33 @@ function Navbar() {
           <Link to={'/Contacto'}>Contacto</Link>
           <Link to={'/Ayuda'}>Ayuda </Link>
 
-          {window.innerWidth < 968 && Open && (
-            <div className="mt-10">
+          {window.innerWidth < 968 && Open &&(
+            //Aqui se debe consultar si el usuario esta loggeado o no
+            false ? (
+              <div className="mt-10">
                 <Link>Registrarse</Link>
-                <Link>Ingresar</Link>
-            </div>
+                <Link>Ingresar </Link>
+              </div>
+              ):(
+              //Aqui se debe acceder al nombre de usuario
+              <div className="mt-10">
+                <p>Hola, {"Mauro"}</p>
+              </div>
+            )
           )}
         </div>
         
         <div className={`items justify-center gap-5 text-center items-center flex`}>
-          <Link>Registrarse</Link>
-          <Link>Ingresar </Link>
+          {/*Aqui se debe consultar si el usuario esta loggeado o no*/}
+          { false ? ( 
+            <div>
+              <Link>Registrarse</Link>
+              <Link>Ingresar </Link>
+            </div>
+            ):(
+            //Aqui se debe acceder al nombre de usuario
+            <p>Hola, {"Mauro"}</p>
+          )}
         </div>
 
         <div
