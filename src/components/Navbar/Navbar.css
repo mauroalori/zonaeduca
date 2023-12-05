@@ -29,7 +29,8 @@
 
 }
 
-.items a{
+.items a,
+.items p{
     margin: 15px;
     color: #ffffff;
     text-decoration: none;

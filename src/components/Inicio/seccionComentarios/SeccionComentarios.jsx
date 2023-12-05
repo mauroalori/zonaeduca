@@ -1,6 +1,10 @@
 import SliderComentarios from "./swiperComentarios/SliderComentarios"
+import AgregarComentarios from "./agregarComentarios/AgregarComentarios"
 
 function SeccionComentarios() {
+
+  
+
   return (
     <div>
 
@@ -8,6 +12,7 @@ function SeccionComentarios() {
 
     <SliderComentarios/>
     
+    <AgregarComentarios/>
     
     </div>
   )

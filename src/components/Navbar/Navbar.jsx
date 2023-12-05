@@ -45,6 +45,8 @@ function Navbar({ openModal }) {
           <Link to={'/Ayuda'}>Ayuda </Link>
 
           {window.innerWidth < 968 && Open && (
+            //Aqui se debe consultar si el usuario esta loggeado o no
+            false ? (
             <div className="mt-10">
               <button
                 className="active:bg-[#001A29] text-white text-lg px-2 py-4 outline-none focus:outline-none"
@@ -59,25 +61,38 @@ function Navbar({ openModal }) {
                 setShowModal={setShowModal}
               />
               <Link>Ingresar</Link>
-            </div>
+            </div> ):(
+              //Aqui se debe acceder al nombre de usuario
+              <div className="mt-10">
+                <p>Hola, {"Mauro"}</p>
+              </div>
+            )
           )}
 
         </div>
-
+  
         <div className={`items justify-center gap-4 text-center items-center flex`}>
-          <button
+            {/*Aqui se debe consultar si el usuario esta loggeado o no*/}
+          { false ? ( 
+            <div>
+              <button
             className="active:bg-[#001A29] text-white text-lg px-2 py-4 outline-none focus:outline-none"
             type="button"
             onClick={openModal}
             style={{ transition: "all .15s ease" }}
-          >
+        >
             Registrarse
           </button>
           <ModalRegistrar
             showModal={showModal}
             setShowModal={setShowModal}
           />
-          <Link  >Ingresar </Link>
+                <Link>Ingresar </Link>
+            </div>
+            ):(
+            //Aqui se debe acceder al nombre de usuario
+            <p>Hola, {"Mauro"}</p>
+          )}
         </div>
 
 
