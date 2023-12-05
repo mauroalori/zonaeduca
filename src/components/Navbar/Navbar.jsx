@@ -46,7 +46,7 @@ function Navbar({ openModal }) {
 
           {window.innerWidth < 968 && Open && (
             //Aqui se debe consultar si el usuario esta loggeado o no
-            false ? (
+            true ? (
             <div className="mt-10">
               <button
                 className="active:bg-[#001A29] text-white text-lg px-2 py-4 outline-none focus:outline-none"
@@ -73,7 +73,7 @@ function Navbar({ openModal }) {
   
         <div className={`items justify-center gap-4 text-center items-center flex`}>
             {/*Aqui se debe consultar si el usuario esta loggeado o no*/}
-          { false ? ( 
+          { true ? ( 
             <div>
               <button
             className="active:bg-[#001A29] text-white text-lg px-2 py-4 outline-none focus:outline-none"

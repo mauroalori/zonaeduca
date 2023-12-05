@@ -1,8 +1,6 @@
 import React from "react";
 import { IoClose } from "react-icons/io5";
 import ImageModal from "./../../../assets/ImageModal.png"
-import { FaSquareInstagram, FaSquareTwitter } from "react-icons/fa6";
-import { FaFacebookSquare } from "react-icons/fa";
 
 function ModalRegistrar({ showModal, setShowModal }) {
 
@@ -22,7 +20,7 @@ function ModalRegistrar({ showModal, setShowModal }) {
                                     <div className="rounded-lg shadow-lg relative flex flex-col w-[55vw] md:w-[90vw] lg:w-[55vw] h-[70vh] md:h-[70vh] lg:h-[85vh] bg-white outline-none focus:outline-none">
                                         {/*header*/}
                                         <div className="flex items-start justify-between p-4 border-b border-solid border-blueGray-200 rounded-t">
-                                            <IoClose className="ml-auto border-0 text-black float-right text-3xl font-semibold "
+                                            <IoClose className="ml-auto border-0 text-black float-right text-3xl font-semibold cursor-pointer"
                                                 onClick={() => {
                                                     setShowModal(false);
                                                     handleCloseModal();
@@ -31,8 +29,8 @@ function ModalRegistrar({ showModal, setShowModal }) {
                                         </div>
                                         {/*body*/}
                                         <div className="flex flex-col md:flex-row w-full relative overflow-y-auto max-w-screen-lg">
-                                            <div className="w-full md:w-1/2  md:order-1">
-                                                <img src={ImageModal} alt="" className="h-[40vh] w-full md:h-[75vh] lg:h-[75vh] object-cover rounded-xl" />
+                                            <div className=" w-full md:w-1/2  md:order-1">
+                                                <img src={ImageModal} alt="" className="h-40 w-full md:h-[75vh] lg:h-[75vh] object-cover rounded-xl" />
                                                 <div className="absolute bottom-44 md:bottom-4 lg:bottom-24 left-12 md:left-8">
                                                     <h1 className="text-white text-left text-lg md:text-[1.5rem] lg:text-[2rem] md:w-60">Registrate y forma parte de ZonaEduca!</h1>
                                                 </div>
@@ -77,11 +75,7 @@ function ModalRegistrar({ showModal, setShowModal }) {
                                                         <button className="bg-[#00729A] active:bg-[#001A29] text-white md:text-lg lg:text-2xl px-12 py-2 rounded-lg outline-none focus:outline-none" type="button">Registrate</button>
                                                     </div>
                                                 </form>
-                                                <div className="flex flex-row items-center mt-6 mb-6 lg:mt-8 lg:mb-18 md:text-xl lg:text-3xl">
-                                                    <FaSquareInstagram className="mr-12" />
-                                                    <FaFacebookSquare className="mr-12" />
-                                                    <FaSquareTwitter />
-                                                </div>
+
 
                                             </div>
                                         </div>
