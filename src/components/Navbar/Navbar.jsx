@@ -4,8 +4,12 @@ import { Link } from "react-router-dom";
 import ModalRegistrar from "./Modals/ModalRegistrar";
 import ModalLogin from "./Modals/ModalLogin";
 import './Navbar.css';
+import UseColegio from "../../hooks/UseColegio";
 
-function Navbar({ openModal }) {
+function Navbar() {
+
+  const {verificacion, user} = UseColegio();
+
   const [showRegisterModal, setShowRegisterModal] = useState(false);
   const [showLoginModal, setShowLoginModal] = useState(false);
 
@@ -50,7 +54,7 @@ function Navbar({ openModal }) {
 
           {window.innerWidth < 968 && Open && (
             //Aqui se debe consultar si el usuario esta loggeado o no
-            true ? (
+            verificacion ? (
             <div className="mt-10">
               <button
                 className="active:bg-[#001A29] text-white text-lg px-2 py-4 outline-none focus:outline-none"
@@ -88,7 +92,7 @@ function Navbar({ openModal }) {
   
         <div className={`items justify-center gap-4 text-center items-center flex`}>
             {/*Aqui se debe consultar si el usuario esta loggeado o no*/}
-          { true ? ( 
+          { verificacion ? ( 
             <div>
               <button
             className="active:bg-[#001A29] text-white text-lg px-2 py-4 outline-none focus:outline-none"
@@ -118,7 +122,7 @@ function Navbar({ openModal }) {
             </div>
             ):(
             //Aqui se debe acceder al nombre de usuario
-            <p>Hola, {"Mauro"}</p>
+            <p>Hola, {user.displayName}</p>
           )}
         </div>
 
