@@ -1,3 +1,4 @@
+import React from "react";
 import { IoClose } from "react-icons/io5";
 import ImageModal from "./../../../assets/ImageModal.png"
 
@@ -23,8 +24,8 @@ function ModalRegistrar({ showModal, setShowModal }) {
                         className="ml-auto border-0 text-black float-right text-3xl font-semibold "
                         onClick={() => {
                         setShowModal(false);
-                        // handleCloseModal();
-                        //   resetErrors(); // Reiniciar errores al cerrar el modal
+                        handleCloseModal();
+                          resetErrors(); // Reiniciar errores al cerrar el modal
                         }}
                     />
                     </div>
