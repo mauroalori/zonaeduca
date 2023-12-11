@@ -20,6 +20,8 @@ function ModalLogin({ showModal, setShowModal }) {
       setVerificacion(false)
     } catch (error) {
       console.error("Error al loguear:", error);
+      alert("Ocurrio un error")
+
     }
   };
 

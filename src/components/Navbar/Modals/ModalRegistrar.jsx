@@ -10,18 +10,20 @@ function ModalRegistrar({ showModal, setShowModal }) {
   // ESTADOS
   const [emailRegister, setEmailRegister] = useState("");
   const [passwordRegister, setPasswordRegister] = useState("");
+  const [nombreUsuario, setNombreUsuario] = useState("");
 
   console.log(emailRegister, passwordRegister);
 
   // FUNCION REGISTRAR
   const handleRegister = async () => {
     try {
-      await register(emailRegister, passwordRegister);
+      await register(emailRegister, passwordRegister, nombreUsuario);
       alert("Registrado con éxito");
       setShowModal(false);
       setVerificacion(false)
     } catch (error) {
       console.error("Error al registrar:", error);
+      alert("Ocurrio un error")
     }
   };
 
@@ -31,6 +33,8 @@ function ModalRegistrar({ showModal, setShowModal }) {
       setVerificacion(false);
     } catch (error) {
       console.error("Error en el login con Google:", error);
+      alert("Ocurrio un error")
+
     }
   };
 
@@ -88,19 +92,7 @@ function ModalRegistrar({ showModal, setShowModal }) {
                               type="text"
                               id="nombreApellido"
                               className="rounded-lg border border-gray-700 mt-2 lg:p-2 md:w-60 lg:w-80 h-9"
-                            />
-                          </div>
-                          <div className="md:mb-2 lg:mb-4 text-left">
-                            <label
-                              htmlFor="usuario"
-                              className="block text-gray-700 md:text-sm lg:text-lg"
-                            >
-                              Usuario:
-                            </label>
-                            <input
-                              type="text"
-                              id="usuario"
-                              className="rounded-lg border border-gray-700 mt-2 lg:p-2 md:w-60 lg:w-80 h-9"
+                              onChange={(e) => setNombreUsuario(e.target.value)}
                             />
                           </div>
                           <div className="md:mb-2 lg:mb-4 text-left">
