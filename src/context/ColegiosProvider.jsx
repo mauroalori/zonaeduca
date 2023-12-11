@@ -2,12 +2,91 @@ import { createContext, useState, useEffect } from "react";
 import PropTypes from "prop-types";
 import { Colegios } from "../data/data";
 
+// FIREBASE IMPORTS 
+import { auth } from "../firebase/firebase.config";
+import { createUserWithEmailAndPassword, signInWithEmailAndPassword, GoogleAuthProvider,signInWithPopup, signOut, onAuthStateChanged, updateProfile } from "firebase/auth";
+import { db } from "../firebase/firebase.config";
+import { collection, getDocs, onSnapshot} from "firebase/firestore";
+
 const ColegioContext = createContext();
 const ColegiosProvider = ({ children }) => {
   // DECLARAR ACA FUNCIONES
-  {
-    /* Recoleccion de los valores para los select desde los datos */
+
+  //ESTADOS FIREBASE
+  const [verificacion, setVerificacion] = useState(true);
+  //user lo utilizo para extraer el nombre desde la autenticacion de google.
+  const [user, setUser] = useState("");
+  //nombreUsuario cuando se registre de manera normal y extraigo el nombre.
+  const [nombreUsuario, setNombreUsuario] = useState("")
+  //estado con los comentarios.
+  const [comentarios, setComentarios] = useState([]);
+
+  // FUNCIONES DE REGISTER Y LOGUE DE FIREBASE 
+
+  const register = async ( email, password, displayName) => {
+    const response = await createUserWithEmailAndPassword(auth, email, password);
+    await updateProfile(auth.currentUser, { displayName });
+    console.log(response);
+  }  
+
+  const login = async ( email, password) => {
+    try {
+      const response = await signInWithEmailAndPassword(auth, email, password);
+      console.log(response);
+      const displayName = auth.currentUser.displayName;
+      console.log("Nombre del usuario:", displayName);
+    } catch (error) {
+      console.error("Error en el inicio de sesión:", error);
+    }
   }
+
+  const loginWithGoogle = async () => {
+    const responseGoogle = new GoogleAuthProvider();
+    return signInWithPopup(auth, responseGoogle)
+  }
+
+  const logout = async () => {
+    const response = await signOut(auth)
+    console.log(response);
+  }
+
+  // FUNCIONES FIREBASE DE COMENTARIOS
+
+  const comentariosCollection = collection(db, "comentarios");
+
+  const getComentarios = async () => {
+
+    const data = await getDocs(comentariosCollection);
+    setComentarios(
+      data.docs.map((doc) => ({...doc.data(), id:doc.id}))
+    )
+  }
+
+  // EFFECT PARA GUARDAR LOS NOMBRES DE LOS USUARIO LOGUEADOS 
+  useEffect(() =>{
+    const user = onAuthStateChanged(auth, (currentUser) => {
+      if(!currentUser){
+        console.log("No hay usuario suscrito")
+        setUser("");
+      }else{
+        setUser(currentUser);
+        setNombreUsuario(currentUser.displayName);
+        console.log("Nombre del usuario:", nombreUsuario);
+      }
+    })
+    return () =>  user();
+  },[])
+
+  // EFFECT PARA ACTUALIZAR LOS COMENTARIOS AGREGADOS 
+  useEffect(() => {
+    const unsubscribe = onSnapshot(comentariosCollection, () => {
+      getComentarios();
+    });
+
+    return () => unsubscribe();
+  }, []);
+  
+  /* Recoleccion de los valores para los select desde los datos */
 
   const rutaAPIColegios = 'https://apicolegioszonaeduca.up.railway.app/colegios'
   const [datosColegios, setDatosColegios] = useState ([]);
@@ -107,6 +186,16 @@ const ColegiosProvider = ({ children }) => {
         setSelectedDepartamento,
         setSelectedNivel,
         setSelectedIdioma,
+        register,
+        login,
+        loginWithGoogle,
+        logout,
+        auth,
+        setVerificacion,
+        verificacion,
+        user,
+        nombreUsuario,
+        comentarios
       }}
     >
       {children}

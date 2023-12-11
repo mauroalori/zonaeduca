@@ -9,7 +9,7 @@ function FormContacto() {
     return (
 
 
-        <div className={`flex flex-col items-center justify-center h-[148vh]  bg-cover`} style={{ backgroundImage: `url(${Fondocole})` }}>
+        <div className={`flex flex-col items-center justify-center h-[145vh]  bg-cover`} style={{ backgroundImage: `url(${Fondocole})` }}>
             <div className="text-white text-center mt-2">
                 <h1 className="text-3xl md:text-[2.5rem] mb-12">FORMULARIO DE CONTACTO</h1>
             </div>
