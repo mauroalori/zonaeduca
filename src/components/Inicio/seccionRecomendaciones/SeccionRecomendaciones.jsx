@@ -41,7 +41,7 @@ function SeccionRecomendaciones() {
 
                     <Link to={`/colegios/${escuela.id || escuela._id}`}>
                       {/* DISEÑO LA CARD  */}
-                      <div  className='bg-white shadow-md shadow-gray-600 h-96 rounded-xl m-2 p-4 md:w-64 w-72 flex flex-col justify-evenly items-center'>
+                      <div  className='bg-white shadow-md shadow-gray-600 h-96 rounded-xl m-2 p-4 md:w-64 w-72 flex flex-col justify-evenly items-center transition ease-in-out delay-15 hover:-translate-y-1 hover:scale-105 duration-300'>
                         <img src={typeof escuela.imagen === 'string' ? escuela.imagen : escuela.imagen.secure_url} alt="foto de una escuela" className='h-1/3 object-cover rounded-xl'  />
                         <h3 className='text-center text-[#00405B]'>{escuela.nombre}</h3>
                         <div className='h-1/3 overflow-hidden px-1 relative'>
@@ -50,7 +50,7 @@ function SeccionRecomendaciones() {
                         </div>
                       </div>
                     </Link>
-                    
+
                   </SwiperSlide>
               ))}
 
