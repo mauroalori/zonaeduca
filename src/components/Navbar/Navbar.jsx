@@ -2,12 +2,20 @@ import { useState, useEffect } from "react";
 import logo from './../../assets/logo.png'
 import { Link } from "react-router-dom";
 import ModalRegistrar from "./Modals/ModalRegistrar";
+import ModalLogin from "./Modals/ModalLogin";
 import './Navbar.css';
+import UseColegio from "../../hooks/UseColegio";
 
-function Navbar({ openModal }) {
-  const [showModal, setShowModal] = useState(false);
+function Navbar() {
 
-  const [Open, setOpen] = useState(false);
+  const {verificacion, user} = UseColegio();
+
+  const [showRegisterModal, setShowRegisterModal] = useState(false);
+  const [showLoginModal, setShowLoginModal] = useState(false);
+
+
+  const [Open, setOpen] 
+  = useState(false);
 
   const [scrolling, setScrolling] = useState(false);
 
@@ -46,21 +54,32 @@ function Navbar({ openModal }) {
 
           {window.innerWidth < 968 && Open && (
             //Aqui se debe consultar si el usuario esta loggeado o no
-            true ? (
+            verificacion ? (
             <div className="mt-10">
               <button
                 className="active:bg-[#001A29] text-white text-lg px-2 py-4 outline-none focus:outline-none"
                 type="button"
-                onClick={openModal}
+                onClick={() => setShowRegisterModal(true)}
                 style={{ transition: "all .15s ease" }}
               >
                 Registrarse
               </button>
               <ModalRegistrar
-                showModal={showModal}
-                setShowModal={setShowModal}
+                showModal={showRegisterModal}
+                setShowModal={setShowRegisterModal}
               />
-              <Link>Ingresar</Link>
+              <button
+            className="active:bg-[#001A29] text-white text-lg px-2 py-4 outline-none focus:outline-none"
+            type="button"
+            onClick={() => setShowLoginModal(true)}
+            style={{ transition: "all .15s ease" }}
+        >
+            Iniciar Sesión
+          </button>
+          <ModalLogin
+            showModal={showLoginModal}
+            setShowModal={setShowLoginModal}
+          />
             </div> ):(
               //Aqui se debe acceder al nombre de usuario
               <div className="mt-10">
@@ -73,25 +92,37 @@ function Navbar({ openModal }) {
   
         <div className={`items justify-center gap-4 text-center items-center flex`}>
             {/*Aqui se debe consultar si el usuario esta loggeado o no*/}
-          { true ? ( 
+          { verificacion ? ( 
             <div>
               <button
             className="active:bg-[#001A29] text-white text-lg px-2 py-4 outline-none focus:outline-none"
             type="button"
-            onClick={openModal}
+            onClick={() => setShowRegisterModal(true)}
             style={{ transition: "all .15s ease" }}
         >
             Registrarse
           </button>
           <ModalRegistrar
-            showModal={showModal}
-            setShowModal={setShowModal}
+            showModal={showRegisterModal}
+            setShowModal={setShowRegisterModal}
           />
-                <Link>Ingresar </Link>
+          <button
+            className="active:bg-[#001A29] text-white text-lg px-2 py-4 outline-none focus:outline-none"
+            type="button"
+            onClick={() => setShowLoginModal(true)}
+            style={{ transition: "all .15s ease" }}
+        >
+            Iniciar Sesión
+          </button>
+          <ModalLogin
+            showModal={showLoginModal}
+            setShowModal={setShowLoginModal}
+          />
+          
             </div>
             ):(
             //Aqui se debe acceder al nombre de usuario
-            <p>Hola, {"Mauro"}</p>
+            <p>Hola, {user.displayName}</p>
           )}
         </div>
 
