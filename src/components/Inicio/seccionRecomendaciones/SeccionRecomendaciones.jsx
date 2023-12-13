@@ -8,6 +8,7 @@ import './SeccionRecomendaciones.css'
 // MODULOS 
 import { Pagination } from 'swiper/modules';
 import UseColegio from '../../../hooks/UseColegio';
+import { Link } from 'react-router-dom';
 function SeccionRecomendaciones() {
   const { colegiosRecomendados } = UseColegio()
 
@@ -32,11 +33,13 @@ function SeccionRecomendaciones() {
             >
               {/* MAPEO LOS DATOS DENTRO DEL SWIPER PARA QUE ME CREE LAS CARDS  */}
               {colegiosRecomendados.map((escuela) => (
-                  <SwiperSlide
+                <SwiperSlide
                   // le paso el id de cada card 
                   key={escuela.id || escuela._id}
                   className='flex justify-center items-center '
                   >
+
+                    <Link to={`/colegios/${escuela.id || escuela._id}`}>
                       {/* DISEÑO LA CARD  */}
                       <div  className='bg-white shadow-md shadow-gray-600 h-96 rounded-xl m-2 p-4 md:w-64 w-72 flex flex-col justify-evenly items-center'>
                         <img src={typeof escuela.imagen === 'string' ? escuela.imagen : escuela.imagen.secure_url} alt="foto de una escuela" className='h-1/3 object-cover rounded-xl'  />
@@ -46,9 +49,9 @@ function SeccionRecomendaciones() {
                           <p className='text-left text-[#00405B] text-sm'>{escuela.descripcion}</p>
                         </div>
                       </div>
-
+                    </Link>
+                    
                   </SwiperSlide>
-
               ))}
 
             </Swiper>
