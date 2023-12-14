@@ -83,7 +83,7 @@ function Navbar() {
             </div> ):(
               //Aqui se debe acceder al nombre de usuario
               <div className="mt-10">
-                <p>Hola, {"Mauro"}</p>
+                <p>Hola, {user.displayName}</p>
               </div>
             )
           )}
