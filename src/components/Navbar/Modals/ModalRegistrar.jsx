@@ -52,7 +52,7 @@ function ModalRegistrar({ showModal, setShowModal }) {
                     {/*header*/}
                     <div className="flex items-start justify-between p-4 border-b border-solid border-blueGray-200 rounded-t">
                       <IoClose
-                        className="ml-auto border-0 text-black float-right text-3xl font-semibold "
+                        className="ml-auto border-0 text-black float-right text-3xl font-semibold cursor-pointer hover:text-gray-500"
                         onClick={() => {
                           setShowModal(false);
                           handleCloseModal();
