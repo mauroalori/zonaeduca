@@ -48,8 +48,8 @@ function AgregarComentarios() {
             isOpen={isModalOpen}
             onRequestClose={closeModal}
             contentLabel="Ejemplo de Modal"
-            className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white p-4 rounded shadow-lg z-10"
-            overlayClassName="fixed inset-0 backdrop-filter backdrop-blur-sm"
+            className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white p-4 rounded shadow-lg"
+            overlayClassName="fixed inset-0 backdrop-filter backdrop-blur-sm z-10"
           >
 
             <h2 className="text-xl font-bold mb-4">Envianos tu comentario</h2>
