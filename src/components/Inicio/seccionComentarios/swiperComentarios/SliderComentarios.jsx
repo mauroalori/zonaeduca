@@ -19,7 +19,7 @@ function SliderComentarios() {
 
   return (
     <>
-      <div className="h-96 m-10">
+      <div className="h-96 m-10 mb-4">
         <Swiper
           // PROPIEDADES DEL SWIPER
           slidesPerView={1}

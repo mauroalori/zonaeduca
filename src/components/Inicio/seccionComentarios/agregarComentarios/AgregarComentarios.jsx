@@ -27,8 +27,8 @@ function AgregarComentarios() {
   const closeModal = () => setModalOpen(false);
 
   return (
-    <div className="flex flex-col items-center pb-14">
-      <h2 className="text-center text-xl text-[#00405B] mb-10">
+    <div className="flex flex-col items-center mb-14">
+      <h2 className="text-center text-xl text-[#00405B] mb-2">
         ¡Dejanos tu comentario!
       </h2>
       {verificacion ? (
