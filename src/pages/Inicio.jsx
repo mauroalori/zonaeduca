@@ -9,17 +9,10 @@ import ModalRegistrar from "../components/Navbar/Modals/ModalRegistrar";
 import React, {useState} from "react";
 
 function Inicio() {
-  const [showModal, setShowModal] = useState(false);
-  const openModal = () => {
-    setShowModal(true);
-  };
-
-  const closeModal = () => {
-    setShowModal(false);
-  };
+  
   return (
     <>
-      <Navbar openModal={openModal}/>
+      <Navbar/>
 
       {/* SECCION PORTADA  */}
       <SeccionPortada/>
@@ -38,7 +31,6 @@ function Inicio() {
 
       {/* FOOTER  */}
       <Footer/>
-      <ModalRegistrar showModal={showModal} setShowModal={closeModal} />
     </>
   )
 }

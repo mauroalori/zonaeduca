@@ -9,10 +9,34 @@ function ModalLogin({ showModal, setShowModal }) {
   // Estados
   const [emailLogin, setEmailLogin] = useState("");
   const [passwordLogin, setPasswordLogin] = useState("");
+  const [errors, setErrors] = useState({});
 
   console.log(emailLogin, passwordLogin);
+  const isValidEmail = (email) => {
+    // Expresión regular para validar el formato del correo electrónico
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailRegex.test(email);
+  };
 
   const handleLogin = async () => {
+    // Validación del formulario
+    const errors = {};
+    if (!emailLogin.trim()) {
+      errors.email = "Campo requerido";
+    } else if (!isValidEmail(emailLogin)) {
+      errors.email = "Formato de correo electrónico no válido";
+    }
+    if (!passwordLogin.trim()) {
+      errors.password = "Campo requerido";
+    } else if (passwordLogin.length < 6) {
+      errors.password = "La contraseña debe tener al menos 6 caracteres";
+    }
+
+    if (Object.keys(errors).length > 0) {
+      // Si hay errores, actualiza el estado y no intenta hacer el login
+      setErrors(errors);
+      return;
+    }
     try {
       await login(emailLogin, passwordLogin);
       alert("Logueado con éxito");
@@ -40,7 +64,7 @@ function ModalLogin({ showModal, setShowModal }) {
                     onClick={() => {
                       setShowModal(false);
                       handleCloseModal();
-                      resetErrors(); // Reiniciar errores al cerrar el modal
+                      setErrors({}); // Reiniciar errores al cerrar el modal
                     }}
                   />
                 </div>
@@ -60,11 +84,11 @@ function ModalLogin({ showModal, setShowModal }) {
                     </div>
                   </div>
                   <div className="w-full md:w-1/2 flex flex-col items-center order-1 md:order-2">
-                    <h1 className="text-[#00405B] text-center mt-4 text-xl md:text-2xl lg:text-4xl font-bold">
+                    <h1 className="text-[#00405B] text-center mt-16 text-xl md:text-2xl lg:text-4xl font-bold">
                       Iniciar Sesión
                     </h1>
                     <form action="" className="flex flex-col items-center">
-                      <div className="md:mb-2 lg:mb-4 text-left">
+                      <div className="mt-16 md:mb-2 lg:mb-4 text-left">
                         <label
                           htmlFor="email"
                           className="block text-gray-700 md:text-sm lg:text-lg"
@@ -74,9 +98,13 @@ function ModalLogin({ showModal, setShowModal }) {
                         <input
                           type="text"
                           id="usuario"
-                          className="rounded-lg border border-gray-700 mt-2 lg:p-2 md:w-60 lg:w-80"
+                          className={`rounded-lg border border-gray-700 mt-2 lg:p-2 md:w-60 lg:w-80 ${errors.email ? "border-red-500" : ""
+                            }`}
                           onChange={(e) => setEmailLogin(e.target.value)}
                         />
+                        {errors.email && (
+                          <p className="text-red-600 text-sm mt-1">{errors.email}</p>
+                        )}
                       </div>
                       <div className="md:mb-2 lg:mb-4 text-left">
                         <label
@@ -86,11 +114,18 @@ function ModalLogin({ showModal, setShowModal }) {
                           Contraseña:
                         </label>
                         <input
-                          type="text"
+                          type="password"
                           id="password"
-                          className="rounded-lg border border-gray-700 mt-2 lg:p-2 md:w-60 lg:w-80"
+                          className={`rounded-lg border border-gray-700 mt-2 lg:p-2 md:w-60 lg:w-80 ${errors.password ? "border-red-500" : ""
+                            }`}
                           onChange={(e) => setPasswordLogin(e.target.value)}
                         />
+                        {errors.password && (
+                          <p className="text-red-500 text-sm mt-1">
+                            {errors.password}
+                          </p>
+                        )}
+
                       </div>
                       <div className="mt-8">
                         <button

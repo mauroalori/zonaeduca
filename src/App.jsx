@@ -1,12 +1,16 @@
+import React, { useState } from "react";
 import AppRoutes from "./routes/AppRoutes"
-import { ColegiosProvider } from "./context/ColegiosProvider"
+import { ColegiosProvider } from "./context/ColegiosProvider";
 
 function App() {
+
   return (
     <>
-    <ColegiosProvider>
-      <AppRoutes/>
-    </ColegiosProvider>
+
+      <ColegiosProvider>
+        <AppRoutes />
+      </ColegiosProvider>
+
     </>
   )
 }

@@ -14,14 +14,13 @@ function Navbar() {
   const [showLoginModal, setShowLoginModal] = useState(false);
 
 
-  const [Open, setOpen] 
-  = useState(false);
+  const [Open, setOpen] = useState(false);
 
   const [scrolling, setScrolling] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 0) {
+      if (window.scrollY > 0 && showLoginModal !== true && showRegisterModal !== true) {
         setScrolling(true);
       } else {
         setScrolling(false);
@@ -33,7 +32,7 @@ function Navbar() {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, []);
+  }, [showLoginModal,showRegisterModal]);
 
 
   return (
@@ -47,15 +46,15 @@ function Navbar() {
         </div>
 
         <div className={`items ${Open && "open"} justify-start text-center items-center flex`}>
-          <Link to={'/'}>Inicio</Link>
-          <Link to={'/Colegios'}>Colegios</Link>
-          <Link to={'/Contacto'}>Contacto</Link>
-          <Link to={'/Ayuda'}>Ayuda </Link>
+          <Link className="text-white" to={'/'}>Inicio</Link>
+          <Link className="text-white" to={'/Colegios'}>Colegios</Link>
+          <Link className="text-white" to={'/Contacto'}>Contacto</Link>
+          <Link className="text-white" to={'/Ayuda'}>Ayuda </Link>
 
           {window.innerWidth < 968 && Open && (
             //Aqui se debe consultar si el usuario esta loggeado o no
             verificacion ? (
-            <div className="mt-10">
+            <div>
               <button
                 className="active:bg-[#001A29] text-white text-lg px-2 py-4 outline-none focus:outline-none"
                 type="button"
@@ -67,23 +66,24 @@ function Navbar() {
               <ModalRegistrar
                 showModal={showRegisterModal}
                 setShowModal={setShowRegisterModal}
+                open={Open}
               />
               <button
-            className="active:bg-[#001A29] text-white text-lg px-2 py-4 outline-none focus:outline-none"
-            type="button"
-            onClick={() => setShowLoginModal(true)}
-            style={{ transition: "all .15s ease" }}
-        >
-            Iniciar Sesión
-          </button>
-          <ModalLogin
-            showModal={showLoginModal}
-            setShowModal={setShowLoginModal}
-          />
-            </div> ):(
+                className="active:bg-[#001A29] text-white text-lg px-2 py-4 outline-none focus:outline-none"
+                type="button"
+                onClick={() => setShowLoginModal(true)}
+                style={{ transition: "all .15s ease" }}
+              >
+                Iniciar Sesión
+              </button>
+              <ModalLogin
+                showModal={showLoginModal}
+                setShowModal={setShowLoginModal}
+              />
+            </div>):(
               //Aqui se debe acceder al nombre de usuario
-              <div className="mt-10">
-                <p>Hola, {user.displayName}</p>
+              <div className="mt-10 text-white">
+                <p className="text-white" >Hola, {user.displayName}</p>
               </div>
             )
           )}
@@ -122,7 +122,7 @@ function Navbar() {
             </div>
             ):(
             //Aqui se debe acceder al nombre de usuario
-            <p>Hola, {user.displayName}</p>
+            <p className="text-white">Hola, {user.displayName}</p>
           )}
         </div>
 

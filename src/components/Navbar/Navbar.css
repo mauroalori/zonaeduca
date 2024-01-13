@@ -1,5 +1,5 @@
 :root{
-    --altura-nav: 60px;
+    --altura-nav: 70px;
 }
 
 .navBar{
@@ -32,7 +32,6 @@
 .items a,
 .items p{
     margin: 15px;
-    color: #ffffff;
     text-decoration: none;
 }
 
