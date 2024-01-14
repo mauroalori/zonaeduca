@@ -103,11 +103,11 @@ function ModalRegistrar({ showModal, setShowModal }) {
                                         </div>
                                     </div>
                                     <div className="w-full md:w-1/2 flex flex-col items-center order-1 md:order-2">
-                                        <h1 className="text-[#00405B] text-center mt-4 text-xl md:text-2xl lg:text-4xl font-bold">
+                                        <h1 className="text-[#00405B] text-center mt-8 mb-4 text-xl md:text-2xl lg:text-4xl font-bold">
                                             Regístrate
                                         </h1>
                                         <form action="" className="flex flex-col items-center">
-                                            <div className="mt-6 md:mb-2 lg:mb-4 text-left">
+                                            <div className="mt-4 md:mb-2 lg:mb-2 text-left">
                                                 <label
                                                     htmlFor="nombreApellido"
                                                     className="block text-gray-700 md:text-sm lg:text-lg"
@@ -122,12 +122,12 @@ function ModalRegistrar({ showModal, setShowModal }) {
                                                     onChange={(e) => setNombreUsuario(e.target.value)}
                                                 />
                                                 {errors.nombreUsuario && (
-                                                    <p className="text-red-500 text-sm mt-1">
+                                                    <p className="text-red-500 text-sm">
                                                         {errors.nombreUsuario}
                                                     </p>
                                                 )}
                                             </div>
-                                            <div className="md:mb-2 lg:mb-4 text-left">
+                                            <div className="md:mb-2 lg:mb-2 text-left">
                                                 <label
                                                     htmlFor="email"
                                                     className="block text-gray-700 md:text-sm lg:text-lg"
@@ -142,12 +142,12 @@ function ModalRegistrar({ showModal, setShowModal }) {
                                                     onChange={(e) => setEmailRegister(e.target.value)}
                                                 />
                                                 {errors.email && (
-                                                    <p className="text-red-500 text-sm mt-1">
+                                                    <p className="text-red-500 text-sm">
                                                         {errors.email}
                                                     </p>
                                                 )}
                                             </div>
-                                            <div className="md:mb-2 lg:mb-4 text-left">
+                                            <div className="md:mb-2 lg:mb-2 text-left">
                                                 <label
                                                     htmlFor="password"
                                                     className="block text-gray-700 md:text-sm lg:text-lg"
@@ -162,7 +162,7 @@ function ModalRegistrar({ showModal, setShowModal }) {
                                                     onChange={(e) => setPasswordRegister(e.target.value)}
                                                 />
                                                 {errors.password && (
-                                                    <p className="text-red-500 text-sm mt-1">
+                                                    <p className="text-red-500 text-sm">
                                                         {errors.password}
                                                     </p>
                                                 )}
@@ -176,7 +176,7 @@ function ModalRegistrar({ showModal, setShowModal }) {
                                                     Regístrate
                                                 </button>
                                             </div>
-                                            <div className="mt-8">
+                                            <div className="mt-8 mb-8">
                                                 <GoogleButton
                                                     onClick={() => handleGoogle()}
                                                 />
