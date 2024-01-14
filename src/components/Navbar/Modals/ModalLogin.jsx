@@ -88,7 +88,7 @@ function ModalLogin({ showModal, setShowModal }) {
                       Iniciar Sesión
                     </h1>
                     <form action="" className="flex flex-col items-center">
-                      <div className="mt-16 md:mb-2 lg:mb-4 text-left">
+                      <div className="mt-14 md:mb-2 lg:mb-4 text-left">
                         <label
                           htmlFor="email"
                           className="block text-gray-700 md:text-sm lg:text-lg"
@@ -129,7 +129,7 @@ function ModalLogin({ showModal, setShowModal }) {
                       </div>
                       <div className="mt-8">
                         <button
-                          className="bg-[#00729A] active:bg-[#001A29] text-white md:text-lg lg:text-2xl px-12 py-2 rounded-lg outline-none focus:outline-none"
+                          className="bg-[#00729A] active:bg-[#001A29] text-white md:text-lg lg:text-xl px-10 py-2 rounded-lg outline-none focus:outline-none"
                           type="button"
                           onClick={() => handleLogin()}
                         >

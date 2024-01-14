@@ -169,7 +169,7 @@ function ModalRegistrar({ showModal, setShowModal }) {
                                             </div>
                                             <div className="mt-8">
                                                 <button
-                                                    className="bg-[#00729A] active:bg-[#001A29] text-white md:text-lg lg:text-2xl px-12 py-2 rounded-lg outline-none focus:outline-none"
+                                                    className="bg-[#00729A] active:bg-[#001A29] text-white md:text-lg lg:text-xl px-12 py-2 rounded-lg outline-none focus:outline-none"
                                                     type="button"
                                                     onClick={() => handleRegister()}
                                                 >
