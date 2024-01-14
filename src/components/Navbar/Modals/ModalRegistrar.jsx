@@ -3,6 +3,7 @@ import ImageModal from "./../../../assets/ImageModal.png";
 import { useState } from "react";
 import UseColegio from "../../../hooks/UseColegio";
 import { auth } from "../../../firebase/firebase.config";
+import GoogleButton from 'react-google-button'
 
 function ModalRegistrar({ showModal, setShowModal }) {
     const { register, loginWithGoogle, setVerificacion } = UseColegio();
@@ -175,14 +176,10 @@ function ModalRegistrar({ showModal, setShowModal }) {
                                                     Regístrate
                                                 </button>
                                             </div>
-                                            <div>
-                                                <button
-                                                    className="bg-[#00729A] active:bg-[#001A29] text-white md:text-lg lg:text-2xl px-12 py-2 rounded-lg outline-none focus:outline-none mt-10"
-                                                    type="button"
+                                            <div className="mt-8">
+                                                <GoogleButton
                                                     onClick={() => handleGoogle()}
-                                                >
-                                                    Google
-                                                </button>
+                                                />
                                             </div>
                                         </form>
                                     </div>
