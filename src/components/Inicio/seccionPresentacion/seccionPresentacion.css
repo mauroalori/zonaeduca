@@ -102,9 +102,8 @@
 }
 
 .btn-colegio:hover{
-    background: linear-gradient(to bottom, #6ac6e7, #002c3d);
-    transform: scale(1.05); /* Aumenta ligeramente el tamaño al pasar el cursor */
-    box-shadow: 0px 6px 6px 0px rgba(0, 0, 0, 0.4); /* Cambia la sombra al pasar el cursor */
+    background: #2293AB;
+    box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.4); /* Cambia la sombra al pasar el cursor */
 }
 
 @media screen and (max-width: 992px){

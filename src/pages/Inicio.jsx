@@ -9,6 +9,7 @@ import ModalRegistrar from "../components/Navbar/Modals/ModalRegistrar";
 import React, {useState} from "react";
 
 function Inicio() {
+  window.scrollTo(0, 0);
   
   return (
     <>
