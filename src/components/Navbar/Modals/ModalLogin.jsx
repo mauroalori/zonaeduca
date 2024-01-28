@@ -35,17 +35,22 @@ function ModalLogin({ showModal, setShowModal }) {
     if (Object.keys(errors).length > 0) {
       // Si hay errores, actualiza el estado y no intenta hacer el login
       setErrors(errors);
+      console.log("Errores de validación del formulario:", errors);
       return;
     }
     try {
       await login(emailLogin, passwordLogin);
-      alert("Logueado con éxito");
+      alert("Login exitoso")
       setShowModal(false)
       setVerificacion(false)
     } catch (error) {
-      console.error("Error al loguear:", error);
-      alert("Ocurrio un error")
+      console.error("Error al loguear desde try/catch:", error);
 
+      if (error.code === "auth/wrong-password" || error.code === "auth/invalid-credential" || error.code === "auth/user-not-found") {
+        alert("Credenciales incorrectas");
+      } else {
+        alert("Ocurrió un error al iniciar sesión");
+      }
     }
   };
 

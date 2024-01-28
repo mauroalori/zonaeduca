@@ -29,17 +29,15 @@ const ColegiosProvider = ({ children }) => {
     console.log(response);
   }  
 
-  const login = async ( email, password) => {
-    try {
-      const response = await signInWithEmailAndPassword(auth, email, password);
-      console.log(response);
-      const displayName = auth.currentUser.displayName;
-      console.log("Nombre del usuario:", displayName);
-    } catch (error) {
-      console.error("Error en el inicio de sesión:", error);
-    }
-  }
-
+  const login = async (email, password) => {
+    console.log("Estoy llegando a la función login");
+    console.log("Antes de signInWithEmailAndPassword");
+    const response = await signInWithEmailAndPassword(auth, email, password);
+    console.log(response);
+    const displayName = auth.currentUser.displayName;
+    console.log("Nombre del usuario:", displayName);
+  };
+  
   const loginWithGoogle = async () => {
     const responseGoogle = new GoogleAuthProvider();
     return signInWithPopup(auth, responseGoogle)
