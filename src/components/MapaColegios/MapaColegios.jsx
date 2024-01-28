@@ -36,10 +36,10 @@ function MapaColegios() {
           >
             {datosColegiosFiltrados.map((colegio) => (
               <Marcador
-                key={colegio.id}
+                key={colegio.id || colegio._id}
                 position={{
-                  lat: colegio.coordenadas.latitud,
-                  lng: colegio.coordenadas.longitud,
+                  lat: colegio?.coordenadas?.latitud,
+                  lng: colegio?.coordenadas?.longitud,
                 }}
                 icon={{
                   url: iconMaps,
@@ -60,12 +60,12 @@ function MapaColegios() {
                 <div className="w-44">
                   <h2 className="font-semibold mb-5">{selectedColegio.nombre}</h2>
                   <img
-                    src={selectedColegio.imagen}
+                    src={typeof selectedColegio.imagen === 'string' ? selectedColegio.imagen : selectedColegio.imagen.secure_url}
                     alt="imagen"
                     className="w-full h-32"
                   />
                   
-                  <Link to={`/colegios/${selectedColegio.id}`} >
+                  <Link to={`/colegios/${selectedColegio.id || selectedColegio._id}`} >
                     <p className="w-24 p-2 m-auto mt-3 border-solid border-2 border-[#00729A] hover:border-[#1f4d5e] text-center font-medium  rounded-lg text-[#00729A] hover:text-[#1f4d5e] duration-100">Ver detalles</p>
                   </Link>
                 </div>

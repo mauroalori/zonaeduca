@@ -4,6 +4,8 @@ import Footer from "../components/Footer/Footer";
 import { GoQuestion } from "react-icons/go";
 
 function Ayuda() {
+  window.scrollTo(0, 0);
+
   return (
     <>
       <Navbar />

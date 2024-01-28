@@ -6,7 +6,7 @@ import {Link} from "react-router-dom"
 export default function SeccionPresentacion() {
     return (
       <>
-      <div className="container-presentacion bg-[#00B0E4] bg-opacity-20">
+      <div className="container-presentacion bg-[#00B0E4] bg-opacity-20 min-h-[90vh]">
         <div className="container-imagen md:w-1/2 w-2/3 min-h-[300px]">
               <img src={fotoSup} alt="" className="imagen-grande"/>
               <img src={fotoInf} alt=""  className="imagen-chica"/>

@@ -5,8 +5,12 @@ import SeccionComentarios from "../components/Inicio/seccionComentarios/SeccionC
 import SeccionPresentacion from "../components/Inicio/seccionPresentacion/SeccionPresentacion";
 import Formulario from "../components/Inicio/formulario/Formulario";
 import Footer from "../components/Footer/Footer";
+import ModalRegistrar from "../components/Navbar/Modals/ModalRegistrar";
+import React, {useState} from "react";
 
 function Inicio() {
+  window.scrollTo(0, 0);
+  
   return (
     <>
       <Navbar/>

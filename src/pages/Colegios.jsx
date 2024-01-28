@@ -4,6 +4,7 @@ import MapaColegios from "../components/MapaColegios/MapaColegios"
 import SeccionFiltro from "../components/Colegios/seccionFiltro/SeccionFiltro"
 import ListadoColegios from "../components/MapaColegios/ListaColegios/ListadoColegios"
 function Colegios() {
+  window.scrollTo(0, 0);
 
   return (
     <>

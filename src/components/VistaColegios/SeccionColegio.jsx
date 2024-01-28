@@ -16,10 +16,8 @@ function SeccionColegio() {
 
   let { id } = useParams();
   const colegio = datosColegios.find(
-    (colegio) => colegio.id === Number.parseInt(id)
+    (colegio) => colegio._id === id || colegio.id === Number.parseInt(id)
   );
-
-  const center = { lat: -34.612181, lng: -58.441959 };
 
   return (
     <>
@@ -46,7 +44,7 @@ function SeccionColegio() {
             ))}
           </ul>
         </div>
-        <img src={colegio.imagen} alt="" className="w-full h-70 object-fill shadow-md shadow-gray-500" />
+        <img src={typeof colegio.imagen === 'string' ? colegio.imagen : colegio.imagen.secure_url} alt="" className="m-auto w-[60%] h-[70vh] object-fill shadow-md shadow-gray-500" />
         <h2 className="text-xl md:text-2xl font-semibold ml-8 mt-8">Descripcion</h2>
         <p className="text-sm md:text-lg ml-8 mt-4">{colegio.descripcion}</p>
         <div className="flex flex-col md:flex-row h-full">
@@ -91,7 +89,7 @@ function SeccionColegio() {
 
           {/* MAPA  */}
           <div className="max-w-600 mt-2 md:w-1/2 ">
-            <div className="text-sm sm: ml-10 lg:ml-2">
+            <div className="text-sm sm:ml-10 lg:ml-2">
               <div className="flex items-center mt-14">
                 <img src={Ubicacion1} alt="" className="w-8 h-8" />
                 <h2 className="text-xl md:text-2xl font-semibold ml-2">Ubicacion</h2>
@@ -101,7 +99,10 @@ function SeccionColegio() {
             </div>
             <GoogleMap
               zoom={13}
-              center={center}
+              center={{
+                lat: colegio.coordenadas.latitud,
+                lng: colegio.coordenadas.longitud
+              }}
               mapContainerStyle={{ height: '300px', width: '100%' }}
             >
               <Marcador
